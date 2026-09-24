@@ -3,10 +3,12 @@
 .env.local
 *.env
 
-# Large raw image crops & references
-public/images/2026/
+# Nagy forrásfájlok: az eredeti PDF-ek (1,7 GB) a koszeg.hu-ról letölthetők (download_kev_archive.py),
+# A processed_index.json csak a letöltő szkript összesítője, a build nem használja.
 references/
-koszeg_es_videke_archive/
+koszeg_es_videke_archive/pdf/
+koszeg_es_videke_archive/processed/processed_index.json
+*.tmp
 
 # Dependencies & Build
 node_modules

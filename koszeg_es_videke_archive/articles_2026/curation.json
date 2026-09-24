@@ -1,0 +1,208 @@
+{
+ "_leírás": "Kézi szerkesztői javítások a 2026-os cikkekhez. Kulcsok: lapszám -> ads (oldal -> képegység-indexek, amelyek hirdetések), not_ads, stories (cikkazonosító -> felülírások). Felülírások: title, deck, kicker, lead, author, photo, section, weight (címlapi fontosság), keep, drop, merge_into (folytatás másik oldalon), as_box, box_title, images (\"pNN:idx\" vagy {page, bbox, caption}), captions, drop_blocks (\"=\" előtaggal pontos egyezés), replace ([[régi, új], ...]), prefix_first.",
+ "kev_20260914_172": {
+  "ads": {
+   "p06": [
+    2
+   ],
+   "p07": [
+    1
+   ],
+   "p11": [
+    0
+   ],
+   "p14": [
+    3,
+    4
+   ],
+   "p15": [
+    0,
+    1,
+    2
+   ],
+   "p22": [
+    4,
+    5
+   ],
+   "p24": [
+    0,
+    3,
+    5
+   ],
+   "p27": [
+    1
+   ],
+   "p28": [
+    0
+   ]
+  },
+  "stories": {
+   "p01s0": {
+    "title": "Évnyitó a Jurisich Miklós Gimnáziumban",
+    "kicker": "350. tanévét kezdte a Jurisich",
+    "weight": 10
+   },
+   "p03s0": {
+    "author": "Básthy Béla polgármester",
+    "weight": 6
+   },
+   "p06s0": {
+    "weight": 2
+   },
+   "p06s1": {
+    "title": "Bezár a kőszegi dm",
+    "deck": "A dm Kft. válasza az üzletbezárásról"
+   },
+   "p07s0": {
+    "images": [
+     "p07:0"
+    ]
+   },
+   "p07s1": {
+    "title": "50 éves érettségi találkozó",
+    "images": [
+     {
+      "page": 7,
+      "bbox": [
+       33,
+       406,
+       414,
+       510
+      ],
+      "caption": "A osztály"
+     },
+     {
+      "page": 7,
+      "bbox": [
+       33,
+       512,
+       414,
+       607
+      ],
+      "caption": "B osztály"
+     },
+     {
+      "page": 7,
+      "bbox": [
+       33,
+       609,
+       414,
+       709
+      ],
+      "caption": "D osztály"
+     }
+    ]
+   },
+   "p08s0": {
+    "title": "Mohács 500 eseményein a kőszegi hagyományőrzők",
+    "weight": 4
+   },
+   "p09s0": {
+    "merge_into": "p08s0"
+   },
+   "p11s0": {
+    "weight": 7
+   },
+   "p12s0": {
+    "deck": "A külső felújítása befejeződött, folytatják a templombelsővel",
+    "weight": 5
+   },
+   "p13s0": {
+    "merge_into": "p12s0"
+   },
+   "p14s1": {
+    "title": "Húszéves a Bechtold István Természetvédelmi Látogatóközpont"
+   },
+   "p18s0": {
+    "weight": 3
+   },
+   "p19s0": {
+    "merge_into": "p18s0"
+   },
+   "p27s0": {
+    "author": "Tóth Flóra",
+    "deck": "A város és a kőszegi bor szolgálatában. Két év után átadja koronáját. Kinek?"
+   },
+   "p28s1": {
+    "deck": "Szeptember 19–20."
+   },
+   "p28s3": {
+    "prefix_first": "„Lépjünk együtt a látható demenciáért” "
+   },
+   "p30s4": {
+    "author": ""
+   },
+   "p30s6": {
+    "author": "",
+    "replace": [
+     [
+      "zárásaként Augusztus 12-től",
+      "Augusztus 12-től"
+     ]
+    ],
+    "drop_blocks": [
+     "=g,"
+    ]
+   },
+   "p26s0": {
+    "author": ""
+   }
+  }
+ },
+ "kev_20260817_171": {
+  "ads": {
+   "p14": [
+    32
+   ],
+   "p24": [
+    1
+   ],
+   "p25": [
+    0
+   ],
+   "p31": [
+    1
+   ],
+   "p33": [
+    1
+   ],
+   "p34": [
+    0
+   ],
+   "p35": [
+    0,
+    1,
+    4,
+    5
+   ]
+  },
+  "stories": {
+   "p05s0": {
+    "merge_into": "p04s0"
+   },
+   "p14s0": {
+    "title": "Fitt-Box Ökölvívók – beteg gyermekeket támogató rendezvény",
+    "images": [
+     "p14:12",
+     "p14:13",
+     "p14:14",
+     "p14:15",
+     "p14:26",
+     "p14:29"
+    ]
+   },
+   "p17s0": {
+    "author": "Szerdahelyi-Bánó Irén"
+   },
+   "p17s1": {
+    "author": ""
+   },
+   "p09s0": {
+    "weight": 3
+   },
+   "p11s0": {
+    "weight": 5
+   }
+  }
+ }
+}

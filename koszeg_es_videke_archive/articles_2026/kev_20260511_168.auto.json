@@ -1,0 +1,5633 @@
+{
+ "stem": "kev_20260511_168",
+ "pages": [
+  {
+   "page": 1,
+   "section": [],
+   "stories": [
+    {
+     "sid": "p01s0",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": true,
+     "box": false,
+     "bbox": [
+      52.4,
+      156.9,
+      545.5,
+      760.0
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "XXXIX.ÉVFOLYAM, 5. SZÁM 2026. MÁJUS 11. Április 30-án ballagtak a kőszegi középiskolák végzős diákjai, mintegy 170-en: a Jurisich Miklós Gimnázium és Kollégium három osztálya, a Kőszegi Evangélikus Gimnázium, Technikum Szakképző Iskola és Kollégium négy osztálya és az Árpád-házi Szent Margit Óvoda, Általános Iskola, Gimnázium és Kollégium egy osztálya. Kőszeg ismét bizonyította: diákváros. Az erről szóló „Kőszegi Diák 2026” feliratú jelvényt a diákoknak Básthy Béla polgármester adta át. Azon szerepelt egy Ottlik Gézától származó idézet: a „három év nem eltelt, hanem van”, ami az Iskola a határon című regényben olvasható.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Hagyomány, hogy a Jurisich Gimnázium érettségi előtt álló diákjai a Jurisics téren elbúcsúznak Kőszeg városától. Eltelt éveikről beszélt Hollósi Laura, arról, hogy nem sejtették azt, mekkora jelentősége lesz életükben a nemes kisvárosnak. Merthogy, „hozzá tartozik egy atmoszféra, a befogadó helyi közösség, és az a sok lehetőség, amit Kőszeg kínált számunkra. Kőszegnek van egy sajátos, megfoghatatlan varázsa.” Elmondta: szeretettel gondolnak vissza az itt eltöltött diákévekre.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Básthy Béla polgármester valódi ünnepnek nevezte a ballagás napját. Azért is, mert „Kedves fiatalok, a napokban ti vagytok a középpontban, maradjanak meg bennetek ezek a pillanatok.” Arra kérte a diákokat: aki sokra akarja vinni az életben, annak ambiciózus terveket kell készíteni, de azok legyenek reálisak. Kérte, leljék meg a tanulásban saját maguk kibontakozásának örömét. „Azt kívánom, vigyétek magatokkal azoknak az üzenetét, akik ma is itt élnek közöttünk, akik a mai világhoz hozzáteszik azt, ami még jobbá teszi. Kőszeg mindig visszavár benneteket!”",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A városvezető elkísérte az érettségire készülő lányát az Árpád-házi iskola kápolnájába, ahol szentmisével kezdődött a diákok ballagása. „Az itt eltöltött éveket megköszönjük Istennek, mindazt a kegyelmet, barátságokat, amit kaptatok”",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– szólt a diákokhoz Kirner Antal Zoltán atya. Hozzátette: „Ebben a szentmisében értetek imádkozunk,",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "hogy az Úristen tegye teljessé,",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "amit elkezdett bennetek”.",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "De Miranda Marco Antonio SVD atya, segítő lelkész a búcsúztatást szolgáló szentbeszédében azt kérte: „Menjetek félelem nélkül szolgálni. A ti életetekben legyen meg a plusz, Krisztus világossága. Jézus a mi legjobb barátunk, társunk az úton. Nem vagytok egyedül ezen az úton, Jézus veletek van”.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Írta és fényképezte:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Kámán Zoltán",
+       "italic": false
+      }
+     ],
+     "chars": 2411
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      263.1,
+      287.5,
+      542.0,
+      467.5
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      179.1,
+      467.2,
+      542.1,
+      594.5
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      2.1,
+      766.9,
+      542.4,
+      827.0
+     ],
+     "story": 0,
+     "dist": 6.9,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      178.0,
+      594.8,
+      542.1,
+      725.8
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 2,
+   "section": [
+    "VÁROSHÁZA"
+   ],
+   "stories": [
+    {
+     "sid": "p02s0",
+     "title": "Lomilottó",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      310.4,
+      62.5,
+      569.3,
+      218.5
+     ],
+     "title_bbox": [
+      310.4,
+      62.8,
+      410.8,
+      91.2
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A sorsolás alkalmával 5 sorszám került kihúzásra a 2026. április 1 – 2026. április 30. között kiosztott 300 db sorszám közül, amelyek a következők:",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "ZÖLD 7",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "40.000 Ft",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "ZÖLD 8",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "30.000 Ft",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "SÁRGA 44",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "10.000 Ft",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "ZÖLD 2",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "10.000 Ft",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "RÓZSASZÍN 5 10.000 Ft A meg nem váltott nyereményutalványok újra sorsolása is megtörtént. A nyertes számok:",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "ZÖLD 79",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "10.000 Ft",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "SÁRGA 20",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "10.000 Ft",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "SÁRGA 16",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "10.000 Ft",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "RÓZSASZÍN 13 10.000 Ft RÓZSASZÍN 74 10.000 Ft",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "ZÖLD 98",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "10.000 Ft",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A nyertes a következő sorsolásig jogosult jelentkezni személyesen a hivatal Városüzemeltetési Osztályán ügyfélfogadási időben.",
+       "italic": false
+      }
+     ],
+     "chars": 566
+    },
+    {
+     "sid": "p02s1",
+     "title": "Hulladékszállítás napjai",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      48.7,
+      205.6,
+      287.2,
+      330.5
+     ],
+     "title_bbox": [
+      48.7,
+      205.6,
+      287.2,
+      234.0
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "h3",
+       "text": "SZELEKTÍV gyűjtés:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "1. körzet: május 25., június 8. (hétfő)",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "2. körzet: május 12., május 26., június 9. (kedd)",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "3. körzet: május 13., május 27., június 10. (szerda) 4. körzet: május 14., május 28., június 11. (csütörtök)",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "ZÖLDHULLADÉK szállítás:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "1. körzet: május 15., május 29. (péntek)",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "2. körzet: május 22., június 5. (péntek)",
+       "italic": false
+      }
+     ],
+     "chars": 324
+    },
+    {
+     "sid": "p02s2",
+     "title": "Megjelenés – terjesztés",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      48.7,
+      344.4,
+      301.5,
+      530.5
+     ],
+     "title_bbox": [
+      48.7,
+      344.4,
+      277.1,
+      372.9
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Kedves Olvasó! A következő lapszám június 8-án jelenik meg.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A terjesztéssel kapcsolatos észrevételeiket a lap alján megadott elérhetőségeken szíveskedjenek megtenni!",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Miklós Gyula, Laing Jolán Gizella",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Fazekas Jolán Gizella, Poropatich Ferencné Németh Margit, Szeleczki Ferenc Boldizsárné Gregorich Irén, Dévényi Irma Mária, Tóth Jenőné Mészáros Anna. Terplán Zoltán alpolgármester személyesen köszöntötte Schwahofer Jenő Andrásné Kálmán Mária Magdolna szépkorút.",
+       "italic": false
+      }
+     ],
+     "chars": 464
+    },
+    {
+     "sid": "p02s3",
+     "title": "Köszöntések",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      417.8,
+      167.5,
+      530.5
+     ],
+     "title_bbox": [
+      42.5,
+      417.8,
+      164.7,
+      446.2
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Básthy Béla polgármester képeslappal köszöntötte a város szépkorú lakóit születésnapjuk alkalmából: Boros Jánosné Szép Margit, Fekete Györgyné Polgár Emma, Milos István János, Kelemen József, Szalai Jánosné Schlenker Margit, Bittera",
+       "italic": false
+      }
+     ],
+     "chars": 234
+    },
+    {
+     "sid": "p02s4",
+     "title": "20 % kedvezménnyel!",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      370.0,
+      504.3,
+      506.4,
+      525.6
+     ],
+     "title_bbox": [
+      370.0,
+      504.3,
+      506.4,
+      525.6
+     ],
+     "title_size": 14.0,
+     "blocks": [],
+     "chars": 0
+    },
+    {
+     "sid": "p02s5",
+     "title": "Fogadóórák időpontjai",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      57.7,
+      546.6,
+      284.3,
+      687.5
+     ],
+     "title_bbox": [
+      61.4,
+      546.6,
+      280.2,
+      575.0
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A tisztségviselői fogadóóra 9 – 11 és 14 – 15.30 óra között tart. BÁSTHY BÉLA polgármester: június 3. DR. ZALÁN GÁBOR jegyző: május 13., június 10. TERPLÁN ZOLTÁN alpolgármester: május 21., június 18. KLOBETZNÉ DEBREI HAJNALKA önkormányzati képviselő június 9-én (kedden) 17.00 – 18.00 óra között DR. NAGY EDINA aljegyző: május 27. Kőszegfalván tart fogadóórát.",
+       "italic": false
+      }
+     ],
+     "chars": 354
+    },
+    {
+     "sid": "p02s6",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      52.0,
+      713.3,
+      252.7,
+      799.9
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "h3",
+       "text": "Kőszeg és Vidéke",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Kőszeg város és környéke polgárainak ingyenes havilapja Kiadja: Jurisics-vár Művelődési Központ és Várszínház",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "Felelős kiadó: Pócza Zoltán",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Felelős szerkesztő: Kámán Zoltán 06 20 381 8014 (kamansn@t-online.hu)",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Lapterv: Trifusz Péter",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "Nyomdai munkák: Mediaworks Hungary Zrt.",
+       "italic": false
+      }
+     ],
+     "chars": 281
+    },
+    {
+     "sid": "p02s7",
+     "title": "széles választékban!",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      323.8,
+      636.6,
+      555.4,
+      692.1
+     ],
+     "title_bbox": [
+      371.6,
+      636.6,
+      504.9,
+      655.6
+     ],
+     "title_size": 16.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "(Az ár tartalmazza: Szemüvegkeret, egy pár szemüveglencse felületkezeléssel, munkadíj és szemvizsgálat) Az akciók részleteiről érdeklődjenek üzleteinkben!",
+       "italic": false
+      }
+     ],
+     "chars": 153
+    },
+    {
+     "sid": "p02s8",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      310.4,
+      713.3,
+      492.4,
+      801.1
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "h3",
+       "text": "Szerkeszti a szerkesztőbizottság:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Hani Tibor (haniti59@t-online.hu), Kámán Zoltán (kamansn@t-online.hu), 06 20 381 8014 Kámán Zoltán (hirdetésszervezés)",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "Terjesztés: VISZI-POST Kft. ISSN 0237-3750",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Megjelenik havonta egyszer 6650 példányban",
+       "italic": false
+      }
+     ],
+     "chars": 234
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      310.4,
+      228.0,
+      565.5,
+      313.0
+     ],
+     "story": 0,
+     "dist": 9.5,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      310.2,
+      530.1,
+      567.2,
+      588.2
+     ],
+     "story": 4,
+     "dist": 4.5,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      310.4,
+      324.0,
+      566.9,
+      366.8
+     ],
+     "story": 2,
+     "dist": 48.9,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 3,
+   "section": [
+    "VÁROSHÁZA"
+   ],
+   "stories": [
+    {
+     "sid": "p03s0",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": true,
+     "box": false,
+     "bbox": [
+      28.3,
+      110.3,
+      555.2,
+      686.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "h3",
+       "text": "Tisztelt Kőszegi Lakosok!",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "2026 januárjában négy burgenlandi kőbányát (Rumpersdorf, Badersdorf, Bernstein, Pilgersdorf) bezártak az osztrák hatóságok a kitermelt kőzet egészségkárosító azbeszttartalma miatt. Mivel az Ausztriában érvényes jogszabályi tilalom csak az építőanyagokhoz mesterségesen hozzáadott azbesztre vonatkozik, a Magyarországra is évtizedeken át szállított természetes eredetű kőzet tanúsítványa erről nem tartalmazott információt. A zúzott követ legálisan és jóhiszeműen a magyar önkormányzatok és magánszemélyek is nagy mennyiségben vásárolták főleg közutak, parkolók, kocsibeállók, udvarok, kertek burkolásához. A bányabezárásokat követően a Vas Vármegyei Kormányhivatal előbb Bozsokon, később Szombathelyen begyűjtött mintákon lefolytatott vizsgálatai a kőzúzalékban és a mintavételi területek levegőjében is a határértékeket többszörösen meghaladó azbeszttartalmat állapítottak meg.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Kőszeg Város Önkormányzata felmérte városunk azon közterületeit, amelyek állagjavításához szintén a bezárt pilgersdorfi bányából származó zúzott követ használták, majd az adatokat továbbította a Vas Vármegyei Kormányhivatal Környezetvédelmi, Természetvédelmi és Hulladékgazdálkodási Főosztálya részére. Tekintettel a kőzúzalék azonos származási helyére a Kormányhivatal 2026. április 24-én a kiporzást mérséklő ideiglenes intézkedések bevezetéséről döntött, melyek végrehajtása az önkormányzat részéről folyamatos. A végzés mellékletében felsorolt parkolókat lezártuk, a kőzúzalékkal borított utakon 10 km/h sebességkorlátozó táblákat helyeztünk ki, felületüket a Kőszegi Önkéntes Tűzoltó Egyesület locsolással nedvesíti. Az érintett területek listája a www.koszeg.hu oldalon elérhető. A Tűzoltóság locsolóautója a több mint 20 km-es szakaszon 8 óra alatt ér végig. Ezalatt 8 alkalommal tölti meg a tartályt és 40 m3 vizet használ fel. A locsolással egyidejűleg biztosítani kell az esetleges tűzesetekhez való vonulást is. Szeretnénk elérni, hogy a védekezésbe egyéb állami szerveknél rendelkezésre álló járműveket és eszközöket is bevonhassunk.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A Tűzoltóság és a Városüzemeltető segítségét valamennyiünk nevében köszönöm!",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az Önkormányzat és a Vas Vármegyei Kormányhivatal a KÖR-KER Kft. akkreditált vizsgáló-laboratóriumától megrendelte az érintett területekről származó kőzúzalék-minták begyűjtését és azbeszttartalmuk vizsgálatát. A mintavétel megtörtént, a vizsgálat eredményei a jelen lapszám megjelenését követően válnak ismertté.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A Vas Vármegyei Kormányhivatal április 27-i egészségügyi lakossági fórumának szakorvos előadói szerint „az azbeszt kockázati tényező, a betegségek kialakulásának esélye nőhet, de nem törvényszerű.” „A járműforgalom terhelése nyomán kiporzás következik be, és a kőzetből kiszabaduló és a levegőbe jutó azbesztrostok belélegzése fokozza az egészségügyi kockázatot.” A tárgyi tapasztalatok és információk megosztása érdekében felvettem a kapcsolatot a Burgenlandi Tartományi Hivatal azbeszt munkacsoportjának vezetőjével, és kezdeményeztem az osztrák és magyar hatóságok közötti együttműködés elmélyítését.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A város egyes pontjain a kőzúzalékból a levegőbe kerülő azbesztrostok okozta kockázat felméréséhez, illetve a feltehetőleg szükséges mentesítő intézkedések lebonyolításához szükséges jelentős pénzügyi és szakmai erőforrások költségvetésünkben nem állnak rendelkezésre, ezért a vármegye számos települését érintő probléma kezeléséhez szükséges központi koordináció és erőforrások biztosítása érdekében a Kormányhivatallal együttműködésben a Közigazgatási és Területfejlesztési Minisztérium segítségét kértem.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A Kormány felismerve, hogy szerepvállalása az ügyben elkerülhetetlen, a 1134/2026. (IV. 30.) Korm. határozatában döntött a kivizsgálással, helyreállítással és újjáépítéssel, valamint azok költségeivel kapcsolatos intézkedésekről, az alábbiak szerint:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "mációkat osszák meg a végrehajtásban eljáró szervekkel, illetve a kárfelmérésben, a helyreállításban és a lakosság ezzel kapcsolatos tájékoztatásában működjenek közre.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Mi az, amit mindannyian megtehetünk saját és mások egészsége védelme érdekében?",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "korlátozást, és kerüljék el a lezárt parkolókat.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az országosan ismertté vált azbeszt-helyzet hatására a kőszegi idegenforgalmi vállalkozások a szállásfoglalások drámai visszaesését tapasztalták, ezért részükre levélben kértem támogatást az ágazatot felügyelő és irányító kormányzati tisztviselőktől.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Önkormányzatunk létrehozta a azbeszt@koszeg.hu e-mail címet, melyen az üggyel kapcsolatos lakossági bejelentéseket, észrevételeket fogadjuk. A helyzet megnyugtató rendezésének érdekében az illetékes hatóságokkal és hivatalos szervekkel a továbbiakban is szorosan együttműködünk, a lakosságot pedig a város honlapján és újságjában, illetve szükség esetén a város Facebook oldalán tájékoztatjuk a fejleményekről.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A probléma kezelése során a végleges megoldásig mindenkitől fegyelmet, bizalmat és együttműködést kérünk, amit ezúton is szeretnék megköszönni! – megállapította, hogy az azbesztszennyezés következményeinek elhárítása kiemelt érdek, melynek gyors lefolytatása indokolt, – elrendelte az érintett területek országos felmérését, a szükséges intézkedések, illetve beavatkozások ütemezésének és költségigényének meghatározását, – utasítást adott a szükséges feladatok ellátásához szükséges forrás biztosítására, – felkérte az önkormányzatokat, hogy a rendelkezésükre álló infor- – szeles, száraz időben csökkentsék az érintett területeken történő tartózkodást, tartsák zárva az ablakokat, – gyermekeket ne engedjenek ezen területeken játszani, – kerüljék a por bevitelét a lakásba, használják a lábtörlőt, vegyék le a cipőjüket mielőtt belépnek a házba, tisztítsák meg a háziállatok lábát, bundáját, – fokozottan ügyeljenek a személyi és lakókörnyezet nedves eszközökkel történő tisztítására, – lehetőség szerint nedvesítsék az ingatlanaik előtt található kőzúzalékkal leterített útszakaszt, – lehetőleg ne használják az érintett utakat, tartsák be a sebesség-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Básthy Béla",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "polgármester",
+       "italic": false
+      }
+     ],
+     "chars": 5965
+    }
+   ],
+   "images": []
+  },
+  {
+   "page": 4,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p04s0",
+     "title": "Szőlő Jövésnek Könyve",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      60.6,
+      569.5,
+      674.5
+     ],
+     "title_bbox": [
+      42.5,
+      60.6,
+      265.9,
+      89.0
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "h3",
+       "text": "Jó dolog itt együtt lennünk",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április 24. Szent György-napja a város, a szőlősgazdák, a kőszegi bor készítőinek hagyományokra épülő ünnepe. 1740 év óta berajzolják a szőlőhajtások a Szőlő Jövésnek Könyvébe. Kőszeg város számára fontos, mert nemzeti érték, 2019-től szerepel a Szellemi Kulturális Örökség Jegyzékében. Idén is kimentek hajnalban a borosgazdák a dűlőkbe, hogy levágják a hajtásokat, ezzel lehetővé tették a berajzolást. A hagyomány szerint a városvezetés és a borászathoz kötődő személyek a temetőben emlékeztek meg az elődökről, azokról, akik életükben sokat tettek Kőszeg történelmi értékének ápolása érdekében. Tizennégyéves múltra tekint vissza, hogy a város vendégei és a helyi vezetők találkoznak a – 2012-ben létesített – Baráti Szőlők dűlőjében, a Chernel utcához csatlakozó várfal mellett, ahol több nemzettől kapott szőlőtőkéket ültettek el. Ott fél kilenc után Básthy Béla polgármester így fogalmazott: „Jó dolog itt együtt lennünk, ezt a helyet a barátság hozta létre”.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Csak barátságból",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Megalapozta a kőszegi borászok nemzetközi kapcsolata, barátsága. Ott a dűlőben kevesen voltak, mondhatni csak barátságból. Az ünnepre a ’nagy csapat’ a Várkörön, a Poncichter/Borok Háza előtt gyülekezett. Onnét indultak el a – 160. évüket ünneplő kőszegi fúvósok vezetésével – a Fő tér érintésével a Jurisics térre, az ünnepség színhelyére. A felvonulók között a kőszegi borkultúra szakmai értékét képviselte három szervezet: A Szőlőtermelők és Borértékesítők Szövetkezete, a Kőszegi Borászok Egyesülete, illetve a Kőszegi Borbarát Hölgyek Egyesülete, közöttük Tóth Flóra borkirálynővel. Az ostromnapok hagyományőrzői csak a magánéletükben kötődhetnek a borhoz, de mostanra már nélkülük alig lehetne megrendezni a városi ünnepséget. Idén is ők vitték, őrizték a történelmi értéket, a Szőlő Jövésnek Könyvét. A Hajnalcsillag táncosai nélkül – már szinte biztos – nincs más városi ünnepség sem. Különösen igaz ez a Szőlő Jövésnek Könyve ünnepre, mert – ahogy elhangzott – „A hagyomány ápolásában részt vevők köteleségüknek tekintik”.",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "Megőrzik, tovább viszik",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A Jurisics térre felvonulás zárásaként a Hajnal Csillagai érkeztek, „Bújj, bújj zöld ág …” énekelték, az Aranyalma Csoport bemutatta Tavaszköszöntő műsorát. Ők még kicsik, de lesznek majd nagyok is, képzett táncosok, akik megőrzik, tovább viszik a néptánc hagyományát Kőszegen.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A városvezető szavai szerint a Jurisics térre érkeztek a ÷táncoló, éneklő emberhajtások”. Majd így folytatta: „Örüljünk nekik nagyon, ne felejtsük, minden, ami történik, róluk szól, értük tesszük, ahogy az előttünk járók tették évszázadokon át.”",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A polgármester különleges élménynek nevezte április 24-én a szőlőhajtásokkal való találkozást, „de ehhez a találkozáshoz szükség van a gazdák napról napra végzett munkára. Köszönjük, hogy elvégzik, foglalkoznak Kőszeg szőlőjével, örökégével, és jövőjével.” Kiemelte, hogy a borászat évszázadok óta jelentős szerepet tölt be a városban, Kőszeg történelmét meghatározó gazdasági tevékenység. A gazdák a szőlők",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "ápolásával, munkájukkal őrzik a",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "hagyományt.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Petrovics István a Szőlőtermelők Szövetkezetének nyugdíjasa idén 31. alkalommal hozta el a Borok Házától a hajnalban levágott szőlőhajtásokat. Bemutatta a városvezetőnek, aki – ahogy ennek lennie kellett – engedélyt adott a berajzolásra. Előtte Nagy Márton a Szőlőtermelők Szövetkezetének elnöke beszámolt arról, milyen ’út” / munka, szőlőbetegségek, időjárás/ vezetett a hajtások Jurisics térre való érkezéséig. Kiemelte a januári fagyos időjárást, a februári hótömeget, amelynek olvadását száraz időjárás követte. Az elmúlt évben 695 mm csapadék hullott le, kevesebb, mint a korábbi években.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Elmondta: a legtöbb hajtás 2 és 4 leveles állapotban van, friss virág kezdeményezés nem látható, így várható termést jósolni nem lehet. A gazdák nagy gondja, hogy a szőlőskertekben megjelent az aranyszínű sárgaság, a fitoplazma betegség. Terjesztője az amerikai szőlőkabóca, lárvái május végén, június elején kelnek ki. Az elnök szerint Kőszegen ennek hatása kisebb, de a szakemberek jóslata szerint a következő években „jelentős kárt, és fejfájást okoz majd a gazdáknak”.",
+       "italic": false
+      }
+     ],
+     "chars": 4138
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      39.6,
+      461.9,
+      304.3,
+      636.6
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      307.4,
+      57.0,
+      572.2,
+      250.5
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      39.6,
+      633.0,
+      304.3,
+      808.2
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      307.4,
+      677.6,
+      572.2,
+      808.2
+     ],
+     "story": 0,
+     "dist": 3.1,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 5,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p05s0",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": true,
+     "box": false,
+     "bbox": [
+      28.3,
+      62.5,
+      555.2,
+      518.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Nagy Márton elnök így zárta le a beszámolóját: „Egy dologban biztos vagyok, bizakodva nézünk az idei évre, megtesszük a lehető legtöbbet, hogy kiváló kőszegi borokat készíthessünk.”",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az ünnepség hagyományos része, hogy a borbarát hölgyek új tagot avatnak, április 24-én Kovács Katalin letette esküjét, abban kötelezettséget vállalt a borvidék hagyományainak ápolására, a kőszegi borok hírnevének öregbítésére, valamint az egyesület céljainak támogatására. Esküje után hivatalosan is egy jó, aktív csapat tagja lett. Az egyesület elnöke, Horváthné Tóth Adrienn elnök kihirdette a borversenyük eredményét. A „Hölgyek Bora” választásra a gazdák beneveztek 24 bort, abból a legmagasabb összpontszámmal a Stefanich Pincészet Friss Cuvee bora viselheti a címet egy évig. A „Hölgyek Zászlós Bora” címet kiérdemelte a Frank Borászat Blauburger bora.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "A",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "egyházak először az evangélikus esperes, Baranyay Csaba kért áldást a szőlőhajtásokra, a zsoltárból idézte:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "„az Úr szeretetével tele van a föld”. Majd így folytatta: „Nem az a kérdés számunkra, hogy Isten szeretetével tele van-e a föld, hanem az a kérdés, hogy a mi szívünk tele van-e az Isten szeretetével. Adja Isten, hogy megteljünk ezzel a szeretettel.” Kiss Antal Zsuzsanna református lelkész kihirdette: „Isten ajándéka az élet, a megújulás, az újjászületés Krisztusban. Az ő ajándéka a természet megújulása évről évre”. Kirner Antal Zoltán plébános arról szólt, hogy Jézus is szőlőtőnek nevezi magát, az atya idézte János Evangéliumát: „Én vagyok az igazi szőlőtő”. Majd elmondta: „Nem mi irányítjuk a természetet, de kérhetjük mennyei Atyánkat, hogy vigyázzon a szőlőnkre, vigyázzon arra a munkára, amit mi elkezdünk és meg is teszünk.” A Szőlő Jövésnek Könyve ünnepnap egyik látványos programja a szőlőhajtások berajzolása. Idén történelmi közül is elvégezte Németh János festőművész-tanár, mostanra már 36. alkalommal, az elsőt 1991-ben tette meg abba a könyvbe, amit Vaihingen ajándékozott Kőszegnek. A múzeumban őrzött, 1740-ből származó Szőlő Jövésnek Könyve zárólapjaira Bechtold István rajzolta be az 1990. évi hatásokat. Mielőtt Kőszeg Város Díszpolgára befejezte földi pályafutását, a városra hagyta életművét, a berajzolás feladatára Németh Jánost ajánlotta. Bechtold István az első bejegyzést 1970-ben végezte el, 1971-ben más művész tette ugyanezt, de 1972-től rögzítette az örökérvényű bejegyzéseket.",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "Az elődök munkájának méltó folytatását jelenti Kőszeg város hagyományainak megőrzése.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Kámán Z",
+       "italic": false
+      }
+     ],
+     "chars": 2479
+    },
+    {
+     "sid": "p05s1",
+     "title": "Szövényi Ernő Vándordíj",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      529.1,
+      555.2,
+      806.5
+     ],
+     "title_bbox": [
+      28.3,
+      529.1,
+      263.6,
+      557.6
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A Szőlő Jövésnek Könyve ünnepség része volt a Vas Vármegyei Borverseny. A statisztikai adatok szerint a Jurisics-vár Művelődési Központ és Várszínház által szervezett versenyre 98 minta érkezett. Azok közül a szakmai zsűri négy mintát oklevél átadásával értékelt, ezen kívül 13 bronz, 52 ezüst és 29 arany minősítés adott ki.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A borversenynek van egy különleges értékelése, a Szövényi Ernő Vándordíj átadása. Az alapító szándéka szerint az elismerést a vármegyei borversenyen az aranyérmes borok közül az kaphatja meg, amelynek Kőszeg a termőhelye és a zsűritől legmagasabb pontszámot kapta. A Vas Vármegyei Borversenyen – a feltételnek megfelelően – a Láng",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Pincészet Városbirtok Furmintja",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "kapta meg a Szövényi Ernő Vándordíjat, amelyet Szövényi Zsolt és Szövényi Ernőné adott át.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A 86,25 pontszám azt jelenti, hogy a bor kiváló, a pincészet egy évre megkapta a Szövényi Ernő által alapított vándorkupát. Megismételték a 2025 évi eredményt, amikor szintén Furmint lett a vándordíjas. A Városbirtok Furmintja, a szőlő a városbirtok meredek domboldalán, a Hidegvölgyben, a Kálvária közelében termett, amelynek gondozását a Láng Pincészet végzi. Az elmúlt évben is a Polgármesteri Hivatal munkatársai részt vettek a szüreten. A szőlő gondos válogatása után a bor reduktívan készült. A borverseny időszakában még tartályban",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "van egy része. Friss, gyümölcsös,",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "enyhe erjedési szénsavtartalomtól üde, ropogós. A 3000 liternyi termés másik fele fahordóban érik.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A koncepció szerint a „Városbirtok Furmint” fahordós érlelésű, mert ez illik az eredeti elképzeléshez, nevezetesen ahhoz, hogy hagyományos bak művelésen termett, tradicionális módon készített borról van szó. Ezért történik a tárolása, illetve érik a 225 és az 500 literes tölgyfahordókban 3-4 hónapig, csak azt töltik palackokba, és abból kap a város 150 darabot bérleti díjként.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "KZ",
+       "italic": false
+      }
+     ],
+     "chars": 1843
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      293.3,
+      525.0,
+      558.0,
+      701.2
+     ],
+     "story": 1,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      25.0,
+      57.0,
+      289.8,
+      187.6
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      25.4,
+      357.0,
+      290.1,
+      520.0
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      364.7,
+      53.7,
+      557.9,
+      248.4
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 6,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p06s0",
+     "title": "Szencből, a testvérvárosból",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      62.5,
+      569.6,
+      626.5
+     ],
+     "title_bbox": [
+      42.5,
+      63.5,
+      297.6,
+      92.0
+     ],
+     "title_size": 23.8,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Kőszegen április 24. hagyományosan a Szőlő Jövésnek Könyve ünnepről szól. A kőszegi programsorozat rendszeres résztvevője 2009 óta Szenc város küldöttsége. Kőszeggel a testvérvárosi szerződést 2015-ben kötötték meg. A külhoni, magyarok is lakta várost idén hárman képviselték, eljött Klenovics Gábor nemzetközi, uniós kapcsolatokért felelős referens, az önkormányzat képviseletében Galambos Rudolf, valamint már nyugdíjasként, Winkler János, aki elindította a két város kapcsolatát. Őt kérdeztük azt követően, hogy Básthy Béla polgármester fogadta az ünnepnap vendégeit a Zwingerben.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Hogyan kezdődött a kapcsolat? – tettük fel az első kérdést.",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– 2008 nyarán jöttem először Kőszegre. Előtte Szenc városunk ünnepén, Szent György-napján találkoztunk Kőszegről meghívásra érkezett delegációval, amit dr. Tóth László jegyző vezetett. Akkor csak ismerkedtünk, személy szerint én is, és mindannyian jó lehetőséget láttunk a kapcsolatok jövőbeni építésére. Azon a nyáron turistaként eljöttem a családommal Bükfür-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "dőre, és kértem a jegyzőtől, dr.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Tóth Lászlótól egy találkozót. Akkor voltam Kőszegen először, Kőszeg olyan város, ha meglátod, rögtön magával ragad. A találkozónkon az ötlet is megszületett a testvérvárosi kapcsolat kiépítésére, majd megszerveztük a polgármesterek találkozóját. A mostani polgármesterünk, Pavol Kval édesapja volt akkor Szenc város vezetője. A városvezetők találkozójának folytatásaként 2009-ben küldöttséggel érkeztünk Kőszegre a szüretre. Majd 2010. szeptember 9-én Szencben megtörtént a partnervárosi szerződés aláírása.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Mi lett a folytatás?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Bővültek a találkozók, a tűzoltók is csatlakoztak, a Csók István Művészkör tagjai Szencben mutatkoztak be egy kiállításon, megtörtént ennek a viszonzása is. A Szenczi Molnár Albert Alapiskolával a kőszegiek felvették a kapcsolatot. Eljöttek hozzánk a Kőszegi Darabontok is. 2010-től öt éven át a kőszegi borászok részt vettek a Kárpátalja Borúton, ami később Borfesztivállá alakult. A városok közötti találkozók a június végén tartott",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "programsorozatra összpontosultak.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az elmúlt évben a kőszegi fúvósok tartottak több és sikeres koncertet. Az idei részvételt programjaik sokasága miatt nem vállalják.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Évek alatt erősödtek, bővültek a kapcsolatok, ennek lett a folytatása a testvérvárosi szerződés aláírása 2015-ben. Stabil, gyümölcsöző a kapcsolatunk.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Te nyugdíjasként is többször eljöttél Kőszegre.",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Magánúton is. Nyugdíjasként is jöhetek az önkormányzatunk delegációjával. Mostanra már sok kőszegit ismerek, és ez nagyon jó érzés.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Magyar-magyar vagy inkább városok közötti a kapcsolat?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Mindkettő, a városok közötti kapcsolat nagyon erős. Szencnek van több testvérvárosa, de – szerintem – a kőszegi a legerősebb. Engem először egy esemény fogott meg igazán. Ültünk egy vendéglő teraszán Kőszegen, a szomszéd asztalnál lévő férfi beszélgetett egy éppen arrajáróval magyarul. Kis idő elteltével jött egy másik ember, akivel németül társalogtak, a harmadikkal horvátul beszélt az asztalszomszédunk. Mi, a régiek Szencen kétnyelvűek vagyunk. Akik betelepültek a városba csak szlovákul beszélnek. A dédnagyapám a nagyapámmal németül beszélt, de váltott magyarra és szlovákra is.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Milyen a magyarok lakossági aránya Szencben?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Szenc lakosságszáma 1990-től 14 ezerről 22 ezerre változott. Élnek még olyanok is, akiknek a város nem állandó lakhelye. A jelenlegi helyzet szerint úgy 15% a magyarok aránya, jellemző a vegyes házasság, ahol később kiveszik a magyar nyelv.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Kámán Z",
+       "italic": false
+      }
+     ],
+     "chars": 3479
+    },
+    {
+     "sid": "p06s1",
+     "title": "Tóth Flóra borkirálynő Kőszeg ünnepéről",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      310.4,
+      361.8,
+      569.3,
+      806.5
+     ],
+     "title_bbox": [
+      310.4,
+      361.8,
+      528.3,
+      414.2
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Ez az ünnep több mint hagyomány: élő kapcsolat őseinkkel.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A szőlő nem csupán növény, hanem a türelem, a gondoskodás és a hit jelképe. A gazda minden tavasszal ugyanazzal az elszántsággal hajol meg a tőkék előtt, jól tudva, hogy az év alakulása sokszor kiszámíthatatlan. És mégis, újra és újra belevág – hiszen a szőlő- és bortermelés sokak számára nem egyszerű munka, hanem szenvedély. Szerelem. Olyan szerelem, amely nem a könnyű utat választja.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Amelyben benne van a kockázat, a küzdelem, a bizonytalanság – és mégis, éppen ezek adják az értékét.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Ahogyan a természet próbára teszi a szőlőt, úgy teszi próbára az embert is. Egy fagyos tavasz, egy viharos nyár képes megkérdőjelezni egy egész év munkáját.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "De aki szerelemből műveli a szőlőt, az ilyenkor sem fordul el tőle. Viszszatér, újrakezdi, gon-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "dozza tovább – mert hisz benne.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "És talán ez az, ami igazán közös mindenben, amit szívből teszünk. Hogy a legnagyobb értékek nem a könnyű pillanatokból születnek, hanem a kitartásból, az odaadásból, abból a csendes, mégis rendíthetetlen elköteleződésből, amely nem engedi, hogy feladjuk.",
+       "italic": false
+      }
+     ],
+     "chars": 1090
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      39.6,
+      316.4,
+      304.3,
+      464.5
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      401.7,
+      532.8,
+      572.1,
+      809.3
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      42.5,
+      633.5,
+      299.1,
+      806.5
+     ],
+     "story": 0,
+     "dist": 7.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 7,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p07s0",
+     "title": "Strompová Viktória",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      60.6,
+      555.4,
+      806.5
+     ],
+     "title_bbox": [
+      28.3,
+      60.6,
+      216.0,
+      89.0
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Az április 12-én tartott országgyűlési választásokon Strompová Viktória a TISZA Párt listája alapján parlamenti mandátumot szerzett. Lakóhelye Sárvár, amely a 2. választási körzet székhelye, ezért, ahogy mondta: „Sárváron élek, de nemcsak a lakókörzetem közelében élőkért akarok dolgozni, hanem az egész észak-vasi körzetet kívánom a parlamentben képviselni. Mindenkit, pártállástól, vallástól függetlenül”.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Mondta április 28-án a 10.00 órakor kezdődött telefonon történt beszélgetésünkön. A személyes találkozásunkhoz, elfoglaltsága miatt, nem találtunk időpontot. Az interjú időpontját, közel egy héttel korábban határoztuk meg.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– A beszélgetésünk után, május 9-én lesz az országgyűlés alakuló ülése. Akkor kezdi meg képviselői munkáját. Hogyan érzi magát képviselőként leadott első szavazata előtt?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Izgatottam várom mi történik, a felkészülési folyamat is sok újat hozott nekem. Az országgyűlésben végzett munka új lesz mindannyiunknak, mert nem vagyunk profi politikusok. Igyekszünk a legtöbbet tanulni, és tenni. Bennem is, mint ahogy mindenkiben van egyfajta elvárás, aminek meg akarunk felelni. A magam részéről szeretek újat tanulni, új dolgok részese lenni. Úgy érzem, nekem való a feladat, amit a választóktól kaptam. Köszönöm mindenkinek, akik szavazatukkal bizalmat adtak nekem! Mindenkinek köszönöm, aki részt vett a választásokon, bárhova is adta le a szavazatát! A közös ügyet, Magyarországot kell, hogy képviseljük.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– A politikai pályafutását Sárváron kezdte önkormányzati képviselőként. Az országgyűlési választások másnapján kértem Öntől először időpontot beszélgetésre, de akkor az önkormányzat hivatalába ment, nem volt ideje kérdésekre válaszolni. Ön már akkor elkezdte a helyi képviselői munka lezárását?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Az a nap is a változások előkészítését szolgálta. Önkormányzati képviselőként 2024-ben körzetben kaptam bizalmat, és ez összeférhe-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "tetlen az országgyűlési",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "képviselői munkával.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az április 22-én tartott testületi ülésen lemondtam a Humán Erőforrás Bizottság elnöki posztjáról, és visszaadtam az egyéni képviselői mandátumomat. Szerettem azt a munkát, de ezeket a döntéseket meg kellett hoznom.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Honnét érkezett Sárvárra?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Felvidéki lány vagyok, mostanra ez már köztudott. Királyhelmec mellett van egy kicsi falucska, Bodrogszentmária, ott születtem, ott nőttem fel, kéttannyelvű gimnáziumban érettségiztem. A Nyitrai Konstantin Filozófus Egyetemen végeztem el az angol nyelv és pszichológus szakot. Egy állásajánlat alapján jöttem Sárvárra, képviseltem egy utazási irodát. 17 éve költöztem a városba, megtetszett az itteni lét, beleszerettem Magyarország életébe, és a férjembe. Itt kaptam meg őt az Istentől. A munka és a személyes kapcsolatok miatt maradtam Sárváron.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Mondta, hogy kapta Istentől. Ön keresztény?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Igen, katolikus vagyok, vallásos családból származom. Nem megyek minden vasárnap templomba, de a hitem az megvan.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Turizmus szempontjából 17 éve ismeri Kőszeget. De miként ismerte meg Kőszeget?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Gyönyörű ékszerdoboznak tartom. Ajánlottam kőszegi programokat turistáknak, szerveztünk oda kirándulásokat, de még ezek előtt magánemberként is sokszor jártam a városban, szívügyem lett Kőszeg. Gyönyörű a város, sokféle területen lehetne rajta fejleszteni. Olyan érzésem van, mintha alvó város lenne, fel kell ébreszteni.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Milyen irányokat lát a fejlesztés oldaláról?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Konkrétumokkal inkább akkor szolgálnék, ha látjuk a pontos irányvonalat és ország költségvetését. Látnunk kell, miből gazdálkodunk, de azt gondolom a turizmust fel kellene lendíteni. Hatalmas lehetőségek rejlenek a városban. A biciklizés, a borkultúra ilyen, a gyönyörű templom, a Hősök tornya, annyi, de annyi minden van a városban, ami egyenként is érték, amit meg kell mutatni az embereknek.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– És itt vagyunk az 1532-es török ostrom 500. évfordulója előtt. Mohács 500. évfordulója idén van. Ha igaz, ott lesznek a várfalaknál a kőszegi hagyományőrzők. Az a néhány év, ami még hátra van 2032-ig az – fejlesztések szempontjából – nem olyan sok.",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Valóban nem.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Szívügyének tekinti a kőszegi ostrom 500. évfordulóját?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Igen. Ez egy olyan évforduló, amit annak rendje és módja szerint méltóan meg is tudunk ünnepelni. Ha lesz rá lehetőségem, akkor ott leszek. – Mennyire vette fel a kapcsolatot az elmúlt időszakban Kőszeggel? – A turista vendégek miatt sokszor jártam Kőszegen. Ez is egy kapcsolat. Ha Ön a városvezetéssel való kapcsolatra utalt, akkor mondhatom, hogy meghívtak a Szőlő Jövésnek Könyve ünnepségre, és külön Kőszeg Város Koncertfúvószenekarának programjaira is, de családi események miatt nem tudtam részt venni azokon. Jövőre szeretnék ott lenni. Sajnáltam, hogy most nem sikerült. Átfogó, fontos dolgot szeretnék mondani Kőszeggel és a környező falvakkal kapcsolatban. Arra fogok törekedni, azért fogok dolgozni, hogy ne csak Sárvár és annak központúsága fejlődjön, ne csak az itt élőket képviseljem a parlamentben.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Kámán Z",
+       "italic": false
+      }
+     ],
+     "chars": 4889
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      245.8,
+      57.0,
+      424.1,
+      275.2
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      296.2,
+      432.0,
+      552.8,
+      805.0
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 8,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p08s0",
+     "title": "Új európai tudományos hálózatba kapcsolódik Kőszeg",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      61.0,
+      569.3,
+      518.5
+     ],
+     "title_bbox": [
+      42.5,
+      61.0,
+      566.9,
+      89.4
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Az Európai Tudományos és Művészeti Akadémia rendes tagjává választották Prof. Dr. Miszlivetz Ferencet, a kőszegi Felsőbbfokú Tanulmányok Intézetének (iASK) főigazgatóját. A rangos nemzetközi tudományos közösséghez való csatlakozás nemcsak személyes szakmai elismerés, hanem az iASK és Kőszeg számára is jelentős presztízst jelent. A salzburgi központú akadémiát 1990-ben alapították, és ma Európa egyik legjelentősebb multidiszciplináris tudományos hálózatának számít. Közel kétezer tagja között Nobel-díjas kutatók, művészek, egyházi és közéleti személyiségek is megtalálhatók. Első megválasztott tagjai között szerepel a Béke Nobel díjas Mihail Gorbacsov. Magyarországról többek között Freund Tamás, Vizi E. Szilveszter és Krausz Ferenc is tagja az akadémiának. Miszlivetz Ferenc a társadalomtudományok, jog és közgazdaságtan osztályába nyert felvételt. Mint elmondta, a jelölési folyamat hosszú időn át tartott, a döntésről pedig az akadémia elnöke értesítette levélben. A hivatalos beiktatásra 2027 márciusában kerül sor Salzburgban, a Szent Péter Apátságban.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A főigazgató hangsúlyozta: az elismerés túlmutat az egyéni pályán. Véleménye szerint a siker mögött",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "az elmúlt évtizedek",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "következetes intézményépítő munkája áll, amelyet az iASK és az azt létrehozó ISES Alapítvány végzett Kőszegen.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Mind az ENSZ Egyetem vezetői, mind az Európai Tudományos és Művészeti Akadémia Kőszegen találtak meg minket. Ez annak a hosszú távú munkának az eredménye, amely során egy nemzetközileg is jegyzett szellemi műhelyt építettünk fel – fogalmazott.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az iASK az elmúlt években tudatosan bővítette nemzetközi kapcsolatait. Együttműködik többek között az ENSZ Egyetem intézeteivel, európai egyetemekkel és kutatóközpontokkal, valamint hazai tudományos műhelyekkel is. Az intézet célja kezdettől fogva az volt, hogy interdiszlináris megközelítésben vizsgálja a 21. század társadalmi, gazdasági és környezeti kihívásait.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A mostani akadémiai tagság új lehetőségeket nyithat meg az intézet",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "előtt. Erősödhetnek a nemzetközi",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "kutatási együttműködések, bővülhetnek a szakpolitikai kapcsolatok, és még láthatóbbá válhat Kőszeg szerepe az európai tudományos életben.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Miszlivetz Ferenc szerint különösen fontos, hogy Közép-Európa szellemi és tudományos teljesítménye hangsúlyosabban jelenjen meg Európában. Az akadémia küldetése is ezt szolgálja: hidat építeni tudományterületek, országok és gondolkodásmódok között. A megválasztás egyben viszszaigazolása annak a munkának is, amely Kőszegen az elmúlt években zajlott. Az iASK mára nem csupán regionális intézményként működik, hanem olyan nemzetközi tudásközpontként, amely képes bekapcsolódni az európai és globális tudományos párbeszédbe.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A tagság így nemcsak rangos cím, hanem új távlatokat nyitó lehetőség is Kőszeg és az iASK számára.",
+       "italic": false
+      }
+     ],
+     "chars": 2775
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      44.0,
+      528.7,
+      297.4,
+      728.1
+     ],
+     "story": 0,
+     "dist": 10.2,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      256.4,
+      93.0,
+      463.3,
+      356.6
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      310.4,
+      612.0,
+      566.9,
+      805.0
+     ],
+     "story": 0,
+     "dist": 93.5,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      310.4,
+      418.1,
+      566.9,
+      598.1
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 9,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p09s0",
+     "title": "Eladták a gyári óvoda épületét",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      61.3,
+      555.3,
+      314.5
+     ],
+     "title_bbox": [
+      28.3,
+      61.3,
+      332.2,
+      89.8
+     ],
+     "title_size": 24.1,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Egy 1994-ben készült óvodai emlékfotó arról szól, hogy abban az évben még működött a Rákóczi utca 104. alatt lévő – szemben a Szent Lénárd utcával – Gyári Óvoda. Azért kapta a gyári nevet, mert a közelben lévő textilgyárak dolgozói oda vitték a gyermekeiket óvodába, amíg ők dolgoztak. A gyermeklétszám csökkent, ezért az óvodát bezárták. Így legalább húsz éve üresen állt az épület, az állapota nem lett jobb. Az önkormányzat évek óta árulta, de 2025 őszén eladta, megvette Schlögl Krisztián egy társásával. Elkészült a helyi védelem alatt lévő, az 1800-as évek végéről származó épület belső átalakítási terve, és megkezdődött az átépítés is. A földszinten három nagyobb, a tetőtérben két kisebb lakást alakítanak ki. Az épület régi falai vastagok, az újakat hangszigetelő tulajdonságú téglá-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "ból készítik. A belső magasságát",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "álmennyezettel csökkentik, a felső térben lesznek a szerelvények. A tervek szerint 2027 nyaráig elkészülnek a munkával. A régi villaépülethez",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "1712 m2-es telek tartozik, a hátsó",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "részen lesznek a fedett autóbeállók. A pince boltíves és nagy méretű, középen van egy ásott kút is.",
+       "italic": false
+      }
+     ],
+     "chars": 1110
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      159.3,
+      176.5,
+      401.7,
+      317.2
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      404.5,
+      113.4,
+      560.8,
+      317.2
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      27.0,
+      317.5,
+      556.7,
+      407.2
+     ],
+     "story": 0,
+     "dist": 3.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      32.1,
+      438.8,
+      265.0,
+      505.0
+     ],
+     "story": 0,
+     "dist": 124.3,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      34.5,
+      644.6,
+      199.2,
+      744.8
+     ],
+     "story": 0,
+     "dist": 330.1,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 5,
+     "bbox": [
+      362.2,
+      532.4,
+      546.8,
+      631.9
+     ],
+     "story": 0,
+     "dist": 217.9,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 10,
+   "section": [],
+   "stories": [],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      239.5,
+      18.5,
+      583.9,
+      71.8
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      208.8,
+      334.9,
+      305.7,
+      464.8
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      22.2,
+      292.4,
+      209.4,
+      447.4
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      102.5,
+      210.3,
+      208.2,
+      252.5
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      32.9,
+      123.3,
+      156.8,
+      209.2
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 5,
+     "bbox": [
+      131.5,
+      178.2,
+      237.8,
+      222.3
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 6,
+     "bbox": [
+      191.6,
+      590.0,
+      254.0,
+      677.0
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 7,
+     "bbox": [
+      96.0,
+      589.1,
+      158.6,
+      676.1
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 8,
+     "bbox": [
+      142.5,
+      620.8,
+      204.9,
+      708.4
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 9,
+     "bbox": [
+      332.3,
+      128.1,
+      595.3,
+      191.2
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 10,
+     "bbox": [
+      325.4,
+      190.6,
+      582.4,
+      606.6
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 11,
+     "bbox": [
+      366.7,
+      690.8,
+      541.4,
+      733.7
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 12,
+     "bbox": [
+      401.5,
+      623.0,
+      512.4,
+      686.7
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 13,
+     "bbox": [
+      488.6,
+      622.9,
+      595.3,
+      686.7
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 14,
+     "bbox": [
+      316.5,
+      623.1,
+      425.2,
+      686.9
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    }
+   ]
+  },
+  {
+   "page": 11,
+   "section": [
+    "VÁROSHÁZA",
+    "KÜLÖNFÉLÉK"
+   ],
+   "stories": [
+    {
+     "sid": "p11s0",
+     "title": "19. Miénk itt a rét!",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      61.3,
+      369.9,
+      460.3
+     ],
+     "title_bbox": [
+      28.3,
+      61.3,
+      215.4,
+      89.8
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Május 8-9-én rendezte meg az Őrségi Nemzeti Park Igazgatósága és az Írottkő Natúrparkért Egyesület a Madarak és Fák Napjához kapcsolódva a programot. Az első alkalom ötlete az igazgatóságtól származik, de tájvédelmet szolgáló szervezetek közösen hívták életre az Alsó-rét, illetve szélesebb körben a táj értékeinek a bemutatását. Azon a két napon 665 látogató 10 állomáson kapott feladatok megoldásával szerzett játékosan ismeretanyagot. Pályázati támogatással /Interreg BaNEx és TinyGreen/ valósult meg a program, ebből adódó egyik cél volt az érzékenyítés a fogyatékkal élők felé. Bősze György és Csiszár Tamás látássérültek eljöttek vakvezető kutyával, arról szóltak tesztkérdések is, milyen az élet látás nélkül. Egy másik állomáson a vakok írását, Braille-írást gyakorolhatták az érdeklődők, akiknek biztosan erősebb lett a sérültek iránti tisztelete. Az alsó fotó 10 fűszernövény felismerési játékából mutat egy pillanatot. Az ott lévő édesanya mondta, „paradicsom a gyermeknek a környezet”. Erről beszélt Kóródi Blanka, az egyik főszervező, amikor a természet közelségét, a környék szépségének bemutatását emelte ki célként. Azt is, hogy az év gyógynövénye a kakukkfű, az énekes rigó az év madara, és év fája a kecskefűz. A Natúrpark saját játéka jelezte: a mobiltelefon használata azt is jelenti, hogy a gyártásához a természet ásványkincseit felhasználják, és erősen fogynak a föld készletei. Ez is a fogyasztói társadalom csapdája! Márciusban megkezdődtek a tél végén bejelentett útfelújítások. A fotó a Rákóczi úton mutatja a padkaépítés május 8-ai helyzetét. Ehhez a felújításhoz tartozik a Várkörnek a Jurisics-vár feletti szakasza, /ott is dolgoznak/ és a Pék utca is. Erre 400 millió Ft kormányzati támogatás érkezett Kőszegre. A VasiVíz Zrt. márciustól a Rákóczi úton a körforgalomtól induló szakaszán, illetve a Rohonci úton végzi a vízbekötések átépítését. Az útfelújítás bruttó összege 638,9 millió Ft. Ennyi pénz jött a városba! Kőszegieket is érinti a 87-es út Gyöngyösfalutól kezdődő szakaszának állami felújítása. Gyorsan dolgozott a Magyar Közút NZrt., az új aszfaltos út járható lett áprilisban, de nem készült el, a választások után megtorpant a munkavégzés.",
+       "italic": false
+      }
+     ],
+     "chars": 2188
+    },
+    {
+     "sid": "p11s1",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      302.1,
+      636.6,
+      549.2,
+      800.9
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Kőszeg Város Önkormányzata versenyeztetési eljárás útján az",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "alábbi ingatlanokat értékesíti:  Kőszeg, 2869/28 hrsz-ú ipartelep 6717 m²  Kőszeg 2975/116 hrsz-ú építési telek 1250 m²",
+       "italic": false,
+       "strong": true
+      },
+      {
+       "type": "p",
+       "text": " Kőszeg, Rákóczi F. u. 63. földszint 3. sz. alatti lakás 31 m²  Kőszeg, Kálvária u. 69. 1. emelet 4 sz. alatti lakás 63 m²  Kőszeg, Kelcz-Adelffy u. 4. 1. emelet 6 sz. alatti lakás 86 m². Részletes információ megtalálható a Kőszegi Közös Önkormányzati Hivatal faliújságján, www.koszeg.hu honlapon, az Információk, közlemények rovat, Önkormányzati ingatlanértékesítés menüpont alatt, valamint a Városüzemeltetési Osztályon",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "kérhető (94/562-517).",
+       "italic": false
+      }
+     ],
+     "chars": 626
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      28.3,
+      630.4,
+      284.9,
+      804.0
+     ],
+     "story": 1,
+     "dist": 57.2,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      385.5,
+      360.0,
+      552.8,
+      624.0
+     ],
+     "story": 1,
+     "dist": 12.6,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      293.3,
+      197.0,
+      558.0,
+      351.5
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      293.3,
+      57.0,
+      558.0,
+      197.7
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      31.1,
+      461.9,
+      373.8,
+      623.2
+     ],
+     "story": 0,
+     "dist": 1.6,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 12,
+   "section": [
+    "KÜLÖNFÉLÉK"
+   ],
+   "stories": [
+    {
+     "sid": "p12s0",
+     "title": "Fegyvereket gyűjtött",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      60.4,
+      570.1,
+      422.5
+     ],
+     "title_bbox": [
+      42.5,
+      60.4,
+      240.4,
+      88.8
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Baldauf Gyula hetven életévén túl van, az elmúlt időszakban a világháborús emlékek gyűjteménye egyre kisebb lett. Családon belül nincs meg a gyűjtés folytatásának szándéka, ezért eldöntötte: ott őrizzék a tárgyi emlékeit, ahol megbecsülik. Április végén megmutatta a maradékot. Öt darab van abból a pohárkészletből, ami a kősze-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "gi várostrom 400. évfordulójára",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "emlékeztet, vagyis közel százéves. Átvette a Tonházi családtól, akik abban a házban laktak, amit most a Dózsa és Gyöngyös utca sarkán felújítanak. A poharak mellett volt egy kisebb fiók, abban az egykori kőszegi katonai alreál iskolából származó gombgyűjteményt őriz Baldauf Gyula. Őrzi az 1896-ból származó porcelántálat, amelyen lévő kép a honfoglalást idézi.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A lakásban sokfelé volt egy-egy múltat idéző emléktágy. A gyűjtő büszke a Monarchia idejéből származó tiszti sapkára, illetve a II. világháborúban használt térképtáskára. Abban benne van német nyelven a Balaton környékét ábrázoló térkép.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A fotón kezében tartja egy 1867-es – tömege miatt rendkívül nehéz",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "– Werndl puskát,",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "amely az első központi gyújtású, vagyis töltényhüvelyes fegyver.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Kilőttek vele 11 mm-es golyót az I. világháború idején, később a hátországban csendőrök, vámosok használták.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Kezében van az 1917 M bőrhüvelyes tiszti bajonett.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A Werndl puska mellett – a más célokat is szolgáló raktárból – vett elő Baldauf Gyula kardot, szablyát, Wenzl kurtájt, 54 mintájú határőr karabélyt. A világháborús katonák – talán békésebb órákban – a töltényhüvelyekből különböző dísztárgyakat készítettek. Ilyeneket, és II. világháborús, a 33 mm-es ágyúgolyókat is őriz a polcon Gyula.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Ez a néhány emléktárgy is utal Baldauf Gyula gyűjtési szenvedélyére. A mostani készletnek",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "sokszorosát tartotta néhány évvel",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "korábban. Ennek a szenvedélyének végett vetett, de az egyik polcon még ott vannak azok a szakkönyvek, amelyeket tanulmányozott, és azok alapján gyűjtött.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A gyűjtést a ’80-as években kezdte, amikor elhagyta a dunai hajózást. Szerinte a katonai emlékek a gyűjtők körében nagy értéket képviselnek.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "KZ",
+       "italic": false
+      }
+     ],
+     "chars": 2033
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      39.6,
+      225.0,
+      214.8,
+      425.4
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      377.8,
+      57.0,
+      572.0,
+      275.2
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      42.5,
+      432.0,
+      566.9,
+      805.0
+     ],
+     "story": 0,
+     "dist": 9.5,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 13,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p13s0",
+     "title": "Két tűzoltó",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      61.3,
+      555.2,
+      806.5
+     ],
+     "title_bbox": [
+      28.3,
+      61.3,
+      135.0,
+      89.8
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Május 1-jén Lakitelken tartotta a Magyar Tűzoltó Szövetség a Szent Flórián napi ünnepséget. Akkor két kőszegi tűzoltó kapott több évtizedes munkájáért elismerést Dobson Tibor elnök, tűzoltó vezérőrnagytól. Fejes Zoltán Emléklapot a tűzvédelem érdekében végzett tevékenységéért. A 76 éves Markovits József kőszegi önkéntes tűzoltó kiérdemelte a – szövetség legmagasabb értékű kitüntetését – a Szent Flórián Emlékérmet. Az idős férfi személyesen nem tudott ott lenni az ünnepségen.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Két férfiról a fotó május 4-én készült a tűzoltók laktanyájában, ott beszélgettük az életpályájukról.",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "Markovits József",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Önkéntes tűzoltó lett 1966-ban, 60 éve ifjúsági tűzoltóként kezdte meg tevékenységét. Barátokkal, öt unokatestvérével ipari iskolásként",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "lépett az önkéntesek közé. Ifjúként",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "vettek részt az aratási ügyeletben. Ha riasztás volt, akkor az egyikük biciklivel ment el a tűzoltóautó sofőrjéért, a társa előkészítette a mentőcsapat indulását. Megvalósítható cél volt a „minél előbb” induljon a mentőakció. Ifjúként tűz közelébe nem mehettek, de felnőttként az első helyszínek egyike lett, amikor a Cáki Csikó Csárda közelében lángra",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "lobbant a „fűrészes autó”, abban",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "egy ifjú, a jó ismerőse halt meg. 1992-ben a Keresztkút felett égett az erdő, a terület később megkapta az „Égett erdő” nevet. A katasztrófa helyzetben Szepi bácsi, mert a tűzoltók között megkapta a tiszteletet sugárzó nevet, az erdőben, a gyökeres útnál forgalomirányítóként vett részt azokban a napokban. Többször is újra begyulladt az erdő. Az idős tűzoltó több, mint ezer bevetésen vett részt aktív életében. Az évek múlásával többféle háttérmunkát végzett, ide tartozott az ügyeleti szolgálat, az ifjúsági tűzoltók nevelése. Sokféle emlékét felidézte, azokat a baráti találkozókat, amelyek a tűzoltók nagy családja összetartását erősítette. A tűzoltóknál is igaz, összetartó családként tudnak hatékonyan önkéntes munkát végezni. Szepi bácsi erdőjáróként is dolgozott a hegyekben, kézi kaszával vágta a füvet a Gulner-malomtól a határátkelőig. 37 évig dolgozott fűtőként a távhőszolgáltatónál.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Örömmel, köszönettel vette át Kőszegen az értékes kitüntetést.",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "Fejes Zoltán",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Köszönöm, hogy megkaptam az elismerést – mondta Fejes Zoltán május 4-én a tíz éve, a Kormány 186 millió Ft támogatásból megépült új tűzoltó laktanya közösségi termében. – Ebben a kitüntetésben minden tűzoltó társam erősen benne van. Egyedül riasztásra nem lehet elindulni. A tűzoltóság munkáját csak a csapat, a raj tudja elvégezni, és ebben benne van az egész állomány. Mindent együtt csinálunk! Az oklevélben azoknak az elöljáróknak, társaknak is érdeme van, akik már nem lehetnek itt velünk.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Fejes Zoltán 1989-től a tűzoltók egyesületi tagja. 1985-ben a Bersek iskolai tűzoltó szakkörön való részvétellel kezdte a munkáját. Ilyen működik a Jurisich Gimnázium kollégistái számára. Az évente két versenyre Zoltán készíti fel a 10-12 diákot. Felidézte Németh Jánost és Kasper Sándort, az első parancsnokait, akik kérésére érkezett az önkéntes tűzoltósághoz. 1989-től ellátta az ügyeleti szolgálatot, majd elvégezte a munkájához szükséges képzéseket.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Jelenleg 21 éve a köztestületnél van főállásban, délelőtt ügyeleti szolgálatban. A nap többi időszakában, ha beosztják, otthoni ügyeleti szolgálatban. Riasztásnál a tartózkodási helyéről – éjszaka is – indul, ahogy a többi önkéntes társa, a laktanyába. A riasztástól számítva 8 percen belül el kell indulni a tűzoltó autónak. A Kedves Olvasó gondoljon arra, ha Önnek kellene ezt elvégezni! Zoltán a riasztás helyszínén többféle feladatot is ellát, amit mindig a vonulós autó parancsnoka határoz meg. Zoltán ott volt Kiszsidánynál, amikor osztrák anya és gyermeke halt meg balesetben. Az ilyen eset minden tűzoltónak trauma. Zoltán is több, mint ezer vonulásban vett részt, de mégis azokat az órákat idézte fel május 4-én, amely az önkéntes csapat, inkább család összetartását szolgálta.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "KZ",
+       "italic": false
+      }
+     ],
+     "chars": 3897
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      28.3,
+      524.1,
+      418.8,
+      804.0
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      159.3,
+      57.0,
+      424.1,
+      253.1
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      28.3,
+      392.3,
+      284.9,
+      516.0
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 14,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p14s0",
+     "title": "Seper János üveges befejezte vállalkozását",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      59.9,
+      569.6,
+      542.5
+     ],
+     "title_bbox": [
+      42.5,
+      59.9,
+      460.3,
+      88.3
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Seper János 1973 augusztusában kezdte meg üvegesként a kőszegi vállalkozását. Idén december 5-én lesz 80 éves. 1986-tól a Temető és Rákóczi utca sarkánál lévő 36 m2-es műhelyben dolgozott, ott beszélgettünk 2026. április 22-én. Azt a napot úgy nevezte: ÷már nem aktív, hanem az utolsó nap, amit itt töltök a műhelyben”. Akkor már nem viselte a jellegzetes zöld köpenyét, az elmúlt öt évtizedben a munkájáért kétszer megkapta az Aranykoszorús Mester kitüntetést. Huszonöt évig volt a Kőszeg és Vidéke Vállalkozók Ipartestületének vezetőségi tagja, mostanra nyugdíjasként tartozik közéjük. A ’régmúlt’ vállalkozói szemlélete szerint példamutatóan képviselte a mestereket öt évtizeden át. Közülük az ’utolsó’ kőszegi, aki befejezte a munkás éveit. Az elmúlt évben ott voltam a műhelyében, amikor bocsánatot kért a vevőjétől a képkeret készítésének egynapos késéséért. – Április 3-án adtam vissza a vállalkozásomat, azóta pakolunk, mindent elviszünk innét – mondta határozottan. – Kisebb anyagdarabokat, üveget, képkereteket mindig megőriztem, mert azokat később fel lehet használni. Az öreg, spórolós Stiaszni Gyulánál a Városháza utcában lévő műhelyében tanultam meg az üveges és képkeretező szakmát. Nála nem volt, nem lehetett hulladék.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Milyen érzés elhagyni a műhelyt?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Nem mondanám jó érzésnek. Ahol megszoktam, talán többet voltam itt, mint otthon. Most is állandóan bennem van a napi feladat, mit kell még elvégezni határidőre. Lehet, hogy majd reggelente az üzlet felé indulok. A menetrendem ezután sem változik, megyek a Soproni Pékségbe kávézni, reggelizni, ehhez hozzászoktam, nem változtatok. Sok lesz a szabadidőm, a ház melletti kertben tudok majd dolgozni.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Miért lett üveges?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– A nyolcadik osztály után, 1961-ben a Bútorszövetgyárban kezdtem dolgozni. Gamauf Lajos, dekoratőr, címfestő mellé helyeztek el, mert azt látták, szépen rajzolok. Azt kérte tőlem, legyen szakmám is. Az öreg",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Stiaszni befogadott, délutánonként",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "nála dolgoztam, tanultam üvegezést estig. A műhelye a várfal melletti parkra nézett.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Amikor 1973-ban kiváltottam az iparengedélyt, akkor még másodállásban dolgoztam, először a Kossuth utcában, majd a Munkácsy utcában. Egyedüli üveges voltam a városban, amikor 1986-ban – a most elhagyott – műhelyt kiutalta nekem a tanács, mert a munkámra szükség volt a városban.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "–1973-ban nem volt elfogadott a magánvállalkozás indítása.",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– A Bútorszövetgyár igazgatójától kellett engedélyt kérnem. Munkám volt bőven, szinte csak törött ablaküvegeket pótoltam. Minden sürgős volt szélben, esőben, hidegben. Szilveszter délutánján javítottam a várpresszó bejárati ajtóját, már ott",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "voltak a vendégek. Olyan is volt,",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "hogy havazott, hidegben kellett gittelni.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Milyen változások voltak az öt évtized alatt a vállalkozásban? – Mindig kellett dolgozni, sok volt az adó, a költség, a régi rendszerben meghatározták egy-egy munka egységárát. A vállalkozások nem haszonról szóltak, a szakma szeretete többet jelentett, meg az is, szabadon választottuk mikor és mit teszünk. A ’90-es években megcsinálhattam az árvetésemet, milyen munkáért mennyit kérek. Az ügynökök az alapanyagokat az üzletbe küldték, nem kellett küzdeni az anyaghiánnyal, a beszerzéssel. Nagyon más világ volt az előző rendszerben, a mai fiatalok azt el sem tudják képzelni.",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Miért lehet szeretni az üveges szakmát?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Hozzá kellett szokni a munkához, meg annak sokféleségéhez. Tudom, csak én vagyok ott, az lesz, amit megcsinálok, és látom az eredményt. A képkeretezés nagyobb feladatot jelentett, több szerszámot, gondolkodást igényelt. A vevő is megfogalmazta kéréseit, és jó érzés volt, amikor tetszett a munkám. Ez is hiányzik majd, talán már holnaptól. Mindkét szakmámat munka közben lehet megtanulni, megszeretni. Ez lett az én sorsom, a munkám! Újra elkezdeném!",
+       "italic": false
+      }
+     ],
+     "chars": 3762
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      42.3,
+      735.3,
+      209.9,
+      805.1
+     ],
+     "story": 0,
+     "dist": 192.8,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      139.6,
+      582.7,
+      209.9,
+      651.1
+     ],
+     "story": 0,
+     "dist": 40.2,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      221.1,
+      548.9,
+      388.3,
+      805.0
+     ],
+     "story": 0,
+     "dist": 6.4,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      399.7,
+      547.8,
+      566.9,
+      804.0
+     ],
+     "story": 0,
+     "dist": 5.3,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      173.5,
+      93.0,
+      438.2,
+      274.2
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 15,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p15s0",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": true,
+     "box": false,
+     "bbox": [
+      28.3,
+      62.5,
+      555.2,
+      182.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "– Kőszegen született?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Nem, Héderváron, a Kisalföldön 1946-ban. Ébredtem éjjel arra, hogy bombázták a Duna jegét. Apám kőszegi volt, inkább németül beszélt. 1945 előtt rendőr volt, később Kőszegen szolgált. Előélete miatt rangot nem kapott, sportember, kapus volt, együtt focizott Lóránt Gyulával.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Mi jut először eszébe, ha viszszagondol az eltelt évtizedekre? – A sok munka, amit jól el tudtam végezni. A munka engem éltet. Amikor csak magamnak dolgoztam, az egy felszabadult érzést adott nekem. A Bútorszövetgyárban jó csapattal dolgoztunk, de nemcsak mi voltunk, azt kellett csinálni, amit mondtak. Sok deko-",
+       "italic": true
+      },
+      {
+       "type": "sig",
+       "text": "rációt gyártottunk, valamit éljenző",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "mondatokat írtunk szinte mindenhová. A szövödében volt egy falra festett orosz katonai jelenet, az is adott feladatot. Úgy 5x10 méteres falakra írtuk ki a havi termelést, a dolgozók teljesítményét, és havonta átfestettük a rubrikákat, beírtuk az új adatokat.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az igazgatónk sokféle kitünteté-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "sét kereteztük. Egyik alkalommal",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "a Szapor igazgató nem kapott, de azért adni kellett. Valahol találtak egy régi emléklapot, és azt igazítottuk át az igazgatónk nevére. A gyár homlokzatán volt egy nagy felület, arra festettük május elsejét vagy a felszabadulást éljenző mondatokat. Ezekre mindig volt elegendő festék.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Kámán Z",
+       "italic": false
+      }
+     ],
+     "chars": 1269
+    },
+    {
+     "sid": "p15s1",
+     "title": "Az iparosok köszöntötték",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      204.5,
+      555.4,
+      434.5
+     ],
+     "title_bbox": [
+      28.3,
+      204.5,
+      276.5,
+      232.9
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A Kőszeg és Vidéke Vállalkozók Ipartestülete, illetve elődje a Kőszegi Ipartestület 1885. június 19-én tartotta alakuló közgyűlését. Azóta eltelt 14 évtized, amikor az iparosok munkájukkal beírták nevüket a város történelmébe. Seper János nyugdíjasként az idős iparosok közé tartozik, aki befejezte vállalkozását, és részt vett május 7-én a kőszegi iparosok egyesületének közgyűlésén, a Jurisics téren lévő székházban. A vezetőség Seper Jánost oklevél átadásával köszöntötte. Az oklevél a következő értékelést tartalmazta:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "„Seper János úr részére Kőszeg kiváló üveges mestereként végzett példaértékű munkásságáért, aki évtizedeken át odaadóan támogatta az iparos közösség tevékenységét, hosszú éveken keresztül elnökségi tagként, majd nyugdíjas tagként. Őszinte, becsületes, áldozatos munkájával maradandó értéket teremtett és erősítette közösségünk összetartását.”",
+       "italic": true
+      }
+     ],
+     "chars": 877
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      358.5,
+      504.6,
+      544.2,
+      628.3
+     ],
+     "story": 1,
+     "dist": 70.1,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      39.7,
+      674.2,
+      225.4,
+      798.0
+     ],
+     "story": 1,
+     "dist": 239.7,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      34.5,
+      444.2,
+      270.8,
+      511.3
+     ],
+     "story": 1,
+     "dist": 9.7,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      25.2,
+      236.9,
+      371.0,
+      437.5
+     ],
+     "story": 1,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 16,
+   "section": [
+    "KÁVÉSZÜNET",
+    "VIDÉK"
+   ],
+   "stories": [
+    {
+     "sid": "p16s0",
+     "title": "Lukácsháza",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      62.0,
+      569.3,
+      374.5
+     ],
+     "title_bbox": [
+      42.5,
+      62.0,
+      155.4,
+      90.5
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Április 17-én erdőjáró akadályverseny várta a Dr. Tolnay Sándor Általános Iskola tanulóit a Csömötei szőlőhegyi kilátónál. Ügyességi és fejtörő feladatokat, műveltségi kvízt és sok mozgást igénylő kihívást oldottak meg a diákok. A Közösségi Ház által szervezett programon 120 diák vett részt, támogatta az önkormányzat, a lukácsházi nyugdíjas klub készítette az ebédet a gyerekeknek.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április 25-én a Kisposta utcai Nemzedékek parkjában ültették el a 2025 évben született gyermekek tiszteletére a korai juharhát, ami 2025-ben az év fája volt. 2011 óta létező – a Föld napjához köthető – rendezvényen eddig 16 fát ültettek el, az emléktáblán 213 megszületett gyermek neve olvasható. 2025 évben 6 fiú és 2 lány született Lukácsházán, a korai juharfa az",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "ő születési fájuk. A rendezvény a",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Gyöngyház Óvoda Napocska csoportjának műsorával kezdődött, majd Virág János polgármester köszöntötte a legifjabb Lukácsházi lakosokat, szüleiket, nagyszüleiket. A MAM ajándékát Albert Mónika alpolgármester, az Önkormányzat ajándékát a polgármester adta át. Április 30-án a Közösségi Ház udvarán helyi ifjak és az örök fiatalok felállították a májusfát. A szalagokra családok, egyesületek, intézmények neve került, természetesen a magyar zászló és a pezsgő is fent van. Felmászni nem kell érte, május 30-án, szombaton a gyereknapi rendezvény után, 17.00 órakor lesz a májusfa kitáncolás egy zenés est keretében.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Május 9-én a Lukácsházi Színjátszó Kör a Csongrád Csanád Vármegyei Öttömösön vendégszerepelt a Samu a kan című darabbal. A Jubileumi Testvértelepülési Találkozón részt vett a Csíkkozmási",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Bojzás Néptánccsoport, a Horgosi",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Asszonykórus, a Kispiaci Kispacsirták Néptánccsoport és az Öttömösi Citerazenekar.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április 28-án tartott képviselőtestületi ülésen téma volt az azbeszt érintettség. 2024/25 évben a település padkajavítási munkáihoz az érintett 4 kőbánya egyikéből érkezett a kőzúzalék. A mintavétel 2026. május 1-én megtörtént, további intézkedések az eredmények ismeretében történnek.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A lakáscélú helyi támogatásról szóló rendelet is napirendre került, a Helyi Építési Szabályzat véleményezési szakaszának lezárásával együtt. Az M 87-es gyorsforgalmi út Lukácsházi Önkormányzat tulajdonában lévő szakaszának érintett részeinek tulajdonjog átruházásáról is döntött a képviselő-testület. Fekvő rendőr elhelyezéséről is döntés született az Óvoda előtt és a Kilátó- tájpince közötti szakaszon. Virágládák beszerzéséről is döntöt-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "tek a képviselők. A Gyöngyös utca",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "járda és csapadékvíz-elvezetés kiépítésére az ajánlattételi felhívás előkészítésével bízta meg a testület polgármestert.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Sport: Végéhez közelednek a labdarúgó bajnokságok. A felnőtt csapat a 9-12. helyért játszik a rájátszásban. A Vas vármegyei Magyar Kupában a csapat bejutott a 4-es döntőbe a Telekes és a Gérce legyőzésével, ahol ismét a Sárvár ellen lesz a mérkőzés a döntőbe jutásért. Az U-21-es csapat az idén szerényebb eredményekkel, szintén a rájátszásban érdekelt. Az U-14-es csapat továbbra is 2. helyen van az északi csoport 13 fős mezőnyében. Az U-13 -as csapat is bajnokságban vesz részt. Az U-7, U-9 és U-11-es csapat a Bozsik tornákon edződik. A sakkcsapat is befejezte a bajnokságot 7. helyezéssel. A Postakocsi Lukácsháza Teke Sportegyesület 4. helyen végzett a 8 csapatos NB-III-as bajnokságban.",
+       "italic": false
+      }
+     ],
+     "chars": 3296
+    },
+    {
+     "sid": "p16s1",
+     "title": "Útlezárás",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      385.9,
+      569.3,
+      542.5
+     ],
+     "title_bbox": [
+      42.5,
+      385.9,
+      133.1,
+      414.3
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Gyöngyösfalu: Húsvét jegyében a gyerekeknek és felnőtteknek meghirdetett programjaink is jól sikerültek. Vidám résztvevők töltöttek együtt vidám órákat. Köszönöm Marika néni szakmailag tökéletes hozzáállását, hogy a felnőtteknek a tojásírás szép hagyományát jól átadta.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A külterületi út beszerzési eljárása a pályázati előírásoknak megfelelően lezárult, várhatóan május végén megkezdődik a kivitelezési munka. A teljes Csorda út megújul. A Liget melletti szakasz beton burkolatot kap, emiatt 3 hétig le lesz zárva. A gépjárművek részére a kőkeresztnél ideglenes átjárót alakítottak ki, ez a Lanc út felől közelíthető meg. A teherforgalom Perenye felől biztosított. A munkálatok várhatóan június közepén fejeződnek be. Túl a választáson, sok sikert",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "eredményes munkát kívánunk a",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "térségből bejutott Országgyűlési képviselőknek. Kérjük, hogy a lakosság érdekeit képviseljék!",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április végén nagy erőkkel állítottunk a szokásoknak megfelelően májusfát. A Gyöngyös utca lakói idén is kitettek magukért, gratulálok a falu legnagyobb májusfájához. Május 31. vasárnap délután 14 órakor kezdődik a májusfa kitáncolása, szeretettel várjuk a kicsiket és nagyokat a tornacsarnokhoz. Vidámsággal, jó hangulattal kezdjük a nyarat.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Tóth Árpád",
+       "italic": false
+      }
+     ],
+     "chars": 1237
+    },
+    {
+     "sid": "p16s2",
+     "title": "Magaságyás",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      310.4,
+      494.5,
+      569.3,
+      806.5
+     ],
+     "title_bbox": [
+      310.4,
+      495.1,
+      430.3,
+      523.5
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Cák: Április 25-én a Tájházak és Szabadtéri Múzeumok Napja alkalmából Tavaszi Pincesor Pikniket rendeztünk a Cáki Pincesoron. A vendégeink tárlatvezetéssel egybekötött múzeum látogatáson vehettek részt, kézműves vásárnak is részesei lehettek.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A pincesor színpadán ismeretterjesztő előadások, könyv, illetve földmérési eszközök bemutatója volt. A pincesor feletti földmérési alapponthoz sétát is szerveztünk. A gyerekeket vártuk a „Legendák ösvényére”, ahol feladatokat kellett megoldaniuk, négy állomáson olvastak egy-egy meserészletet, és megoldani a hozzá kapcsolódó feladatokat. A mese címe: Hogyan nőttek ide fák? A feladatok során megismerhették a gyerekek az erdőben élő fákat és az erdei madarakat. A családok számára népi",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "játszótér és pónilovaglás nyújtott",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "szórakozást.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A Kőszegi Kisvonat a Kőszegi-hegységen keresztül szervezett túrája során hozzánk érkező vendégeket helyi borászunk, Stefanich Kornél borkóstolóval várta. A helyiek által készített gulyás elfogyasztása után akusztikus koncerteket hallgathattak az érdeklődők.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Településünk is csatlakozott a Falco Zrt. és a H+ Média és Kulturális Egyesület együttműködéséből megvalósuló Közösségi Kert Programhoz. Ennek keretében 4 db lapraszerelt magaságyást és 4 db raklapot kapunk. A Fő utca közepén található, patak melletti zöld területre kihelyezett ládákba fűszer- és gyógynövényeket fogunk ültetni a cáki családok és gyerekek segítségével. Az új közösségi tér elneve zésére várjuk a község lakóinak ötleteit és reméljük, hogy kellemes környezetet nyújt mindenki számára.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Tóth Szabolcs",
+       "italic": false
+      }
+     ],
+     "chars": 1560
+    },
+    {
+     "sid": "p16s3",
+     "title": "Élmények",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      553.1,
+      301.4,
+      806.5
+     ],
+     "title_bbox": [
+      43.9,
+      553.1,
+      137.4,
+      581.6
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Kőszegpaty: Idén is felelevenítettük a húsvéti szokásokat, kicsik és nagyok együtt ünnepelték a tavasz ünnepét. A tojáskeresés nem csak a gyermekeknek szerzett örömet, ahogy a település utcáin keresték a „nyuszi” által ajándékkal tele rakott fészkeket, hanem a helyi közösséget összefogta. Kőszegpaty lakói meglepetésként készítették el a fészkeket, és rakták tele finomságokkal, ezeket gyűjtötték a gyerekek. A rendezvény végén cukordobás következett a kicsik nagy örömére.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Színes szalagok díszítik a Közösségi Ház udvarát, ahol a helyiek felállították a májusfát.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A díszítésében részt vettek a gyermekek, az idősebbek, minden korosztály. A díszes fa májusban a település ékköve marad, emlékeztetve mindenkit a tavasz ünnepére. A májusfa kitáncolása megtörténik június 6-án, a Hagyományőrző Főzőnapon. Arra szeretettel várjuk a lakosságot!",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Györe Eszter",
+       "italic": false
+      }
+     ],
+     "chars": 861
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      153.0,
+      669.0,
+      304.2,
+      808.2
+     ],
+     "story": 3,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 17,
+   "section": [
+    "VIDÉK"
+   ],
+   "stories": [
+    {
+     "sid": "p17s0",
+     "title": "Hagyomány",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      60.6,
+      555.2,
+      278.5
+     ],
+     "title_bbox": [
+      28.3,
+      60.6,
+      148.0,
+      89.0
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Pusztacsó: Élményt nyújtott a Közösségi Kemence Program harmadik alkalma, mint záróesemény.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az elsőn a helyiek gyűjtötték a falu és a családok hagyományos receptjeit. Az értékek őrzésére elkészült a Pusztacsói Receptesfüzet. A második alkalommal farsangi falatozás valósult meg. A záróeseményen, ahol a Nemzeti Művelődési Intézet részéről Makrai Tamás is részt vett, Kolarits Kornél polgármester kiemelte a közösség erejét és a hagyományok továbbadásának fontosságát. A program a Petőfi Kultu-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "rális Program keretében, a Kormány",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "támogatásával valósult meg.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Színpadra lépett a Derű Néptáncegyüttes Vigyorkák csoportja, lendületes műsorukkal sikert arattak. Köszönjük, hogy elfogadták a meghívást! A májusfa állítása az est látványos, megható része lett. A hatalmas fát a lányok, asszonyok díszítették, a férfiak kézi erejükkel emelték fel a magasba. Ezt falatozás követte, mert időközben a kemencében megsült a langalló, a pizza. A gyermekeknek ugrálóvár és óriáscsúszda adott önfeledt szórakozást. A jó hangulat hajnalig kitartott, ami mutatja, nagyon fontosak a közösségi alkalmak a település életében. Nemcsak szórakozást nyújtott, hanem erősítette a helyiek közötti kapcsolatokat, és méltó lezárása volt a hagyományokra épülő eseménysorozatnak.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Köszönet illeti mindazokat, akik bármilyen formában hozzájárultak a rendezvény sikeréhez: az előkészületekben, a kemencés sütésben, a zene biztosításában vagy a lebonyolításban nyújtott segítségükkel valódi közösségi összefogás valósult meg. Köszönjük mindenkinek, aki eljött, és jelenlétével emelte az est hangulatát. Reméljük, mindenki jól érezte magát, és jövőre újra együtt ünnepelhetünk!",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Balázs Anikó",
+       "italic": false
+      }
+     ],
+     "chars": 1663
+    },
+    {
+     "sid": "p17s1",
+     "title": "Bozsok",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      179.7,
+      287.3,
+      458.5
+     ],
+     "title_bbox": [
+      28.3,
+      179.7,
+      98.5,
+      208.1
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Március elején a falu hölgyeit ünnepeltük egy szórakoztató este keretében. Szívet melengető érzés volt, hogy eljöttek a fiatalok és idősebbek is, megtelt a Kultúrház.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Március 15-én méltóképp megemlékeztünk az 1848-49-es szabadságharc hőseiről, köszönjük az óvodások által az önkormányzat épülete elé készített díszítést. Márciusban elindítottuk a Könyvtármozi sorozatot a kicsik örömére. Nekik vetítettük a régi magyar nagysikerű rajzfilmeket. Tovább folytatódik az elavult géppark korszerűsítése, márciusban fűnyíró traktort vásárolt az önkormányzat. A szélvihar Bozsokon is rombolt, a tűzoltósággal szembeni híd mindkét korlátját ledöntötte. Ezek ja-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "vítása nem lehetséges, új korlátot",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "kell készíttetni, az önkormányzatnak a káresemény jelentős kiadást okoz. Húsvétra hangolódva kézműves délutánon vehettek részt a helybeli gyerekek, ismerkedhettek a tojásfestés különféle technikáival Csepregi Anita vezetésével.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Bozsokon az azbesztszennyezésről a lakosság tájékoztatása folyamatos, nincs pánikhangulat. A megfelelő intézkedéseket minden érintett területen megtettük. Áprilisban megrendeztük a második Bozsoki Egészségnapot, 14 kiállító egészségtudatos termékeivel és szolgáltatásaival ismerkedhettek meg ingyenesen a látogatók. Örülünk, hogy idén is sokan vettek részt a helyiek és a környékbeliek, volt győri látogatónk is. Jövőre is várjuk az egészségükért tenni akaró érdeklőket!",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Jakab Zsuzsanna",
+       "italic": false
+      }
+     ],
+     "chars": 1414
+    },
+    {
+     "sid": "p17s2",
+     "title": "Programok",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      296.2,
+      290.2,
+      555.2,
+      518.5
+     ],
+     "title_bbox": [
+      296.2,
+      290.2,
+      404.1,
+      318.6
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Nemescsó: Április 8-án a nyugdíjas klub tagjai az Őrségben kirándultak. Gyönyörű helyeken, jó társaságban töltöttük el a napot, közös élményeket gyűjtve. Április 11-én csatlakozva a „Vesszen minden útmenti szemét” kezdeményezéshez a falu központjából elindulva Kőszegfalva, Lukácsháza és Pusztacsó irányában tisztítottuk meg az árkokat. A zsákokat a Magyar Közút elszállította. Jó lenne, ha többen óvnák és védnék a környezetet és nem szemetelnének! Még aznap este a Nemescsói Színjátszó kör az Árpád-házi Iskolában adta elő a „Hol születik a nemes?” című darabot, Baranyai Csaba esperes úr meghívására. Április 24-én a férfi klub tagjai töltöttek el egy kellemes estét. Másnap társadalmi munkát szerveztünk. Április 30-àn kicsik és nagyok együtt díszítették a falu májusfáját az Egyesületi ház előtt, amit szalonnasütés követett. Hálásan köszönjük mindenkinek, aki eljött és segített!",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Május elején az édesanyáknak készítettünk meglepetést a könyvtárban. Május 23-án pedig Értékekre hangolva rendezvényt tartunk, ahol főzőverseny, kiállítás, kulturális programok erősítik a közösséget. Lesz Kutyás családi délután, szeretettel várjuk az érdeklődőket!",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Szerdahelyi-Bánó Irén",
+       "italic": false
+      }
+     ],
+     "chars": 1179
+    },
+    {
+     "sid": "p17s3",
+     "title": "Aktuális",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      470.5,
+      287.3,
+      806.5
+     ],
+     "title_bbox": [
+      28.3,
+      470.9,
+      108.8,
+      499.4
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Kőszegszerdahelyen is megtalálható, ausztriai bányákból származó kőzúzalék, azbesztet tartalmazhat. Az önkormányzat több helyszínen mintavételt és vizsgálatot rendelt meg akkreditált laboratóriummal rendelkező cégtől. Ha bebizonyosodik, hogy a településen található kőzúzalék egészségügyi kockázatot jelent, intézkedési tervet dolgozunk ki a hatóságokkal együttműködve. Az ügyben április végén kormánydöntés is született, amely központilag koordinált intézkedéseket határoz meg.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Kérjük a Tisztelt Lakosságot a hatósági ajánlások betartására: ilyen kőzetanyagokat ne vásároljanak, ha már megtörtént, akkor olyan típusú felhasználástól, amelynek során a kőzúzalék mechanikai terhelés hatására aprózódhat, töredezhet, tartózkodjanak. A kőzúzalékkal borított helyeken porképződés minimalizálása érdekében autóval maximum 10 km/h sebességgel közlekedjenek. A további fejleményekről tájékoztatjuk a lakosságot!",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április 25-én a szőlőhegyen emelt Szent György-szobornál tartottunk dalos megemlékezést és hegybejárást, majd bordalos műsoraikat adták elő: Bozsoki Dalárda, a Fertőszentmiklósért Egyesület Férfi Dalköre, Flórián Tűzoltó Férfikar, Vadrózsa Népdalkör.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április 30-án délután együtt állítottuk fel a falu májusfáját, utána az idei hat alkalmas filmklub legelső vetítésén a Kincsem című filmet nézhették meg az érdeklődők.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Május 23-án 19 órára a falu férfi lakosait várjuk szeretettel a hagyományos férfinapi műsorra és vacsorára. Május 30-án, délután 3-tól játékos gyereknapot szervezünk a családoknak. Május 31-én, vasárnap a délelőtti szentmise után megemlékezést tartunk a Hősök Napja alkalmából a templomkertben és a hősi emlékműnél.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Nagy András",
+       "italic": false
+      }
+     ],
+     "chars": 1668
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      306.9,
+      521.9,
+      544.3,
+      802.0
+     ],
+     "story": 2,
+     "dist": 3.4,
+     "overlay_chars": 16,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "section": [],
+   "stories": [
+    {
+     "sid": "p18s0",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": true,
+     "box": false,
+     "bbox": [
+      44.1,
+      810.2,
+      554.6,
+      817.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Allergének: 1. Glutént tartalmazó gabonafélékből készült termékek; 2. Tojásból készült termékek; 3. Halból készült termékek; 6. Tej és tejtermékből készült termékek; 9. Mustár és abból készült termékek; 14. Rákfélék és abból készült termékek.",
+       "italic": false
+      }
+     ],
+     "chars": 242
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      0,
+      0,
+      70.1,
+      833.4
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      104.6,
+      0,
+      245.3,
+      416.9
+     ],
+     "story": 0,
+     "dist": 393.3,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      349.9,
+      34.3,
+      595.3,
+      138.9
+     ],
+     "story": 0,
+     "dist": 671.3,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      244.8,
+      69.1,
+      350.4,
+      138.9
+     ],
+     "story": 0,
+     "dist": 671.3,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      420.0,
+      138.5,
+      595.3,
+      451.7
+     ],
+     "story": 0,
+     "dist": 358.5,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 5,
+     "bbox": [
+      104.6,
+      416.4,
+      245.3,
+      833.4
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 6,
+     "bbox": [
+      420.0,
+      451.2,
+      595.3,
+      764.4
+     ],
+     "story": 0,
+     "dist": 45.8,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 7,
+     "bbox": [
+      314.9,
+      763.9,
+      595.3,
+      833.4
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 8,
+     "bbox": [
+      214.4,
+      9.0,
+      347.6,
+      78.9
+     ],
+     "story": 0,
+     "dist": 731.3,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 9,
+     "bbox": [
+      312.0,
+      110.0,
+      412.2,
+      173.6
+     ],
+     "story": 0,
+     "dist": 636.6,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 10,
+     "bbox": [
+      312.0,
+      173.4,
+      420.5,
+      764.4
+     ],
+     "story": 0,
+     "dist": 45.8,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 19,
+   "section": [
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p19s0",
+     "title": "Gyöngypántlikás táncos",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.0,
+      61.3,
+      287.3,
+      806.5
+     ],
+     "title_bbox": [
+      28.0,
+      61.3,
+      259.9,
+      89.8
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Április 29. a Tánc Világnapja, ennek részeként május 1-jén Örömtánc Kőszegen rendezvényt tartottak a Fő téren a IX. Kézműves-Sör- Majálishoz kapcsolódóan. Horváth Márta műsorvezető bejelentette, hogy Frank Borbála az április 17- 19-én tartott Néptáncfesztiválon megkapta a Gyöngypántlikás táncos címet. Május 1-jén az Örömtánc program részeként Borbála színpadra lépett párjával, Pálmai Kristóffal. (fotó)",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A Kőszegi Gyermek és Ifjúsági Népzenei és Néptáncfesztivált 2026. április 17-19. között rendezték meg azzal a céllal, hogy bemutatkozási lehetőséget kapjanak a néptáncegyüttesek és az utánpótlást képező fiatal néptáncosok. A rendezvény színhelye volt a Jurisics vár lovagterme, a program egyik szervezője a házigazda (JVMK), karöltve a Nyugat-Magyarországi Hagyományőrző Egyesülettel, illetve a Kőszegi Cimborák Táncegyüttessel.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A fesztivál első napján, pénteken Ifjúsági Szólótáncversenyen 120 fiatal, szombaton Népzenei és Népdaléneklési Versenyen 100 ifjú zenész, énekes, majd vasárnap 12 táncegyüttes lépett a közönség elé. A jelentős létszámú részvétel miatt lett a fesztivál a népzene hagyományát ápoló értékes rendezvény.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A minősítő versenyen Frank Borbála Györgyfalvi csárdást és szaporát táncolt Pálmai Kristóf párjával, a produkciót Gyöngypántlikás táncos kitüntető címmel értékelte a szakmai zsűri. Táncpartnere – a verseny szabálya szerint – túlkoros, így tánctudását nem értékelte a szakma. A díjat azok a táncosok kaphatták meg, akiknek a produkcióját kiemelt összpontszámmal értékelte a zsűri.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Borbála, ahogy elmondta: „mi egymással táncolunk a legszívesebben”. A közös táncot három éve kezdték el a Kőszegi Cimborák Táncegyüttesben. Kristóf az Ungarescából érkezett, Borbála a Hajnalcsillag Néptáncegyüttesből lépett át. Az együttes vezetője B. Szabó-Nagy Evelin, a szakmai felkészítő munkát Gerlecz Evelin és Gerlecz László végzi.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Bozsokon élek a szüleimmel, a tánc kicsi korom óta kitölti a mindennapjaimat. A népzene nálunk családi hagyomány, mindig is az életem része volt, édesanyám is otthon van a népművészetben – mondta Borbála.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Örömmel újságolta, hogy április 30-án az Árpád-házi iskola gimnazistájaként ballagott, és tervei szerint a Pázmány Péter Katolikus Egyetem Jog- és Államtudományi Karán folytatja a tanulmányait.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Kámán Z",
+       "italic": false
+      }
+     ],
+     "chars": 2271
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      162.0,
+      258.1,
+      323.2,
+      395.1
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      322.9,
+      258.1,
+      484.0,
+      395.1
+     ],
+     "story": 0,
+     "dist": 75.6,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      483.7,
+      258.1,
+      553.0,
+      600.1
+     ],
+     "story": 0,
+     "dist": 236.4,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      162.0,
+      394.8,
+      323.2,
+      531.9
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      322.9,
+      394.8,
+      484.0,
+      531.9
+     ],
+     "story": 0,
+     "dist": 75.6,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 5,
+     "bbox": [
+      162.0,
+      531.6,
+      323.2,
+      668.5
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 6,
+     "bbox": [
+      322.9,
+      531.6,
+      484.0,
+      668.5
+     ],
+     "story": 0,
+     "dist": 75.6,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 7,
+     "bbox": [
+      483.7,
+      599.8,
+      553.0,
+      805.3
+     ],
+     "story": 0,
+     "dist": 236.4,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 8,
+     "bbox": [
+      162.0,
+      668.2,
+      323.2,
+      805.3
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 9,
+     "bbox": [
+      322.9,
+      668.2,
+      484.0,
+      805.3
+     ],
+     "story": 0,
+     "dist": 75.6,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 10,
+     "bbox": [
+      293.3,
+      54.2,
+      558.0,
+      257.2
+     ],
+     "story": 0,
+     "dist": 46.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 20,
+   "section": [],
+   "stories": [],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      322.2,
+      610.0,
+      565.4,
+      718.0
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      326.7,
+      151.3,
+      483.1,
+      405.4
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      350.7,
+      0,
+      592.6,
+      129.6
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      57.0,
+      558.7,
+      280.0,
+      707.6
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    }
+   ]
+  },
+  {
+   "page": 21,
+   "section": [],
+   "stories": [],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      340.2,
+      392.1,
+      500.2,
+      544.2
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      439.8,
+      747.2,
+      574.7,
+      826.1
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      103.5,
+      582.0,
+      238.5,
+      722.8
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      70.9,
+      213.5,
+      280.9,
+      347.2
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      346.5,
+      13.4,
+      511.5,
+      172.4
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    }
+   ]
+  },
+  {
+   "page": 22,
+   "section": [
+    "KÁVÉSZÜNET",
+    "AKTUÁLIS"
+   ],
+   "stories": [
+    {
+     "sid": "p22s0",
+     "title": "Lamp család – négyen a koncertfúvószenekarban",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      61.3,
+      569.3,
+      806.5
+     ],
+     "title_bbox": [
+      42.5,
+      61.3,
+      521.5,
+      89.8
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Április 25-én és 26-án – a Szőlő Jövésnek Könyve programsorozat részeként – Kőszeg Város Koncertfúvószenekara fennállása 160. évfordulóját ünnepelte. A zenészek két teltházas koncertet adtak, a közönség vastapssal jutalmazta a koncertet. A jubileumhoz kapcsolódva bemutatták a zenekar új tagjait. Idén hat fővel bővült a csapat, köztük volt Lamp Olivér klarinétos is.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Elhangzott, hogy a zenekar egy nagy, együtt zenélő családként tekint önmagára. A nagy családon belül: rokonok, apák fiaikkal, házaspárok, testvérek zenélnek együtt. A zenekar történetében az idei jubileumi koncerten fordult elő először, hogy Olivér felvételével a Lamp család minden tagja: anya, apa és a két fiú – Kornél négy éve – a zenekar tagjai lettek. Ezzel megvalósult a Lamp házaspár régi vágya, gyerekeikkel együtt zenélhetnek a zenekarban.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április 30-án a Lamp család tagjaival otthonukban beszélgettünk. – Honnét indult a zenekarba vezető út? – kérdésre az édesapa, Lamp Tamás válaszolt.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Gyermekkoromban 12 évig csellóztam, majd néhány évig dobolni is tanultam. A fúvósokhoz 16 éve csatlakoztam ütősként, azt láttam, hogy az ifjú karmester, Szilágyi Miklós nagy lendülettel építi a zenekar jövőjét. Az ütősök nemcsak dobolnak, hanem a dallam-, ritmushangszerek széles skáláját szólaltatják meg. A vonós múltam segítséget nyújtott abban, hogy a timpanikat, vagyis az üstdobokat mindig tisztán, jól hangoltan szólaltassam meg. Jelenleg az ütős szekció legrégebbi tagja vagyok. Az édesanya, Lampné Erdősi Andrea fuvolásként két évvel később követte a férjét a zenekarba. Így fogalmazott:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Gyermekként hét évig hegedültem, azért úgy éreztem szívesebben játszanék fuvolán. Tomi rendszerint egy-egy koncert, próba után lelkesen mesélt a zenekarról. Amikor kismamaként a gyerekekkel otthon",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "voltam, akkor lehetőséget találtam",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "fuvolán tanulni, majd két évvel később követtem férjemet, a zenekar tagja lettem. Nagyon jól érzem magam a zenekar fuvolásai, barátaim, zenésztársaim között.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Arra törekedtünk a feleségemmel, hogy a fiaink minél előbb zenélni tanuljanak, ehhez minden adottságuk megvolt – fogalmazta meg Tamás. – Mindketten elsős koruktól tanultak zeneiskolában. Kornél ügyes trombitás, zenekari tag, az ifjúsági zenekarban alsós kora óta zenélt. – Kornél! Hogyan töltöd napjaidat?",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– 18 éves vagyok, tanulok, hétéves koromtól fújom a trombitát. Úgy érzem, a zenekarnak, a szólamomnak stabil tagja vagyok. A másik hobbim a foci. Egyesületi tagként edzésekre járok, hétvégenként meccseken játszom, mégis ott vagyok szinte minden zenekari próbán és szereplésen. A zeneiskolában a tanáraim versenyekre, művészeti szemlékre vittek, a rangos Sistrum Regionális Trombitaversenyen (2022) ezüst minősítést szereztem, trombitáltam, énekkart kísértem az evangélikus templomban.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Olivér! Milyen hangszeren kezdted a zenélést?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Elsős koromtól, nyolc éve kezdtem el zongorázni. Alsó tagozatban klarinétoztam, csatlakoztam az ifjúsági zenekarhoz. Igaz, hogy a felnőtt zenekarnak hivatalosan a jubileumi koncerttől vagyok a tagja, de zongoristaként többször álltam színpadra a fúvósokkal. Ilyen volt a nagyszabású Jézus musical-orató-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "rium, és az ugyancsak nagy sikerű",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Omega Show.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Itthon is többször és szívesen hallgatjuk Olivér zongorajátékát – fogalmazta meg az édesanya, Andrea – Nemcsak a zeneiskolai darabokat gyakorolja, hanem spontán dallamokat, akkordokat talál ki, hallás után ismert dallamokat ültet át zongorára. Olivér többször kísérte zongorán az Árpád-házi Iskola kórusát. Az idei Művészeti Szemlén kiemelt arany minősítést értek el. – Olivér! Az iskola és a zenélés együtt sok időt vesz igénybe?",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Jut másra is, fontos hobbim a színjátszás. A Soproni Petőfi Színház, majd a Színházi Nevelési Program keretein belül szerepeltem különböző darabokban. Játszottam nagyszínpadon, többször szerepeltünk iskolákban színházi előadásokkal. Büszkén mondhatom ifjú színészként játszottam Németh Ervin: A legyek ura darabban. Csak gyerekszereplők voltunk a színpadon, kiváló rendezés, díszlet, zene, feszített próbák után egy hónapon belül 32 előadást tartottunk. Fárasztó volt, és óriási siker.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Csak Olivér zenél otthon? – kérdésre Andrea válaszolt.",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Szakítunk időt közös zenélésre, ünnepek alkalmával elővesszük a hangszereket. Családunk örömmel vett részt a zenekar szervezésében megvalósult adventi kalendárium zenei programjában. Több fúvósközösségben szép produkciók születtek. – Mit jelent a családnak a fúvószenekar? – Tamás válaszolt.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Közös hobbi, időtöltés. Szerencsésnek érezzük magunkat, hogy",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "az otthonon kívül van",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "egy másik hely, ahol az egész család együtt zenélhet. Sokat köszönhetünk a zenekarnak, ahol barátokra leltünk, keresztszülőkké váltunk, rengeteg közös élmény köt össze bennünket a zenekar tagjaival.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Ilyenek az utazással járó szereplések – vette át szót Andrea. – A buszon is remek a hangulat, a koncertek közötti időben programokat szervez a csapat. Külön öröm nekünk a férjemmel, hogy kamasz, felnövő fiaink a zenekarnak köszönhetően még több időt töltenek velünk. A gondolatsort folytatta Tamás:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Hetente kétszer két órát próbál a zenekar. Nekünk természetes, hogy szinte minden próbán ott vagyunk, más programot erre az időpontra nem szervezünk. Előfordul, hogy munka után, fáradtan indulunk el itthonról, de a próbaterembe érve ez elmúlik, várjuk a találkozást a zenésztársakkal.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Szeretem a próbák hangulatát – mondta Andrea. – Sokszor feszített a tempó, de a humor, jókedv is velünk van. Egy-egy koncertre hosszú a felkészülési idő, a zeneileg nehezebb darabok több próbát igényelnek, de élmény, amikor úgy szólaltatjuk meg a művet, ahogy a karnagyunk elképzelte.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Mit hozott Szilágyi Miklós a zenekarba?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– Lendületet, értékes szakmaiságot, profizmust. Meg tudtunk újulni, tudunk olyat nyújtani, amit korábban nem. Miklós nagyon jól hangszerel és merész ötleteket, projekteket hoz nekünk. Azokból sok munkával sikeres előadások születnek, adnak újabb inspirációt a zenekar tagjainak.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "– Mit hoz a jövő?",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "– A zenekari házaspárok gyermekei közül többen zeneiskolában tanulnak, várhatóan a jövőben további teljes családok zenélhetnek együtt Kőszeg Város Koncertfúvószenekarában.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "KZ",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Fotó: Büki László",
+       "italic": false
+      }
+     ],
+     "chars": 6158
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      140.9,
+      92.8,
+      473.7,
+      287.4
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 23,
+   "section": [
+    "KŐSZEGI NÉMETEK",
+    "KŐSZEGI HORVÁTOK"
+   ],
+   "stories": [
+    {
+     "sid": "p23s0",
+     "title": "Hrvatsko shodišće u Juru",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      61.3,
+      555.4,
+      423.6
+     ],
+     "title_bbox": [
+      28.3,
+      61.3,
+      278.3,
+      89.8
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Na Majkin dan 3. maja dopodne su se krenuli gradišćanski Hrvati u Juru na jur tradicionalno shodišće k Krvave suze točećoj Divici Mariji. U kiseškom autobusu blizu pedeset vjernikov se je pripravljalo s molitvami očenašev i jačkami na jurski vjerski susret. Po dolazku okolo jurske katedrale prijatelji, poznaniki s radošćom su se pozdravljali iz svih stran Gradišća. U deset uri po- četoj svetoj maši Gábor Szarka koljnofski farnik je pozdravio nazočne. Glavni celebrant p. mag. Štefan Vukić( A) mašni aldov je dilio s dr. Ivanom Smatovichem farnikom u mirovini, ki ljetos sve- čuje 60.obljetnicu svojega zaredjenja. Uz kantora Ivana Maásza (iz Čunova), muzički su klapa „Di- ( Celebranti svete maše ),",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "p „",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "čaki“ (iz Južnoga Gradišća)",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "oblikovali vjerski susret. Po ophodu k milosnomu kipu svaki je mogao dotaknuti staklen okvir/ramu u kim čuvaju rupčac krvavih suz.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Već je tradicija da jursko shodišće kisežani povežu izletom s drugimi vjerskimi, povijesnimi mjesti. Ovim putem je Celldömölk/ Malo Celje bilo cilj. Po objedu su posjetili crikvu Blažene Divice Marije.Bogata informacija turističke voditeljice opširno nam je pokazala lipotu, bogatstvo i vridnost ovoga vjerskoga mjesta. Na ovo mjesto kopiju Majke Božje Celjanske doprimio je apat Odó Koptik i za nekadašnjom drivenom crikvom (1739.) uzidjena je denašnja barokna crikva (1768.) u koj su na postavili i štatuu Majke Božje Celjanske. Puni doživljaja su stigli vjerniki doma, ki su u svoje hiže doprimili blagoslov i mir od ovoga putovanja.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Anyák napján a kőszegi horvátok is útra keltek, hogy részt vegyenek hagyományos zarándokútjukon a Vérrel Könnyező Szűzanya kegyképéhez a győri Katedrálisban. Hazafelé Celldömölkön megtekintették a Máriazelli",
+       "italic": true
+      },
+      {
+       "type": "sig",
+       "text": "Spomen kip pred jurskom Katedralom",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "S k d Szűzanya (A) oltáron elhelyezett kópiáját, a Nagyboldogasszony-templomban. A zarándokút anyagi vonzatát (autóbusz költségét) pályázatból fizették.",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "Hodočasniki u crikvi Blažene Divice Marije k K d l",
+       "italic": true
+      },
+      {
+       "type": "sig",
+       "text": "Márija Fülöp Huljev",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "j p j",
+       "italic": false
+      }
+     ],
+     "chars": 2030
+    },
+    {
+     "sid": "p23s1",
+     "title": "Német nemzetiségi hírek",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      434.1,
+      555.2,
+      806.5
+     ],
+     "title_bbox": [
+      28.3,
+      434.1,
+      269.4,
+      462.5
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "h3",
+       "text": "30. Jubiläum des Alpensänger Chores",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április 17-én ünnepelte megalakulásának 30. évfordulóját a Kőszegi Alpensänger Német Nemzetiségi Kórus. Az Alpensänger 1996 őszén alakult nagyrészt a Béri Balog Ádám Általános Iskola tanáraiból.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Vendégeink voltak Wild Róbert, a Magyarországi Németek Országos Önkormányzata Nyugat-Magyarországi Regionális Irodájának vezetője. Kőszegfalvi Ágnes a Német Nemzetiségi Önkormányzat nevében gratulált. Köszöntötte a kórust Terplán Zoltán alpolgármester, aki elhozta nekünk Básthy Béla polgármester úr által adott Kőszeg Város Elismerő Oklevelét és egy finom tortát. Megkaptuk Majthényi László által küldött Vas Vármegye Közgyűlésének elismerő oklevelét is.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Nagy örömünkre a régi tagok",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "közül 16-an eljöttek, hogy velünk töltsék ezt a szép délutánt. Énekkel köszöntöttük vendégeinket, majd a Kőszegfalvi Német Nemzetiségi Kórus szereplése után együtt énekeltük régi társainkkal kedvenc dalainkat. Maitz József tanár úr kísért minket har-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "monikán, megteremtve a vidám hangulatot. Jó",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "volt látni beszélgető, emlékező dalostársainkat. Ennek a szívet melengető délutánnak az emléke sokáig velünk marad!",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Pochánné Polesznyák Ágota",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "6. Tracht-Tag 24. April 2026",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április 24-én országszerte számos óvoda, iskola, egyesület, énekkar, tánccsoport ünnepelte meg a német népviselet napját, és így tettünk mi is a Balog iskolában. Az iskola tanulói német táncokat mutattak be, mesejátékot adtak elő, az Alpensänger német dalokat énekelt. Ekkor rendezték meg a német szavalóversenyt is, melyen 4-8. nemzetiségi osztályokból voltak versmondók. Nagyon jól éreztük magunkat ezen a különleges pénteken! Köszönet mindenkinek, akik közreműködtek ebben.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Kőszegfalvi Ágnes",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "kórusvezető",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "NNÖ elnöke",
+       "italic": false
+      }
+     ],
+     "chars": 1749
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      25.4,
+      665.1,
+      260.4,
+      809.1
+     ],
+     "story": 1,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      154.1,
+      468.7,
+      379.4,
+      608.9
+     ],
+     "story": 1,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      354.6,
+      692.9,
+      557.9,
+      808.6
+     ],
+     "story": 1,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      25.4,
+      264.9,
+      200.8,
+      416.8
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      306.0,
+      56.5,
+      559.5,
+      185.8
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 5,
+     "bbox": [
+      382.6,
+      265.0,
+      558.0,
+      405.2
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false,
+     "caption": "u Celldömölk - u"
+    }
+   ]
+  },
+  {
+   "page": 24,
+   "section": [
+    "KÁVÉSZÜNET",
+    "KÜLÖNFÉLÉK"
+   ],
+   "stories": [
+    {
+     "sid": "p24s0",
+     "title": "Örömtánc a Fő téren",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      59.6,
+      569.3,
+      170.5
+     ],
+     "title_bbox": [
+      42.5,
+      59.6,
+      242.7,
+      88.0
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Idén harmadszor rendezte meg az Örömtánc Kőszegen programot a BE-JÓ Táncegyüttesért Egyesület, a Silverbirds Bellydance Egyesület és a Jurisics-vár Művelődési Központ és Várszínház. A Fő téren felállított színpadon tánccsoportok szórakoztatták a közönséget, bemutatták a tánc sokféleségét. Ahogy Horváth Márta műsorvezető – a BE-JÓ művészeti vezetője – elmondta, közönség elé került „Kőszeg hihetetlenül gazdag táncpalettája”. Ehhez tartozik hastánc, jazzbalett – kortárs tánc, hip-hop, magyar és horvát néptánc, akrobatikus rocky, majorette. Márta a „Židanske zvijezdice” ifjúsági - és gyermekcsoport műsora után azt mondta, hogy számára a horvát nemzetiségű tánc ötletes, látványos és lebilincselő. Hangsúlyosan beszélt az össztáncról, megköszönte a részvételt, az egyedi koreográfia betanulását. Ösztáncban három tánccsoport szórakoztatta a közönséget a Fő tér kövezetén, együtt a BE-Jó, a Dance Jam és a Hajnalcsillag táncosai. Az Örömtánc délutánján nyolc együttes lépett színpadra, közülük néhány csoport produkcióját szemléltetjük a 25. oldalon a fotógalériában.",
+       "italic": false
+      }
+     ],
+     "chars": 1071
+    },
+    {
+     "sid": "p24s1",
+     "title": "Remetelak a Kálvária-templomban",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      42.5,
+      182.3,
+      569.6,
+      626.5
+     ],
+     "title_bbox": [
+      43.2,
+      182.3,
+      380.9,
+      210.7
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A szombatonként, 14-16 óra között nyitott a turisták számára. Szertartásokat, szentmiséket is tartanak az értékes műemlék épületben. Annak két helyisége a remetelak, első lakója, remetéje 1735-től gróf Wels Henrik, aki elszegényedett főnemesből lett képíróvá. A látogató, ha betér a templomba, az oltár mellett bal oldalon lehet eljutni az egykori remeték lakhelyére. Egyik helyiség a füstös konyha, a másik a lakótér. Mindkettőben ott vannak a helyreállítás eszközei, nem elhagyták, hanem szolgálják idén nyáron a szakemberek munkáját. Dalos Viktória restaurátortól megtudtuk, hogy őszig befejezik a munkát. A szakmai részletekről is adott tájékoztatást.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az 1734-re elkészült Kálvária-kápolnához kapcsolódó remetelak csak 1735-ben lett hozzáépítve a szentélyhez nyugati irányból. Festett ábrázolást csak a cserépkályhával felszerelt szobájában tártak fel (fotó), hiszen erre a területre – 1947. október 19-én éjszaka történt gyújtogatás után – a kitört tűzvész nem felújított Kálvária-templom terjedt ki. A szabadkéményes kony-",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "hán,/füstös konyhán/ keresztül",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "lehet bejutni a fiókos, dongaboltozatú két ablakos szobába.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A remetelak szondázó festőrestaurátori kutatását követően a kutatóablakok segítségével információkat kaptak a szakemberek a feltárt festékrétegek állapotáról. Szembeötlő, ahogy a sok, helyenként 11 festékréteg egymástól rétegesen elvált. A mennyezeten hosszanti boltozati repedések húzódtak és egykori beázás nyomai voltak láthatóak, mert a templom beázott, a tetőzetet átfogóan kellett felújítani.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A remetelak legépebben megmaradt, szigorúan védendő díszítőfestését két, három egyszínű meszelésréteg, helyenként javítóvakolatréteg fedte. Ezek eltávolításával a jellemzően zöld színű, kvalitásos díszítőfestés teljes feltárásával a remetelak összes, a zöld díszítőfestés és az alatta meghúzódó, egymásra festett, díszítőfestett rétegek állagmegóvása megfelelő mértékben teljesülhetett, és megőrződött.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "A jelentős történeti és esztétikai",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "értéket képviselő jellemzően zöld színű díszítőfestés teljes feltárása nem csak az esztétikai helyreállítás szempontjából volt fontos, hanem a díszítőfestés és az alatta húzódó összes történeti kifestésréteg megőrzése elengedhetetlen.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az előkerült motívumtöredéket a restaurátorok láthatóvá és értelmezhetővé tették dokumentálás és esztétikai helyreállítás során, a műemléki és kulturális érték bemutatása érdekében.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "2023. november 24-én áldotta meg Székely János megyéspüspök a felújított Kálvária-templomot. A",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "jelenlévő hívektől azt",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "kérte: „Imádkozzunk azért, hogy minden zarándok, aki ide belép, valamit megtapasztaljon ebből a kincsből”. A „KINCS” építészeti felújítását kőszegi vállalkozás (Szárnyas Kft.) végezte. Az összes munkához tartozott az omladozó, templomhoz vezető stációk rendbe tétele is. Az elvégzett munka eredménye mindenkié lett. Megvalósulhatott a Kormány által 2020-ban adott 6,1 milliárd Ft támogatásból.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "KZ/szerk",
+       "italic": false
+      }
+     ],
+     "chars": 2921
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      42.5,
+      631.1,
+      566.9,
+      805.2
+     ],
+     "story": 1,
+     "dist": 4.6,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      143.6,
+      392.8,
+      479.6,
+      629.7
+     ],
+     "story": 1,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 25,
+   "section": [],
+   "stories": [
+    {
+     "sid": "p25s0",
+     "title": "Örömtánc Kőszegen 2026. május 1-jén",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      35.4,
+      30.7,
+      417.1,
+      59.1
+     ],
+     "title_bbox": [
+      35.4,
+      30.7,
+      417.1,
+      59.1
+     ],
+     "title_size": 24.0,
+     "blocks": [],
+     "chars": 0
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      287.1,
+      192.0,
+      422.4,
+      404.2
+     ],
+     "story": 0,
+     "dist": 132.9,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      437.8,
+      231.8,
+      570.0,
+      421.0
+     ],
+     "story": 0,
+     "dist": 214.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      27.3,
+      531.2,
+      339.3,
+      678.3
+     ],
+     "story": 0,
+     "dist": 472.1,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      28.7,
+      395.8,
+      294.4,
+      540.0
+     ],
+     "story": 0,
+     "dist": 336.7,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      282.5,
+      395.3,
+      571.0,
+      622.5
+     ],
+     "story": 0,
+     "dist": 336.2,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 5,
+     "bbox": [
+      28.3,
+      73.4,
+      189.2,
+      241.0
+     ],
+     "story": 0,
+     "dist": 14.3,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 6,
+     "bbox": [
+      28.7,
+      233.5,
+      289.1,
+      397.8
+     ],
+     "story": 0,
+     "dist": 174.4,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 7,
+     "bbox": [
+      306.5,
+      614.5,
+      570.0,
+      797.3
+     ],
+     "story": 0,
+     "dist": 555.4,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 8,
+     "bbox": [
+      28.3,
+      677.5,
+      306.1,
+      798.3
+     ],
+     "story": 0,
+     "dist": 618.4,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 9,
+     "bbox": [
+      409.1,
+      74.4,
+      570.0,
+      243.2
+     ],
+     "story": 0,
+     "dist": 15.3,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 10,
+     "bbox": [
+      189.2,
+      73.4,
+      409.1,
+      203.6
+     ],
+     "story": 0,
+     "dist": 14.3,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 26,
+   "section": [
+    "KÁVÉSZÜNET",
+    "KÜLÖNFÉLÉK"
+   ],
+   "stories": [
+    {
+     "sid": "p26s0",
+     "title": "IX. Kézműves-Sör-Majális",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      310.4,
+      60.4,
+      569.3,
+      230.5
+     ],
+     "title_bbox": [
+      310.4,
+      60.4,
+      560.3,
+      88.8
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Április 30. és május 2. közötti programok a Fő téren szórakoztatták az érdeklődőket! Az első nap délutánján sok család, egyesület kötötte fel a fenyőágakra a szalagját. Öt órakor már a a Hajnalcsillag táncosai (fotó) készültek a májusfa magasra emelésére. Abban a Városüzemeltető kft. daruja segített. Majd a lányok, fiúk, szeniorok táncos programmal szórakoztatták a jelenlévőket. A májusfa állítás színes műsorát mindig a táncosok adják, mert ők midig ott vannak, ahol a városi programok értékét lehet növelni. Aznap a Kvarc együttes koncertjével folytatódott az este. A következő két napra a vásári hangulathoz a Jurisics-vár Művelődési Központ és Várszínház további nyolc programot szervezett. Aki elment azokra, a napsütötte órákban egyedi majálisi hangulatban lett része.",
+       "italic": false
+      }
+     ],
+     "chars": 781
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      43.2,
+      58.5,
+      298.4,
+      419.5
+     ],
+     "story": 0,
+     "dist": 52.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      42.5,
+      432.0,
+      566.9,
+      805.0
+     ],
+     "story": 0,
+     "dist": 201.5,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      307.4,
+      237.6,
+      572.2,
+      424.0
+     ],
+     "story": 0,
+     "dist": 7.1,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 27,
+   "section": [
+    "PROGRAMOK"
+   ],
+   "stories": [
+    {
+     "sid": "p27s0",
+     "title": "Programajánló",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      34.5,
+      60.4,
+      281.3,
+      498.3
+     ],
+     "title_bbox": [
+      34.5,
+      60.4,
+      177.9,
+      88.8
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "május 13. 18.00 Jurisics vár lovagterme FINISSZÁZS Erwin Birnmeyer Lépcsők című kiállításának finisszázsára kerül sor a vár lovagtermében, ahol Harro Pirch vezeti körbe az érdeklődőket a kiállításon.",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "május 13. 18.00 német fatimai mise és körmenet",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "május 19. 10.00 és 13.30 Janosch: Kistigris és Kismackó Gye-",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "rekszínházi Bérlet előadása",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "május 19. 17.00 Könyvbemutató: Az otthontalanság poétikája – Tanulmányok Agota Kristofról – Zsinagóga május 20. 15.45 Megemlékezés és koszorúzás a kitelepítésről a kőszegi vasútállomáson.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "16.00 Robert Gutowski Architects kiállításának megnyitója a Zwingerben. Köszöntő: Básthy Béla polgármester. Megnyitóbeszéd: Fejérdy Tamás építészmérnök, műemlékvédelmi szakmérnök. 17.00 órakor az építésziroda munkatársai tárlatvezetést tartanak a helyszínen.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "17.00 László Gábor: 300 év... „de mit adtak nekünk a svábok?” film vetítése a városi könyvtárban.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "május 30. lovagterem Kőszeg Város Ifjúsági Fúvószenekara",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "május 20. május 20.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "koncertje",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "május 31. Jurisics vár 13.30-17.00 Városi Gyermeknap programjai",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "május 31. 18.00 Hősök tornya Hősök-napi megemlékezés",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "június 2. 10.00 és 13.30 Egyszer fenn…. – Egészen elröppent időutazás a szárnyak nyomában Gyerekszínházi Bérlet előadása június 2. 17.00 óra: Festetics-Chernel Palota Istálló: Zsombor",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Ede festőművész „Mesterségek” című kiállításának",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "megnyitója június 4. 10.00 Országzászló Nemzeti Összetartozás-napi",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "megemlékezés",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "június 7. Gyalogos (12.20 óra) és buszos (15 óra) zarándoklat Steinbergbe/Bründl-Kapelle június 7. Hajnalcsillag Néptáncegyüttes évadzáró műsora",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "június 9. KÖSZHÁZ Városi Véradás",
+       "italic": false
+      }
+     ],
+     "chars": 1589
+    },
+    {
+     "sid": "p27s1",
+     "title": "A Kőszegi Városi Múzeum, Könyvtár és Levéltár hírei",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      296.2,
+      61.3,
+      559.4,
+      746.5
+     ],
+     "title_bbox": [
+      296.2,
+      61.3,
+      559.4,
+      113.8
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "h3",
+       "text": "MÚZEUMI PROGRAMOK:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "• 2026. május 15. 17 óra Lőrinc László, író és történelemtanár 25 szelfi és a Híres merényletek című könyveinek bemutatója és író-olvasó találkozó lesz. Lőrinc László 25 szelfi sorozata egy népszerű ifjúsági ismeretterjesztő könyvsorozat, amely játékos formában, elképzelt közösségimédia-posztokon keresztül mutatja be a magyar történelmet. A sorozat köteteit Rátkai Kornél illusztrálta.25 szelfi az Árpád-korból: a honfoglalástól az Árpád-ház kihalásáig tartó időszakot öleli fel, 25 szelfi a török korból: a mohácsi vésztől a törökök kiűzéséig tartó korszakot mutatja be; 25 szelfi a felvilágosodás korából: a 18. század végétől a reformkor hajnaláig kalauzolja az olvasót; 25 szelfi a reformok korából: a sorozat befejező része, amely az 1830 és 1900 közötti éveket dolgozza fel.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Lőrinc László ezen kívül új könyvéből, a „Híres merényletek”-ből is szemezget érdekes mozzanatokat, amelyekben rengeteg érdekességet megtudhatunk az egyes történelmi korszakokról. Végigkalauzol a különböző történelmi korszakok híressé vált merényletein, megismerhetjük a sikeres vagy épp sikertelen gyilkossági kísérletek hátterét és helyszíneit. A terítékre kerülő merényletek: Julius Caesar, Abraham Lincoln, Mahátma Gandhi. • 2026. május 16. szombaton 10 órától szeretettel várjuk az óvodásokat és kisiskolásokat családjukkal a Hajnalcsillag Néptáncegyüttes nyárindító játékos, mondókás foglalkozására.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "• 2026. május 28. 17 óra Rozán Eszter: Álhírek és csodagyógyítók - Hogyan ismerjük fel, ha a pénztárcánkra vadásznak? Előadónk a Magyar Reumabetegek Egyesülete elnöke, lelkes közösségszervező, okleveles biblioterapeuta, a Vas megyei Reumaklub vezetője is egyben. Pár kérdés: Hogyan lehet kiszűrni az álhíreket? Hihetünk-e a szemünknek? Miért veszélyes az információs buborék? Hogyan születnek a legendák? Milyen szerepet töltenek be a babonák az életünkben? Melyek az áltudomány jellemzői? Hogyan ismerjük fel a telefonos csalókat, és mit tehetünk ellenük? • 2026. június 12. Régészet Napja, délelőtt régészeti interaktív órák igényelhetőek a balogh.beata@kvmkl.hu email címen, majd 17 órától a rendezvényteremben Simon Zsófia, régész tart előadást Tömegsírfeltárások Sátorhelyen címmel. 2020-2024 között Sátorhelyen, a mohácsi csatához köthető tömegsírok feltárásába kapcsolódott be régész kolléganőnk, aki az ott zajló munkákról fog mesélni az érdeklődőknek.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "• 2026. június 20. 16-23 óra között Múzeumok Éjszakája az Arany Egyszarvú Patikamúzeumban és a Chernel Kálmán Városi Könyvtárban, részletes program az Intézmény facebook oldalán hamarosan!",
+       "italic": false
+      },
+      {
+       "type": "h3",
+       "text": "KÖNYVTÁRI PROGRAMOK:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "• 2026. május 20-án szerdán 10.00 órára Kissné Rentkó Zsuzsanna várja a legkisebbeket Baba-Mama Játszóházba a gyermekrészlegbe! Regisztráció: programszervezés@kvmkl.hu • 2026. május 22. 15 óra Irány a Könyvmolygalaxis! vetélkedő ünnepélyes díjátadó rendezvénye • 2026. június 9. 17 órakor nyílik meg a rendezvényteremben ‘Ébredés’ címmel Kasztner Andrea és Rózsás Dorina képzőművészeti kiállítása, mely 2026. június 27-ig tekinthető meg a könyvtár nyitvatartási idejében. • 2026. június 11. 17 óra Ünnepi Könyvhét - „Mi, magyarok...” Közönségtalálkozó Sal Endre íróval, az Újságmúzeum főszerkesztőjével a rendezvényteremben.",
+       "italic": false
+      }
+     ],
+     "chars": 3209
+    },
+    {
+     "sid": "p27s2",
+     "title": "Dance Jam – Évadzáró",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      510.7,
+      287.3,
+      566.5
+     ],
+     "title_bbox": [
+      28.3,
+      510.7,
+      252.4,
+      539.1
+     ],
+     "title_size": 24.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A Kőszegi Dance Jam Táncművészeti Egyesület szeretettel hívja és várja az érdeklődőket évadzáró előadására.",
+       "italic": false
+      }
+     ],
+     "chars": 108
+    },
+    {
+     "sid": "p27s3",
+     "title": "Kapcsolódásaink",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      74.4,
+      570.4,
+      238.8,
+      598.8
+     ],
+     "title_bbox": [
+      74.4,
+      570.4,
+      238.8,
+      598.8
+     ],
+     "title_size": 24.0,
+     "blocks": [],
+     "chars": 0
+    },
+    {
+     "sid": "p27s4",
+     "title": "2026. május 16. 17.00 óra Jurisics vár",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      594.7,
+      287.3,
+      734.5
+     ],
+     "title_bbox": [
+      78.4,
+      594.7,
+      234.8,
+      626.3
+     ],
+     "title_size": 14.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Az évadzárón több mint 20 – látványos koreográfiával létrehozott – táncot mutatnak be. A táncosok a mozgás nyelvén keresztül vizsgálják az emberi kapcsolatok sokféleségét. Az idei évben a produkciók a külvilág felé nyitnak, az egymáshoz, a térhez és a közösséghez való viszony kerül fókuszba. A tánccsoportok előadásai változatos stílusokban jelennek meg, a lírai, finom mozgásvilágtól a dinamikus, lendületes koreográfiákig. Cél: a nézők ne csupán táncot lássanak, hanem találjanak kapcsolódási pontokat egymással, a színpadi történetekkel. Vetített vizuális elemek is gazdagítják, erősítik a tánc és a tér közötti kapcsolatot.",
+       "italic": false
+      }
+     ],
+     "chars": 629
+    },
+    {
+     "sid": "p27s5",
+     "title": "Anyakönyvi hírek",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      34.5,
+      744.7,
+      281.1,
+      802.3
+     ],
+     "title_bbox": [
+      34.5,
+      744.7,
+      141.6,
+      764.3
+     ],
+     "title_size": 16.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "HÁZASSÁG: Horváth Alexandra – Szalai Tamás, Bereczk Zsófia Mirtill – Németh Bence, Fekete Adél – Heiszenberger Norbert, Óvári Ágnes – Pethő András, Semperger Katalin – Császár István.",
+       "italic": false
+      }
+     ],
+     "chars": 183
+    }
+   ],
+   "images": []
+  },
+  {
+   "page": 28,
+   "section": [],
+   "stories": [],
+   "images": []
+  },
+  {
+   "page": 29,
+   "section": [
+    "SPORT"
+   ],
+   "stories": [
+    {
+     "sid": "p29s0",
+     "title": "Labdarúgás: Őrzik az előnyt",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      63.1,
+      287.3,
+      278.5
+     ],
+     "title_bbox": [
+      28.3,
+      63.1,
+      210.0,
+      82.0
+     ],
+     "title_size": 16.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A 25. fordulóban a második helyezett Répcelak szabadnapos volt, s mivel a kőszegiek nem botlottak, visszaállt a kilencpontos különbség a két csapat között. A Uraiújfalu, Bük és Alsóújlak sem tudta megállítani a kőszegieket. 13:1 az utolsó három forduló gólaránya. Csak a bükiek tudtá k egyszer a kőszegiek kapuját bevenni.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Nagy hullámzás jellemző a kőszegfalvi csapat eredményeire. A 18. forduló elhalasztott mérkőzésén csúnya vereségbe futottak bele Vasváron, s Jáktól is kaptak egy négyest hazai pályán. Ugyanakkor Gyöngyösfalut és Nemesbődöt három illetve kétgólos különbséggel győzték le, ráadásul idegenben. Otthon Toronyt gyűrték le két góllal.",
+       "italic": false
+      }
+     ],
+     "chars": 653
+    },
+    {
+     "sid": "p29s1",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      301.9,
+      63.1,
+      549.5,
+      334.9
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "h3",
+       "text": "Eredmények",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Összesített pontverseny: 1. Kőszegi SE 35 pont, 2. Suli Harmónia 34, 3. Vasszécseny 33, 4. GYŐRI AC 29.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "GYERMEK I-II. korcsoport leány 1. Mészáros Lilla (Győri Elektromos), 2. Németh Maja (SZAK-SI), 3. 3. Holler Dorka (Suli Harmónia, Általános Iskola, Egervölgy) és Kupi Emma (Suli Harmónia), fiú 1. Kovács Olivér (KSE), 2. Jánosi Gergely (Vasszécseny), 3. Vadicsku András (Suli Harmónia) és Varga Levente (Suli Harmónia), III-IV. kcs. leány 1. Kozári Julianna (Győri Elektromos), 2. Frigy Noémi (Suli Harmónia), 3. Németh Maja (SZAK-SI) és Mészáros Lilla (Győri Elektromos), fiú 1. Szommer Máté (Agyagosszergény SE), 2. Bancsó Belián (Győri Elektromos), 3. Horváth Zalán (Kapuvár) és 3. Nardai Máté (Suli Harmónia). FELNŐTT női 1. Kozári Julianna (Győri Elektromos), 2. Molnár Kitti (Horvátzsidány), 3. Scheck Dóra (Horvátzsidány) és Nagy Mónika (Nárai), férfi (NB II-ig) 1. Jánosi Mihály (Vasszécseny), 2. Molnár Péter (Horvátzsidány), 3. Farkas János (Nemeskolta) és Raffensperger Máté (Turris SE Sopron), férfi amatőr 1. Szerdahelyi Máté (Vasszécseny), 2. Sárközi Krisztián (Nárai), 3. Szommer Máté (Agyagosszergény SE) és Jánosi Mihály (Vasszécseny), férfi páros 1. Varga József-Molnár Péter, 2. Takács László-Alasz Marcell, 3. Kozári Julianna-Bancsó Belián és Karádi László-Bobay Gábor, női páros 1. Molnár Kitti-Scheck Dóra, 2. Raffensperger Emma-Raffensperger Csenge, 3. Kiss Éva-Niksz Beáta és Holler Dorka-Kupi Emma.",
+       "italic": false
+      }
+     ],
+     "chars": 1442
+    },
+    {
+     "sid": "p29s2",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      34.0,
+      152.3,
+      281.6,
+      212.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Eredmények A KLFC a 22. fordulóban szabadnapos volt. 23. forduló: Kőszegi LFC-Uraiújfalu SE 5:0 (2:0), gólok: Imre (2), Kalucza, Kovács Dominik, Szijártó, 24. forduló: Büki TK-Kőszegi LFC 1:4 (0:2), gólok: Kalucza (4), 25. forduló: Kőszegi LFC-Alsóújlaki SC 4:0 (2:0), gólok: Kalucza (2), Szijártó (2).",
+       "italic": false
+      }
+     ],
+     "chars": 302
+    },
+    {
+     "sid": "p29s3",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      34.0,
+      284.3,
+      281.6,
+      368.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Eredmények 18. forduló (halasztott mérkőzés): Vasvár VSE- Kőszegfalva 6:1 (0:0), gól Pongrácz Ervin, 22. forduló: Gyöngyösfalu SE-Kőszegfalvi SE 2:5 (1:2), gólok: Horváth (2), Juhász, Vajda, Pongrácz Ervin, 23. forduló: Kőszegfalvi SE-Jáki SZSE 0:4 (0:1), 24. forduló: Nemesbőd SE-Kőszegfalvi SE 1:3 (0:0), gólok: Kiss Benedek Miksa (2), Pongrácz Ervin, Kőszegfalvi SE-Torony KSK 2:0 (2:0), gólok: Pongrácz Dániel (2).",
+       "italic": false
+      }
+     ],
+     "chars": 418
+    },
+    {
+     "sid": "p29s4",
+     "title": "DIÁKSPORT",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      296.2,
+      341.6,
+      555.2,
+      626.5
+     ],
+     "title_bbox": [
+      296.2,
+      341.6,
+      374.7,
+      360.5
+     ],
+     "title_size": 16.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A hagyománynak megfelelően a gödöllői reptéren rendezték a Mezeifutó Diákolimpia Országos Döntőjét (április 14.). A verseny igazi futóünnep. A legtöbb korcsoportban 200 fő közeli mezőnyök rajtoltak. 2023 után újra kőszegi éremnek örülhettünk. Medvegy András a Jurisichból meggyőző fölényű megyei sikere után, az országos döntőn is nagyszerűen futott. A győztestől mindöszsze három másodperccel elmaradva, második helyen ért célba. Különleges siker, hogy a Jurisichból három különböző számban is végzett versenyzőjük a TOP 10-ben. A II. korcsoportban a balogos fiúk, a középiskolások közt a Jurisichból az V. korcsoportos fiúk és a VI. korcsoportos lányok végeztek az első tíz között.",
+       "italic": false
+      }
+     ],
+     "chars": 692
+    },
+    {
+     "sid": "p29s5",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      301.9,
+      632.3,
+      549.7,
+      799.0
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Eredmények csapat leány VI. kcs. (3 km) 9. Jurisich 242 helyezési szám (8. Ziskó Liza 12:24,5, 60. Gurisatti Dorka 15:28,0, 68. Deme Róza 15:57,7,108. Bencsik Júlia 20:56,4). fiú II. kcs. (2 km) 8. Balog 340 hsz. (75. Szolyák Dominik 7:54,8. 80. Pápai Máté László 7:56,5, 88. Ruzsics Márk Alexander 7:59,3, 97. Csonka Jan Andris 8:03,0, 197. Mersich Milán 8:36,2). IV. kcs. (3 km) 17. Balog 444 (33. Kósa Kornél 11:27,5, 103. Róth Ármin Ede 12:28,8, 136. Dzőke Domonkos Brúnó 12:49,5. 172. Németh Áron József 13:28,0, 203. Pénzes Dávid 14:16,3). V. kcs. (4 km) 7. Jurisich 241 hsz. (6. Gurisatti Péter 12:45,4, 54. Kovács Levente 14:18,4, 88. Horváth Máté 15:074,6, 93. Varga Zénó Szilárd 15:16,9, 6. Kolozsvári Vilmos Bence 15:50,1). VI. kcs (4 km) 9. Jurisich 300 hsz (2. Medvegy András 12:01,9, 88. Sándor Mihály 16:14,9, 93. Stampf Ármin 16:27,4, 117. Illés Ádám 17:40,6, Paksa Botond Márton 18:03,1)",
+       "italic": false
+      }
+     ],
+     "chars": 904
+    },
+    {
+     "sid": "p29s6",
+     "title": "Karate: „Farkasok” Egerben",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      375.4,
+      287.3,
+      662.5
+     ],
+     "title_bbox": [
+      28.3,
+      375.4,
+      206.9,
+      394.3
+     ],
+     "title_size": 16.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Egerben, a 15. SKDUN Europen Shotokan Karate Championship & Cup (április 16-19.) karate versenyen négy napon át, 22 ország közel 1000 versenyzője lépett tatamira. A rangos mezőnyben a Kőszegi Farkasok Harcművészeti Egyesület hét versenyzője hat érmet gyűjtött. Tollár Nóra és Krisztián-Stipkovits Bence nyakába a legfényesebb érmet akasztották. Tollár Nóra az egyesület elnöke a karate kortalanságát és társadalmi szereptől független közösségépítő szerepét emelte ki. A klub versenyzői a kemény mezőnyben, a nagy kihívásnak nemzetközi versenytapasztalat nélkül is eleget tettek.",
+       "italic": false
+      }
+     ],
+     "chars": 579
+    },
+    {
+     "sid": "p29s7",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      34.0,
+      668.3,
+      281.6,
+      716.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Eredmények aranyérem Tollár Nóra 40+, kumite (küzdelem), Krisztián- Stipkovits Bence 18+, kata (formagyakorlat), ezüstérem Tanka-Tollár Ildikó 31+, kata, Krisztián-Stipkovits Botond 14-17 év kata és Pintér Vivien 16-17 éves, kata, Nagy Péter 31+, kihon ippon kumite.",
+       "italic": false
+      }
+     ],
+     "chars": 265
+    },
+    {
+     "sid": "p29s8",
+     "title": "Asztalitenisz: KŐSZEG VÁR KUPA",
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": false,
+     "bbox": [
+      28.3,
+      726.4,
+      287.3,
+      806.5
+     ],
+     "title_bbox": [
+      28.3,
+      726.4,
+      246.9,
+      745.4
+     ],
+     "title_size": 16.0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Április 25-én, a megye egyik legrangosabb versenyének adott otthont az Árpád-házi Szent Margit iskola. A Kőszegi SE szervezése jól sikerült: 25 csapatból 150 nevezés érkezett. 12 kategóriában, közel 10 órán keresztül zajlottak a küzdelmek. Kiélezett verseny alakult ki az összesített pontverseny megnyeréséért. A Kőszegi SE ért célba, s lett a „Kőszeg Vár Kupa” őrzője.",
+       "italic": false
+      }
+     ],
+     "chars": 369
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      402.4,
+      375.6,
+      558.6,
+      586.6
+     ],
+     "story": 4,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      25.4,
+      396.7,
+      290.1,
+      545.3
+     ],
+     "story": 6,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 30,
+   "section": [
+    "SPORT"
+   ],
+   "stories": [
+    {
+     "sid": "p30s0",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": true,
+     "box": false,
+     "bbox": [
+      42.5,
+      74.5,
+      569.3,
+      806.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Április 20-21-én, a Sugár úti Atlétika centrumban megtartották a középiskolások Atlétika Egyéni és Váltófutó Pályabajnokság Diákolimpia megyei döntőjét. A Jurisich gimnázium idén is népes csapattal vett részt, s az Evangélikus középiskola is indított versenyzőket. A Jurisich diákjai 31 érmet: 11 arany, 7 ezüst és 13 bronzérmet gyűjtöttek. Gurisatti Péter és Medvegy András 3000 méteren, Polgár Száva Adél 100 és 200 méteren, Pápai Nerina 200 és 400 méteren teljesítette az országos döntő meghívási szintjét.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Lengyeltótiban rendezték (április 18-19.) az",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "utánpótlás, serdülő, gyermek korosztályok és a sprint táv Duatlon Magyar Bajnokságot. A fiatalabbak közül, korosztályában Molnár Gergely és Kovács Levente végzett a legjobb hat között. A serdülő csapat a dobogó harmadik fokára állhatott. A Sprint Országos bajnokságban, a felnőttek között, Hóbor Zalán (a PSN Zrt. versenyzőjeként) győzött, minimális különbséggel előzte meg Medvegy Andrást. Az ifjúsági nőknél Hóbor Enikő egy hellyel maradt le a dobogóról. A MIX-váltó 5. lett, Hóbor Enikő, Medvegy András, Hóbor Lehel, Medvegy Nóra összeállításban.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Április 15-én, az Illés Akadémia pályáin megtartották a McDonalds Fair Play Cup, amatőr labdarúgó bajnokság tavaszi, megyei körét. A Jurisich megnyerte a tavaszi fordulót is, s az összesített eredmény alapján csoportelsőként jutott a megyei döntőbe. Az Evangélikus középiskola a másik csoportban negyedik helyen végzett. A Jurisich lány csapata megnyerte a tavaszi fordulót. Holtversenyben a sárvári Turisztikai csapatával csoportelsőként lett döntős.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A megyei fináléban a Jurisich mindkét csapata második helyen végzett. A fiúknál minden mérkőzés egy góllal dőlt el. A JMG egyszer vereséget szenvedett. A lányok kétszer is kikaptak ugyan, de mindkét alkalommal csak büntetőrúgásokkal.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A III. korcsoportban (5-6. osztályosok) is lezajlott a foci Diákolimpia körzeti fordulója. A három kőszegi iskola lépett pályára. Az Árpád-házi és a Balog iskola között dőlt el az első hely sorsa. A két csapat nem bírt egymással. Az döntött, hogy a harmadik csapat ellen ki, milyen eredményt ért el. Ebben egyetlen góllal az Árpád-házi bizonyult jobbnak, s jutott tovább. A II. korcsoport megyei döntőjén (Körmend, április 14.) a Balog iskola magabiztosan jutott az elődöntőbe, ahol 0:0 után a szombathelyi Zrínyi büntetőkkel győzte le. A rendes játékidő a bronzmeccsen is 0:0-ra végződött a csoportban korábban legyőzött vasváriakkal. De a büntetők itt a kőszegiek javára dőltek el, így a Balog iskola csapata a megyei dobogó harmadik fokára állhatott.",
+       "italic": false
+      }
+     ],
+     "chars": 2551
+    },
+    {
+     "sid": "p30s1",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      48.2,
+      698.3,
+      295.8,
+      806.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Eredmények UP duatlon Újonc 2 (1-4-0,5 km) fiú 6. Molnár Gergely 16:0317. Gyermek (2-8-1) fiú 7. Gurisatti Ádám 27:08, Serdülő (3-12-15) fiú 6. Kovács Levente 335:48, 10. Molnár Péter 36:49, 35. Vincze Márton 41:06. Csapat Serdülő 3. Kőszegi Triatlon (Kovács Levente, Molnár Péter, Vincze Márton) 1:53:44. Sprint táv (5-20-2,5 km) Női ifjúsági 4. Hóbor Enikő 1:04:28, 17. Jelencsics Alíz 1:10:09, Női felnőtt 8. Medvegy Nóra 1:05:25, Férfi junior 12. Hóbor Álmos 56:11, Férfi felnőtt 1. Hóbor Zalán (PSN Zrt.) 51:36. 2. Medvegy András 51:39, 8. Hóbor Lehel 54:39. Mix-váltó Felnőtt 5. Kőszegi Triatlon",
+       "italic": false
+      }
+     ],
+     "chars": 604
+    },
+    {
+     "sid": "p30s2",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      48.2,
+      263.3,
+      295.8,
+      491.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Kőszegi érmesek (Vastagítva a meghívási szintet teljesítők.) V. korcsoport fiú 1500 m 2. Varga Zénó Szilárd 4:57,3, 3000 m 1. Gurisatti Péter 9:38,9, 3. Varga Zénó Szilárd 10:48,8, távolugrás 1. Gombkötő Hendrich Zalán 513, gerelyhajítás 1. Kolozsvári Vilmos Bence 32,04, 3. Gadányi Miklós 26,00, lány 400 m 1. Kovács Orsolya 73,5, 1500 m 3. Bariska Fruzsina 5:59,7, távolugrás 1. Kövi Leila 468, 3. Kis Luca 408, diszkoszvetés 3. Lendvai Zsaklin Janita 18,51, VI. korcsoport fiú 200 m 3. Sándor Barnabás 24,5, 3000 m 1. Medvegy András 8:55,3, 4x400 m 2. Jurisich (Sándor Mihály, Cseppán Zsombor Alex, Juhász Zoltán, Sándor Barnabás) 3:55,3, távolugrás 1. Kozma Patrik 555, 3. Kozma Gábor 540, súlylökés 3. Nagy Bálint 12,22, gerelyhajítás 1. Nagy Gábor 36,68, 2. Cseppán Zsombor Alex 34,23, diszkoszvetés 3. Müller Péter 23,75, lány 100 2. Polgár Száva Adél 12,9 1. ief 2. 13,2), 200 m 1. Pápai Nerina 25,2, 3. Polgár Száva Adél 27,5, 400 m 1. Pápai Nerina 58,9, 800 m 2. Deme Róza 2:50,5, 1500 m 1. Ziskó Liza 5:34,1, 4x400 1. Jurisich gimnázium (Polgár Száva Adél, Kövi Leila, Kovács Orsolya, Pápai Nerina) 4:42,5, távolugrás 3. Kovács Fanni Mária 438, súlylökés 2. Kovács Fanni Mária 828, gerelyhajítás 3. Nyul Evelin 22,37, diszkoszvetés 1. Tőke Anna Erzsébet 20,07.",
+       "italic": false
+      }
+     ],
+     "chars": 1273
+    },
+    {
+     "sid": "p30s3",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      316.1,
+      380.3,
+      563.7,
+      440.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Összesített tabella fiú „A” csoport 1. Jurisich 8 mérkőzés -7 győzelem -1 győzelem büntetőkkel -21:3-as gólarány -23 pont. „B” csoport 4. Evangélikus -3 győzelem- 1 vereség büntetőkkel – 4 vereség-13:18-as gólarány -10 pont, leány „B” csoport 1. Jurisich 6 mérkőzés -5 győzelem- 1 vereség -14:6-os gólarány -15 pont.",
+       "italic": false
+      }
+     ],
+     "chars": 317
+    },
+    {
+     "sid": "p30s4",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      316.1,
+      692.3,
+      563.7,
+      728.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Eredmények (III. korcsoport) Mérkőzések: Árpád-házi-Balog 2:2, Árpád-házi-Bersek 5:1, Balog-Bersek 4:1. Tabella:1. Árpád-házi 4 pont (7:3), 2. Balog 4 pont (6:3), 3. Bersek 0 pont (2:9),",
+       "italic": false
+      }
+     ],
+     "chars": 187
+    },
+    {
+     "sid": "p30s5",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      316.1,
+      57.6,
+      561.3,
+      81.6
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Klub 1:37:29 (Hóbor Enikő 25:28, Medvegy András 21:37, Hóbor Lehel 23:42, Medvegy Nóra, 26:44).",
+       "italic": false
+      }
+     ],
+     "chars": 96
+    },
+    {
+     "sid": "p30s6",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      316.1,
+      512.3,
+      563.7,
+      596.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Eredmények fiú Mérkőzések: Jurisich- HBSZ (Horvát Boldizsár) 2:1, -Gépipari 1:0, -KDG (Kanizsai) 1:2. Tabella: 2. Jurisich 3 mérkőzés -2 győzelem- 1 vereség -4:3-as gólarány -6 pont. leány Mérkőzések Jurisich Kereskedelmi 0:0 (büntetők: 0:1), -„Big Lui” 1:0, -Turisztikai 1:1 (büntetők 3:4). Tabella: 2. Jurisich 3 mérkőzés -1 győzelem- 2 vereség büntetőkkel -2:1-as gólarány -5 pont. Csapatvezetők: Gordos Kristóf és Tóth Botond.",
+       "italic": false
+      }
+     ],
+     "chars": 431
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      39.6,
+      72.5,
+      204.0,
+      212.9
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      39.6,
+      517.9,
+      141.3,
+      697.4
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      307.4,
+      117.0,
+      572.2,
+      285.0
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 31,
+   "section": [
+    "SPORT"
+   ],
+   "stories": [
+    {
+     "sid": "p31s0",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": true,
+     "box": false,
+     "bbox": [
+      28.3,
+      278.3,
+      555.2,
+      746.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A IV. korcsoportos döntőn (Szentgotthárd, április 16.) a Bersek iskola képviselte Kőszeget. Csoportjukból ők is továbbjutottak. A rájátszásban 4. helyezést értek el. A csapat tagjai: Pántos Deján, Ohanagorom Samuel, Katona Gergő, Prím Alex, Molnár Márkusz, Kincses Levente. Felkészítő: Kratochwill Zoltán.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Sűrű a programja a Kőszegi SE birkózóinak:",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Az U17-es korosztálynak szabadfogású válogat óversenyt rendeztek Budapesten a Vasasban (március 7.). Több mint 130 birkózó mérkőzött. Felvidéki, moldovai, osztrák, lett és szlovák sportolók is szőnyegre léptek. Eredmények 71 kg 11. Tornai Ábel, 14. Tóth Ábel. Pécsen (március 21.) , a Pécsi Egyetemi Atlétikai Club és a Dél-Zselic SE közös szervezésében területi bajnokságot rendeztek az U13-as korosztály részére. A fiatalabbaknak meghívásos gálát rendeztek. A két versenyt egy helyszínen, egy időben a PEAC kézilabdacsarnokában tartották.",
+       "italic": false
+      },
+      {
+       "type": "sig",
+       "text": "Népszerű verseny a Tollaslabda",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Diákolimpia. Az országban 1527-en neveztek. A legjobbak versenyének, a Tollaslabda Diákolimpia országos döntőjének a ceglédi Gál József Sportcsarnok adott otthont. 325-en jutottak be a fináléba, köztük 16 vasi, 3 kőszegi. Varga Marcell a Jurisich gimnáziumból 8-dikként lépett tovább, de a rájátszásban hibátlanul menetelt s lett a VI. korcsoport bajnoka.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "Március 26-28-án, a XXXVI. Tallin Openen öt kőszegiv ersenyző vett részt. Több mint 3300 versenyző nevezett. Szigorú csatákat vívtak. Legjobban Tóth Ábel szerepelt. 10. helyezést ért el. A többiek, Tornai Ábel, Róth Ármin és Kóczán Kolos szoros mérkőzéseket vívtak. Pusztai Szilveszternek egy győzelmet is sikerült aratnia, de utána szoros mérkőzésen vereséget szenvedett, így a 18. helyezést szerezte meg. A kőszegi versenyzők megtapasztalhatták a nemzetközi mezőny erősségét, s számos tapasztalattal lettek gazdagabbak. Előző számunkban beszámoltunk az Árpád-házi iskola korcsolyázóinak szerepléséről. A március 17-28-dikai Diákolimpián a Balog iskola is népes csapattal -8 fiú 7 lány- vett részt. Sikerüket 3 arany, 3 ezüst, 3 bronzérem mutatja.",
+       "italic": false
+      }
+     ],
+     "chars": 2023
+    },
+    {
+     "sid": "p31s1",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      34.0,
+      566.3,
+      281.6,
+      602.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A kőszegiek eredményei: III. korcsoport leány 17. Őri Anna (Árpádházi), III. korcsoport fiú 33. Kocsis Nimród (Árpád-házi), VI. kcs. fiú 1. Varga Marcell (Jurisich)",
+       "italic": false
+      }
+     ],
+     "chars": 165
+    },
+    {
+     "sid": "p31s2",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      34.0,
+      752.3,
+      281.6,
+      800.5
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Eredmények Területi bajnokság U13 38 kg 3. Polgár Ádin, 46 kg 3. Nagy Róbert. Gyermek gála U9 24 kg 3. hely Horváth Lénárd, 32 kg 1. Kóczán Kende, 50 kg 3. Mersich Gergely, 59 kg 1. Bella Máté. U10 26 kg. 3.Révész Levente, 29 kg 1. Kappel Ottó, 35 kg 1. Lágler Áron.",
+       "italic": false
+      }
+     ],
+     "chars": 267
+    },
+    {
+     "sid": "p31s3",
+     "title": null,
+     "kicker": null,
+     "deck": null,
+     "orphan": false,
+     "box": true,
+     "bbox": [
+      34.0,
+      57.4,
+      281.6,
+      141.6
+     ],
+     "title_bbox": null,
+     "title_size": 0,
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Eredmények (II. korcsoport) Csoportkör: Balog- Vasvár 3:1, -Celldömölk 5:0, -Rum 5:0, Elődöntő: Balog-Zrínyi (Szombathely) 0:0 (büntetők 1:3, Bronzmérkőzés: Balog-Vasvár 0:0 (büntetők: 1:0), Árpád-házi-Bersek 5:1, Balog-Bersek 4:1. Végeredmény: 3. Balog iskola (csapattagok: Abért Dávid, Balázs Ármin, Gálos Nimród, Korényi Rudolf, Pápai Máté, Ruzsics Márk, Schrott Balázs, Szolyák Dominik). Csapatvezető: Varga Benjamin.",
+       "italic": false
+      }
+     ],
+     "chars": 423
+    }
+   ],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      25.4,
+      144.0,
+      290.1,
+      305.3
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      26.1,
+      403.4,
+      159.8,
+      557.2
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      293.3,
+      366.8,
+      558.0,
+      557.1
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 3,
+     "bbox": [
+      293.3,
+      53.7,
+      558.0,
+      273.1
+     ],
+     "story": 0,
+     "dist": 5.2,
+     "overlay_chars": 0,
+     "ad_guess": false
+    },
+    {
+     "idx": 4,
+     "bbox": [
+      296.2,
+      631.7,
+      552.8,
+      803.0
+     ],
+     "story": 0,
+     "dist": 0.0,
+     "overlay_chars": 0,
+     "ad_guess": false
+    }
+   ]
+  },
+  {
+   "page": 32,
+   "section": [
+    "MOZAIK",
+    "MOZAIK",
+    "MOZAIK"
+   ],
+   "stories": [],
+   "images": [
+    {
+     "idx": 0,
+     "bbox": [
+      42.5,
+      436.7,
+      566.9,
+      806.1
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 1,
+     "bbox": [
+      42.5,
+      56.7,
+      299.1,
+      428.7
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    },
+    {
+     "idx": 2,
+     "bbox": [
+      310.4,
+      56.7,
+      566.9,
+      428.7
+     ],
+     "story": null,
+     "dist": 1000000000.0,
+     "overlay_chars": 0,
+     "ad_guess": true
+    }
+   ]
+  }
+ ]
+}

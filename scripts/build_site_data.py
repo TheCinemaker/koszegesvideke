@@ -114,7 +114,7 @@ def _is_name_line(t):
         return words[0].lower() in ROLE_WORDS - {"és", "a", "az"}
     caps = sum(1 for w in words if w[:1].isupper())
     roles = sum(1 for w in words if w.lower() in ROLE_WORDS)
-    return caps >= 2 and caps + roles == len(words)
+    return caps + roles == len(words) and (caps >= 2 or (caps >= 1 and roles >= 1))
 
 
 def split_signature(blocks):
@@ -296,7 +296,7 @@ def auto_story_fixes(auto):
                 if b is a or not b.get("title") or not b.get("title_bbox"):
                     continue
                 bb = b["title_bbox"]
-                if -4 <= bb[1] - ab[3] <= 45 and _xover(ab, bb) > 0:
+                if -12 <= bb[1] - ab[3] <= 45 and _xover(ab, bb) > 0:
                     if abs((b.get("title_size") or 0) - (a.get("title_size") or 0)) < 2:
                         fixes[a["sid"]] = {"title": f"{a['title'].strip()} {b['title'].strip()}", "keep": True}
                     else:
@@ -424,7 +424,7 @@ def build_articles(issues, with_images=True):
                 img_refs = o["images"]
             else:
                 img_refs = []
-                for pnum in [pg["page"]] + [int(x[1:3]) for x in merges.get(sid, [])]:
+                for pnum in sorted({pg["page"], *[int(x[1:3]) for x in merges.get(sid, [])]}):
                     pgrec = auto["pages"][pnum - 1]
                     for im in pgrec["images"]:
                         if im["idx"] in ads.get(pnum, set()) or im["ad_guess"]:
@@ -565,4 +565,8 @@ def main():
         write_json(DATA_OUT / "searchManifest.json", manifest)
     print(f"{len(issue_list)} lapszám, {len(articles)} cikk (2026)")
     for stem in sorted(counts):
-        pr
+        print(f"  {stem}: {counts[stem]} cikk")
+
+
+if __name__ == "__main__":
+    main()
