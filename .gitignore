@@ -1,0 +1,28 @@
+# Environment secrets
+.env
+.env.local
+*.env
+
+# Large raw image crops & references
+public/images/2026/
+references/
+koszeg_es_videke_archive/
+
+# Dependencies & Build
+node_modules
+dist
+dist-ssr
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.sw?

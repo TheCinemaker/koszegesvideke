@@ -1,0 +1,34 @@
+[
+ {
+  "slug": "varoshaza",
+  "name": "Városháza"
+ },
+ {
+  "slug": "aktualis",
+  "name": "Aktuális"
+ },
+ {
+  "slug": "videk",
+  "name": "Vidék"
+ },
+ {
+  "slug": "kultura",
+  "name": "Kultúra"
+ },
+ {
+  "slug": "sport",
+  "name": "Sport"
+ },
+ {
+  "slug": "nemzetisegek",
+  "name": "Nemzetiségek"
+ },
+ {
+  "slug": "hitelet",
+  "name": "Hitélet"
+ },
+ {
+  "slug": "kulonfelek",
+  "name": "Különfélék"
+ }
+]
