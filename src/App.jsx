@@ -25,9 +25,13 @@ const NotFound = () => (
   </div>
 );
 
+import { ScrollToTop } from './components/ScrollToTop';
+import { PdfModal } from './components/PdfModal';
+
 export default function App() {
   const route = useRoute();
   useDocumentMeta(route);
+  const [pdfModal, setPdfModal] = React.useState(null);
 
   // új oldalra lépéskor az oldal tetejére ugrunk
   const routeKey = `${route.name}/${route.param}/${route.query.q || ''}/${route.query.ev || ''}`;
@@ -35,6 +39,33 @@ export default function App() {
     // új oldalra lépéskor azonnal a tetejére (a sima görgetés csak az oldalon belüli mozgásra vonatkozik)
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [routeKey]);
+
+  // Globális PDF kattintás-elfogó és egyedi esemény-figyelő (Modalban nyitja meg a PDF lapszámot)
+  useEffect(() => {
+    const handleGlobalClick = (e) => {
+      const a = e.target.closest('a');
+      if (!a) return;
+      const hrefAttr = a.getAttribute('href');
+      if (hrefAttr && (hrefAttr.includes('.pdf') || hrefAttr.includes('r2.dev') || hrefAttr.includes('r2.cloudflarestorage.com'))) {
+        e.preventDefault();
+        const title = a.getAttribute('data-pdf-title') || a.getAttribute('aria-label') || a.getAttribute('alt') || 'Kőszeg és Vidéke PDF Lapszám';
+        setPdfModal({ url: hrefAttr, title });
+      }
+    };
+
+    const handleCustomEvent = (e) => {
+      if (e.detail?.url) {
+        setPdfModal({ url: e.detail.url, title: e.detail.title || 'Kőszeg és Vidéke PDF Lapszám' });
+      }
+    };
+
+    window.addEventListener('click', handleGlobalClick, true);
+    window.addEventListener('open-pdf-modal', handleCustomEvent);
+    return () => {
+      window.removeEventListener('click', handleGlobalClick, true);
+      window.removeEventListener('open-pdf-modal', handleCustomEvent);
+    };
+  }, []);
 
   if (route.name === 'admin') {
     return (
@@ -83,7 +114,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
       <button
         type="button"
         onClick={() => document.getElementById('main')?.focus()}
@@ -95,6 +126,14 @@ export default function App() {
       <main id="main" tabIndex={-1} className="flex-1 focus:outline-none">{page}</main>
       <Footer />
       <MobileNav key={routeKey} route={route} />
+      <ScrollToTop />
+      {pdfModal && (
+        <PdfModal
+          pdfUrl={pdfModal.url}
+          title={pdfModal.title}
+          onClose={() => setPdfModal(null)}
+        />
+      )}
     </div>
   );
 }
