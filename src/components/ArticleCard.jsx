@@ -2,12 +2,21 @@ import React from 'react';
 import { href } from '../lib/router';
 import { sectionName, formatDate } from '../lib/content';
 
-const Photo = ({ image, ratio = '3 / 2', eager = false }) =>
-  image ? (
+// A kártya képkerete fix arányú. A nagyon széles vagy nagyon magas képek (plakát, szalagcím) egészben
+// látszanak, a többi kitölti a keretet; álló fotónál a vágás felülre igazodik, hogy az arcok megmaradjanak.
+const Photo = ({ image, ratio = '3 / 2', eager = false }) => {
+  if (!image) return null;
+  const [rw, rh] = ratio.split('/').map(Number);
+  const frame = rw / rh;
+  const img = image.w && image.h ? image.w / image.h : frame;
+  const contain = img / frame > 1.9 || frame / img > 2.1;
+  const style = contain ? { objectFit: 'contain' } : img < frame * 0.85 ? { objectPosition: 'center 30%' } : undefined;
+  return (
     <div className="img-frame card-photo" style={{ aspectRatio: ratio }}>
-      <img src={image.src} alt={image.caption || ''} loading={eager ? 'eager' : 'lazy'} decoding="async" />
+      <img src={image.src} alt={image.caption || ''} loading={eager ? 'eager' : 'lazy'} decoding="async" style={style} />
     </div>
-  ) : null;
+  );
+};
 
 const Label = ({ article, show }) =>
   show ? <p className="section-label mb-1.5">{article.kicker && article.kicker.length < 40 ? article.kicker : sectionName(article.section)}</p> : null;

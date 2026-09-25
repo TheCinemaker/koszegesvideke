@@ -170,6 +170,9 @@ def split_signature(blocks):
             last["text"] = t[: m3.start()].strip()
             continue
         break
+    if author:
+        # egybetűs maradvány a név előtt ("y Varsányi Áron" -> "Varsányi Áron")
+        author = re.sub(r"^(?:[a-záéíóöőúüű]\s+)+", "", author.strip()).strip() or None
     # any remaining signature-type block inside the text is shown as a normal paragraph
     for b in blocks:
         if b["type"] == "sig":
@@ -209,12 +212,44 @@ def pick_section(page_rec, title=""):
     return None
 
 
+def trim_frame(img, max_share=0.18):
+    """
+    A nyomtatott képkeret (fehér szegély és szürke árnyék) levágása a kép széleiről.
+    Keretnek számít az a sor/oszlop, amely világos (átlag > 200) és szinte egyszínű (kis szórás),
+    így a valódi kép (akár világos égbolt is) megmarad, mert az nem egyenletes.
+    """
+    from PIL import ImageOps, ImageStat
+    gray = ImageOps.grayscale(img)
+    w, h = gray.size
+
+    def is_frame(box):
+        st = ImageStat.Stat(gray.crop(box))
+        return st.mean[0] > 200 and st.stddev[0] < 9
+
+    top = 0
+    while top < h * max_share and is_frame((0, top, w, top + 1)):
+        top += 1
+    bottom = h
+    while bottom > h * (1 - max_share) and is_frame((0, bottom - 1, w, bottom)):
+        bottom -= 1
+    left = 0
+    while left < w * max_share and is_frame((left, top, left + 1, bottom)):
+        left += 1
+    right = w
+    while right > w * (1 - max_share) and is_frame((right - 1, top, right, bottom)):
+        right -= 1
+    if (left, top, right, bottom) == (0, 0, w, h):
+        return img
+    m = max(1, round(min(w, h) * 0.004))  # kis ráhagyás a keret/árnyék elmosódott széle miatt
+    return img.crop((min(left + m, w // 2), min(top + m, h // 2), max(right - m, w // 2), max(bottom - m, h // 2)))
+
+
 def render_clip(doc, page_no, bbox, out_path, max_w=1400):
     page = doc[page_no - 1]
     r = pymupdf.Rect(bbox) & page.rect
     zoom = min(4.0, max(2.0, max_w / max(r.width, 1)))
     pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=r)
-    img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    img = trim_frame(Image.frombytes("RGB", (pix.width, pix.height), pix.samples))
     if img.width > max_w:
         img = img.resize((max_w, round(img.height * max_w / img.width)), Image.LANCZOS)
     out_path.parent.mkdir(parents=True, exist_ok=True)

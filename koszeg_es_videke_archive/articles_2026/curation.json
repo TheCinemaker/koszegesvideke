@@ -121,10 +121,19 @@
    },
    "p27s0": {
     "author": "Tóth Flóra",
-    "deck": "A város és a kőszegi bor szolgálatában. Két év után átadja koronáját. Kinek?"
+    "deck": "A város és a kőszegi bor szolgálatában. Két év után átadja koronáját. Kinek?",
+    "images": [
+     "p27:0",
+     "p27:2",
+     "p28:1"
+    ],
+    "captions": {
+     "p28:1": "Borkirálynő 2026 – a Kőszegi Borbarát Hölgyek Egyesülete várja a jelentkezőket"
+    }
    },
    "p28s1": {
-    "deck": "Szeptember 19–20."
+    "deck": "Szeptember 19–20.",
+    "images": []
    },
    "p28s3": {
     "prefix_first": "„Lépjünk együtt a látható demenciáért” "
@@ -203,6 +212,13 @@
    "p11s0": {
     "weight": 5
    }
+  }
+ },
+ "kev_20260316_166": {
+  "ads": {
+   "p03": [
+    0
+   ]
   }
  }
 }

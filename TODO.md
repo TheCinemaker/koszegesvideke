@@ -15,6 +15,10 @@ Kézi javítások: `koszeg_es_videke_archive/articles_2026/curation.json`
       Ellenőrizni: `render_clip()` nagyítása és a kártyák képarányai (`ArticleCard.jsx`: 16/10, 3/2, 4/3, 1/1),
       csíkokra vágott kollázsoknál kézi kivágás (`images: [{page, bbox}]`)
 
+Javítva (09-25, felhasználói példák alapján): Sarjadó vetés (hirdetés volt a kép), Nyitott Porta Napok
+(a borkirálynő-felhívás a Tóth Flóra-cikkhez került), Ostromnapok felvezető (plakát egészben látszik);
+általánosan: a nyomtatott képkeret és árnyék automatikusan levágódik, a plakátszerű képek nem vágódnak le.
+
 ## 0.5 SEO és Google (fontos: a Google azonnal találja meg)
 
 - [x] **Útvonalak `#/cikk/...` helyett valódi URL-ekre (`/cikk/...`)** – a `#` utáni részt a Google NEM
