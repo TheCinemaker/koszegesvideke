@@ -9,6 +9,7 @@ import { IssuePage } from './pages/IssuePage';
 import { ArchivePage } from './pages/ArchivePage';
 import { SearchPage } from './pages/SearchPage';
 import { useRoute, href } from './lib/router';
+import { useDocumentMeta } from './lib/useDocumentMeta';
 
 // A szerkesztőségi felület külön csomagban töltődik be, csak ha megnyitják.
 const AdsPage = lazy(() => import('./pages/AdsPage').then((m) => ({ default: m.AdsPage })));
@@ -23,6 +24,7 @@ const NotFound = () => (
 
 export default function App() {
   const route = useRoute();
+  useDocumentMeta(route);
 
   // új oldalra lépéskor az oldal tetejére ugrunk
   const routeKey = `${route.name}/${route.param}/${route.query.q || ''}/${route.query.ev || ''}`;

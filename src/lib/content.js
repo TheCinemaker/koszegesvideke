@@ -64,3 +64,9 @@ export function loadArticleBody(id) {
   }
   return bodyCache.get(id);
 }
+
+// Előrendereléskor (és az előrenderelt oldalba ágyazva) a cikk szövege globálisan elérhető.
+export function getPreloadedBody(id) {
+  const pre = typeof globalThis !== 'undefined' ? globalThis.__KEV_PRELOAD__ : null;
+  return pre && pre.id === id ? pre.blocks : null;
+}

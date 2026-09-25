@@ -4,7 +4,7 @@ import { href, navigate } from '../lib/router';
 import { sections, latestIssue, issueTitle } from '../lib/content';
 import { useHeaderOffset } from '../lib/useScrollDirection';
 
-export const todayText = () => {
+const todayText = () => {
   const s = new Date().toLocaleDateString('hu-HU', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   return s.charAt(0).toUpperCase() + s.slice(1);
 };

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FileText, Link2 } from 'lucide-react';
 import { ArticleCard } from '../components/ArticleCard';
 import { href } from '../lib/router';
-import { getArticle, getIssue, sectionName, formatDate, issueTitle, pdfLink, articlesOfSection, articlesOfIssue, loadArticleBody } from '../lib/content';
+import { getArticle, getIssue, sectionName, formatDate, issueTitle, pdfLink, articlesOfSection, articlesOfIssue, loadArticleBody, getPreloadedBody } from '../lib/content';
 
 const Figure = ({ image, eager }) => (
   <figure>
@@ -52,11 +52,12 @@ function interleave(blocks, images) {
 
 export const ArticlePage = ({ id }) => {
   const article = getArticle(id);
-  const [blocks, setBlocks] = useState(null);
+  // előrenderelt oldalon a szöveg már az oldalba ágyazva érkezik (nincs külön letöltés)
+  const [blocks, setBlocks] = useState(() => (article ? getPreloadedBody(article.id) : null));
   const [loadError, setLoadError] = useState(false);
 
   useEffect(() => {
-    if (!article) return undefined;
+    if (!article || blocks) return undefined;
     let alive = true;
     loadArticleBody(article.id)
       .then((b) => alive && setBlocks(b))
@@ -64,14 +65,8 @@ export const ArticlePage = ({ id }) => {
     return () => {
       alive = false;
     };
-  }, [article]);
+  }, [article, blocks]);
 
-  useEffect(() => {
-    if (article) document.title = `${article.title} – Kőszeg és Vidéke`;
-    return () => {
-      document.title = 'Kőszeg és Vidéke – Kőszeg város és környéke havilapja';
-    };
-  }, [article]);
 
   if (!article) {
     return (

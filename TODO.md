@@ -17,23 +17,26 @@ Kézi javítások: `koszeg_es_videke_archive/articles_2026/curation.json`
 
 ## 0.5 SEO és Google (fontos: a Google azonnal találja meg)
 
-- [ ] **Útvonalak `#/cikk/...` helyett valódi URL-ekre (`/cikk/...`)** – a `#` utáni részt a Google NEM
+- [x] **Útvonalak `#/cikk/...` helyett valódi URL-ekre (`/cikk/...`)** – a `#` utáni részt a Google NEM
       indexeli külön oldalként, így most egyetlen cikk sem kereshető. `src/lib/router.js` → History API,
       a tárhelyen minden útvonal az `index.html`-re essen (rewrite)
-- [ ] **Előrenderelés (prerender/SSR)**: minden cikkoldal kész HTML-ként legyen kiszolgálva, ne csak JS-ből
+- [x] **Előrenderelés (prerender/SSR)** – `scripts/prerender.mjs`, `npm run build` futtatja;: minden cikkoldal kész HTML-ként legyen kiszolgálva, ne csak JS-ből
       (pl. `vite-plugin-ssr`/Vike, vagy build utáni statikus generálás a `scripts/smoke-render.mjs` alapján)
-- [ ] oldalanként saját `<title>`, `meta description`, kanonikus URL (`<link rel="canonical">`)
-- [ ] Open Graph + Twitter kártya (cím, bevezető, főkép) – Facebook-megosztáshoz is
-- [ ] strukturált adat (JSON-LD): `NewsArticle` (cím, dátum, szerző, kép), `NewsMediaOrganization`,
+- [x] oldalanként saját `<title>`, `meta description`, kanonikus URL (`<link rel="canonical">`)
+- [x] Open Graph + Twitter kártya (cím, bevezető, főkép) – Facebook-megosztáshoz is
+- [x] strukturált adat (JSON-LD): `NewsArticle` (cím, dátum, szerző, kép), `NewsMediaOrganization`,
       `BreadcrumbList`, a címlapon `WebSite` + `SearchAction` (Google keresőmező)
-- [ ] `sitemap.xml` (minden cikk, rovat, lapszám) + `news-sitemap.xml` (Google News, utolsó 2 nap) – a
+- [x] `sitemap.xml` (minden cikk, rovat, lapszám) + `news-sitemap.xml` (Google News, utolsó 2 nap) – a
       `build_site_data.py` generálja
-- [ ] `robots.txt` a sitemap hivatkozással
+- [x] `robots.txt` a sitemap hivatkozással
+- [ ] **Cloudflare Pages környezeti változó: `VITE_SITE_URL`** = a végleges domain (pl. `https://koszegesvideke.hu`),
+      e nélkül a kanonikus URL-ek, a sitemap és az RSS a `https://koszegesvideke.pages.dev` címre mutatnak
+- [ ] `public/og-default.jpg` (1200×630) – alapértelmezett megosztási kép (Gemini)
 - [ ] Google Search Console: tulajdon igazolása, sitemap beküldése; Google News Publisher Center
 - [ ] Google Analytics 4 (vagy adatvédelmileg barátságosabb alternatíva) + süti-tájékoztató (GDPR)
 - [ ] képek: `alt` szövegek, `width`/`height`, WebP/AVIF változat, `srcset` a mobilhoz
 - [ ] Core Web Vitals / PageSpeed Insights mobilon: LCP, CLS mérése és javítása
-- [ ] RSS feed (`/rss.xml`) a friss cikkekhez
+- [x] RSS feed (`/rss.xml`) a friss cikkekhez
 - [ ] PWA: `manifest.webmanifest`, telepíthető app, offline olvasás (a favicont/ikonokat a Gemini készíti)
 
 ## 1. Tartalom – kézi ellenőrzés (legfontosabb)

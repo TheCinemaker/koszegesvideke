@@ -2,15 +2,18 @@
 // Használat: node scripts/smoke-render.mjs
 import { createServer } from 'vite';
 
-const routes = ['#/', '#/rovat/sport', '#/rovat/nemzetisegek', '#/archivum', '#/archivum/2015', '#/kereses?q=jurisics'];
+const routes = ['/', '/rovat/sport', '/rovat/nemzetisegek', '/archivum', '/archivum/2015', '/kereses?q=jurisics', '/hirdetesek'];
 
 globalThis.window = {
-  location: { hash: '#/' },
+  location: { pathname: '/', search: '', hash: '' },
+  history: { replaceState() {}, pushState() {} },
+  innerHeight: 800,
+  scrollY: 0,
   addEventListener() {},
   removeEventListener() {},
   scrollTo() {},
 };
-globalThis.document = { title: '', getElementById: () => null };
+globalThis.document = { title: '', getElementById: () => null, head: { querySelector: () => null } };
 globalThis.localStorage = { getItem: () => null, setItem() {} };
 
 const server = await createServer({ server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' });
@@ -20,10 +23,12 @@ try {
   const React = (await import('react')).default;
   const App = (await server.ssrLoadModule('/src/App.jsx')).default;
   const content = await server.ssrLoadModule('/src/lib/content.js');
-  const extra = content.articles.slice(0, 40).map((a) => `#/cikk/${a.id}`);
-  extra.push(`#/lapszam/${content.latestIssue.id}`);
+  const extra = content.articles.slice(0, 40).map((a) => `/cikk/${a.id}`);
+  extra.push(`/lapszam/${content.latestIssue.id}`);
   for (const r of [...routes, ...extra]) {
-    window.location.hash = r;
+    const [pathname, search = ''] = r.split('?');
+    window.location.pathname = pathname;
+    window.location.search = search ? `?${search}` : '';
     try {
       const html = renderToString(React.createElement(App));
       if (html.length < 500) throw new Error('túl rövid kimenet');
