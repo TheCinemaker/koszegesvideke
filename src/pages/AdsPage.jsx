@@ -1,43 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import { Phone, Mail, MapPin, ExternalLink, Megaphone } from 'lucide-react';
+import { Phone, Mail, Megaphone } from 'lucide-react';
 import { getRunningAds, AD_CONTACT } from '../lib/ads';
+import PRINT_ADS from '../data/printAds.json';
 
-const AdCard = ({ ad }) => {
-  const Wrapper = ad.link_url ? 'a' : 'div';
-  const wrapperProps = ad.link_url ? { href: ad.link_url, target: '_blank', rel: 'noopener noreferrer sponsored' } : {};
-  return (
-    <article className="border border-[var(--color-line)] rounded-2xl overflow-hidden bg-white flex flex-col">
-      <Wrapper {...wrapperProps} className="block">
-        {ad.image_url && (
-          <div className="bg-[#f4f4f4]">
-            <img src={ad.image_url} alt={`${ad.advertiser} hirdetése`} loading="lazy" className="w-full h-auto" />
-          </div>
-        )}
-      </Wrapper>
-      <div className="p-4 sm:p-5 flex flex-col gap-2 flex-1">
-        {ad.category && <p className="section-label">{ad.category}</p>}
-        <h2 className="headline text-[20px]">{ad.title}</h2>
-        <p className="text-[15px] font-semibold text-[var(--color-ink-2)]">{ad.advertiser}</p>
-        {ad.body && <p className="text-[16px] leading-relaxed text-[var(--color-ink-2)] justify">{ad.body}</p>}
-        <div className="mt-auto pt-2 flex flex-wrap gap-2">
-          {ad.phone && (
-            <a className="btn text-[14px] py-2" href={`tel:${ad.phone.replace(/[^\d+]/g, '')}`}>
-              <Phone className="w-4 h-4" aria-hidden="true" /> {ad.phone}
-            </a>
-          )}
-          {ad.link_url && (
-            <a className="btn text-[14px] py-2" href={ad.link_url} target="_blank" rel="noopener noreferrer sponsored">
-              <ExternalLink className="w-4 h-4" aria-hidden="true" /> Weboldal
-            </a>
-          )}
-        </div>
-        {ad.address && (
-          <p className="meta flex items-center gap-1.5">
-            <MapPin className="w-4 h-4 shrink-0" aria-hidden="true" /> {ad.address}
-          </p>
-        )}
-      </div>
-    </article>
+// Online (adminból feltett) hirdetés: csak a kép, linkkel ha van
+const AdImage = ({ ad }) => {
+  if (!ad.image_url) return null;
+  const img = (
+    <img
+      src={ad.image_url}
+      alt={`Hirdetés – ${ad.advertiser}`}
+      loading="lazy"
+      decoding="async"
+      className="w-full h-auto rounded-lg shadow-sm border border-[var(--color-line)]"
+    />
+  );
+  return ad.link_url ? (
+    <a href={ad.link_url} target="_blank" rel="noopener noreferrer sponsored" className="block">
+      {img}
+    </a>
+  ) : (
+    img
   );
 };
 
@@ -56,13 +39,34 @@ export const AdsPage = () => {
     <div className="container-news pt-6 sm:pt-10">
       <header className="border-b-2 border-[var(--color-ink)] pb-4 mb-8">
         <h1 className="text-[34px] sm:text-[44px] leading-tight">Hirdetések</h1>
-        <p className="text-[17px] text-[var(--color-ink-2)] mt-2 max-w-[65ch] justify">
-          Helyi vállalkozások, szolgáltatások és ajánlatok. A hirdetők támogatásával jelenik meg a Kőszeg és Vidéke — köszönjük!
-        </p>
       </header>
 
+      {/* A legfrissebb lapszám hirdetései – csak a képek, egymás alatt */}
+      <div className="max-w-[760px] mx-auto flex flex-col gap-6 sm:gap-8">
+        {PRINT_ADS.ads.map((ad) => (
+          <img
+            key={ad.src}
+            src={ad.src}
+            width={ad.w}
+            height={ad.h}
+            alt="Hirdetés"
+            loading="lazy"
+            decoding="async"
+            className="w-full h-auto rounded-lg shadow-sm border border-[var(--color-line)]"
+          />
+        ))}
+      </div>
+
+
+      {ads && ads.length > 0 && (
+        <div className="max-w-[760px] mx-auto flex flex-col gap-6 sm:gap-8 mt-6 sm:mt-8">
+          {ads.map((ad) => (
+            <AdImage key={ad.id} ad={ad} />
+          ))}
+        </div>
+      )}
       {/* Felhívás */}
-      <section className="rounded-3xl bg-[var(--color-brand)] text-white p-6 sm:p-10 mb-10 overflow-hidden relative" aria-labelledby="hirdessen">
+      <section className="rounded-3xl bg-[var(--color-brand)] text-white p-6 sm:p-10 mt-12 overflow-hidden relative" aria-labelledby="hirdessen">
         <div className="relative max-w-[640px]">
           <span className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/15 mb-4">
             <Megaphone className="w-6 h-6" aria-hidden="true" />
@@ -88,18 +92,6 @@ export const AdsPage = () => {
           </p>
         </div>
       </section>
-
-      {ads === null && <p className="text-[17px] text-[var(--color-muted)]">Hirdetések betöltése…</p>}
-      {ads && ads.length === 0 && (
-        <p className="text-[17px] text-[var(--color-ink-2)]">Jelenleg nincs futó online hirdetés. Legyen Ön az első!</p>
-      )}
-      {ads && ads.length > 0 && (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {ads.map((ad) => (
-            <AdCard key={ad.id} ad={ad} />
-          ))}
-        </div>
-      )}
     </div>
   );
 };

@@ -44,13 +44,10 @@ export function issueTitle(issue) {
 
 export const monthName = (m) => MONTHS[m - 1];
 
-const R2_BASE = import.meta.env.VITE_R2_URL || 'https://pub-fc6c9d1807b047e1bbddb255e30b9c50.r2.dev';
-
+// A PDF-ek a Cloudflare R2-ből jönnek (az issues.json-ban már a végleges cím van)
 export function pdfLink(issue, page) {
-  if (!issue) return null;
-  const filename = issue.pdf ? issue.pdf.split('/').pop() : `${issue.id}.pdf`;
-  const url = `${R2_BASE}/${filename}`;
-  return page ? `${url}#page=${page}` : url;
+  if (!issue?.pdf) return null;
+  return page ? `${issue.pdf}#page=${page}` : issue.pdf;
 }
 
 // A cikkek teljes szövege külön fájlban van (public/content/<id>.json), megnyitáskor töltődik be.

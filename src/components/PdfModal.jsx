@@ -1,17 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { X, ExternalLink, FileText } from 'lucide-react';
+import React, { Suspense, lazy, useEffect } from 'react';
+import { X, ExternalLink } from 'lucide-react';
+import { issues } from '../lib/content';
+
+// A PDF.js-olvasó csak PDF megnyitásakor töltődik le (külön csomag)
+const PdfViewer = lazy(() => import('./PdfViewer'));
 
 export const PdfModal = ({ pdfUrl, title, onClose }) => {
-  const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
-    if (!pdfUrl) return;
-
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768 || /iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
-    };
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
+    if (!pdfUrl) return undefined;
 
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
@@ -25,16 +21,16 @@ export const PdfModal = ({ pdfUrl, title, onClose }) => {
     return () => {
       document.body.style.overflow = 'unset';
       window.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('resize', checkMobile);
     };
   }, [pdfUrl, onClose]);
 
   if (!pdfUrl) return null;
 
-  // Mobilon a Google Docs Viewer embed megjeleníti a teljes többoldalas PDF-et lapozhatóan
-  const iframeSrc = isMobile
-    ? `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(pdfUrl)}`
-    : `${pdfUrl}#toolbar=1&navpanes=0`;
+  // "…/kev_20260914_172.pdf#page=5" -> fájl + kezdőoldal; tartalékként az eredeti koszeg.hu-s cím
+  const [fileUrl, hash = ''] = pdfUrl.split('#');
+  const initialPage = Number((hash.match(/page=(\d+)/) || [])[1]) || 1;
+  const filename = fileUrl.split('/').pop();
+  const fallbackUrl = issues.find((i) => i.pdf && i.pdf.endsWith(`/${filename}`))?.pdfOriginal;
 
   return (
     <div
@@ -54,9 +50,10 @@ export const PdfModal = ({ pdfUrl, title, onClose }) => {
 
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <a
-            href={pdfUrl}
+            href={fileUrl}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer external"
+            data-no-modal="true"
             className="flex items-center gap-1.5 px-3 py-1.5 text-[12px] sm:text-[13px] rounded bg-white/10 hover:bg-white/20 text-white transition-colors"
             title="Megnyitás teljes képernyőn / letöltés"
           >
@@ -75,28 +72,13 @@ export const PdfModal = ({ pdfUrl, title, onClose }) => {
         </div>
       </header>
 
-      {/* PDF Viewport Container */}
-      <div className="flex-1 w-full h-full bg-[#323639] relative flex flex-col">
-        <iframe
-          src={iframeSrc}
-          title={title || 'PDF Megjelenítő'}
-          className="w-full h-full border-0 flex-1"
-          loading="lazy"
-        />
-
-        {/* Mobilon biztonsági alsó sáv ha az olvasó közvetlen PDF megnyitást szeretne */}
-        {isMobile && (
-          <div className="p-2 bg-[var(--color-ink,#1a1a1a)] border-t border-[var(--color-line)] text-center shrink-0">
-            <a
-              href={pdfUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[13px] text-[#d4af37] underline py-1"
-            >
-              <FileText className="w-4 h-4" /> Ha mobilon nem lapozható, kattints ide a közvetlen megnyitáshoz
-            </a>
-          </div>
-        )}
+      {/* PDF Viewport Container – PDF.js: minden telefonon görgethető, a kért oldalon nyílik */}
+      <div className="flex-1 min-h-0 w-full bg-[#323639] relative flex flex-col">
+        <Suspense
+          fallback={<div className="flex-1 flex items-center justify-center text-white/80 text-[16px]">Az olvasó betöltése…</div>}
+        >
+          <PdfViewer url={fileUrl} initialPage={initialPage} fallbackUrl={fallbackUrl} />
+        </Suspense>
       </div>
     </div>
   );

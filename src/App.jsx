@@ -45,6 +45,7 @@ export default function App() {
     const handleGlobalClick = (e) => {
       const a = e.target.closest('a');
       if (!a) return;
+      if (a.dataset.noModal) return; // a modálon belüli „új lapon” linkek
       const hrefAttr = a.getAttribute('href');
       if (hrefAttr && (hrefAttr.includes('.pdf') || hrefAttr.includes('r2.dev') || hrefAttr.includes('r2.cloudflarestorage.com'))) {
         e.preventDefault();

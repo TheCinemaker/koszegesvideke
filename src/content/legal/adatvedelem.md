@@ -26,7 +26,7 @@ A weboldal működéséhez az alábbi külső szolgáltatásokat vesszük igény
 - **Cloudflare, Inc.** – a weboldal tárhelye és kiszolgálása (Cloudflare Pages), a biztonság és a gyors elérés biztosítása.
 - **Google Fonts (Google Ireland Ltd.)** – a weboldal betűtípusainak letöltése.
 - **Supabase, Inc.** – a hirdetések és a szerkesztőségi felület adatainak tárolása.
-- **Kőszeg Város Önkormányzata (koszeg.hu)** – a korábbi lapszámok PDF-fájljainak tárhelye; a PDF megnyitásakor a böngésző a koszeg.hu szerveréhez kapcsolódik.
+- **Cloudflare R2 (Cloudflare, Inc.)** – a lapszámok PDF-fájljainak tárhelye; a PDF-olvasó a weboldal saját kódjával jeleníti meg a lapszámokat, külső megjelenítő szolgáltatás nélkül.
 
 ## 4. Kapcsolatfelvétel
 

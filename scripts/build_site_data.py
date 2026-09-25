@@ -11,6 +11,7 @@ Futtatás a projekt gyökeréből:  python scripts/build_site_data.py [--no-imag
 """
 
 import argparse
+import os
 import hashlib
 import json
 import re
@@ -27,6 +28,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 ROOT = Path(__file__).resolve().parent.parent
 FORCE_IMAGES = False
+PDF_BASE = os.environ.get("KEV_PDF_BASE", "https://pub-fc6c9d1807b047e1bbddb255e30b9c50.r2.dev").rstrip("/")
 ARCH = ROOT / "koszeg_es_videke_archive"
 AUTO_DIR = ARCH / "articles_2026"
 CURATION = AUTO_DIR / "curation.json"
@@ -332,7 +334,10 @@ def load_issue_meta():
             "serial": it["issue_number"],
             "volume": vol, "number": num,
             "pages": pages,
-            "pdf": it["url"],
+            # a PDF-ek a Cloudflare R2-ből jönnek (gyors, CORS-képes a PDF.js-olvasónak);
+            # az eredeti koszeg.hu-s cím tartalék, ha egy fájl még nincs feltöltve
+            "pdf": f"{PDF_BASE}/{it['filename']}",
+            "pdfOriginal": it["url"],
             "label": f"{it['year']}. {MONTHS[it['month'] - 1]}",
         }
     return out
@@ -580,6 +585,40 @@ def build_articles(issues, with_images=True):
     return articles
 
 
+def build_print_ads(issues):
+    """
+    A Hirdetések oldal nyomtatott hirdetései: mindig a legfrissebb olyan lapszámé, amelyhez van lista
+    a print_ads.json-ban. A hirdetésterületet a PDF-oldalról vágja ki, szöveg nélkül, sorrendben.
+    """
+    cfg_file = AUTO_DIR / "print_ads.json"
+    if not cfg_file.exists():
+        return None
+    cfg = json.loads(cfg_file.read_text(encoding="utf-8"))
+    stems = sorted((k for k in cfg if k.startswith("kev_")), reverse=True)
+    if not stems:
+        return None
+    stem = stems[0]
+    out_dir = PUBLIC / "ads" / stem
+    out_dir.mkdir(parents=True, exist_ok=True)
+    doc = pymupdf.open(PDF_DIR / str(issues[stem]["year"]) / f"{stem}.pdf")
+    ads = []
+    for k, a in enumerate(cfg[stem]):
+        page = doc[a["page"] - 1]
+        clip = page.rect if a["bbox"] == "full" else pymupdf.Rect(a["bbox"]) & page.rect
+        zoom = min(3.0, 1100 / clip.width)
+        pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=clip)
+        img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+        rel = f"ads/{stem}/{k + 1:02d}.jpg"
+        img.save(PUBLIC / rel, "JPEG", quality=84, optimize=True, progressive=True)
+        ads.append({"src": "/" + rel, "w": img.width, "h": img.height, "page": a["page"]})
+    doc.close()
+    keep = {Path(a["src"]).name for a in ads}
+    for old in out_dir.glob("*.jpg"):
+        if old.name not in keep:
+            old.unlink(missing_ok=True)
+    return {"issueId": stem, "label": issues[stem]["label"], "ads": ads}
+
+
 def normalize_search_text(t):
     t = t.replace("\u00ad", "")
     t = re.sub(r"(\w)-\n(\w)", r"\1\2", t)
@@ -651,6 +690,10 @@ def main():
                 print(f"  figyelem: nem törölhető (használatban): {stale.name}")
     write_json(DATA_OUT / "articles.json", index, compact=True)
     write_json(DATA_OUT / "sections.json", sections)
+    print_ads = build_print_ads(issues)
+    if print_ads:
+        write_json(DATA_OUT / "printAds.json", print_ads)
+        print(f"Nyomtatott hirdetések: {len(print_ads['ads'])} db ({print_ads['label']})")
     if not args.no_search:
         manifest = build_search(issues)
         write_json(DATA_OUT / "searchManifest.json", manifest)
