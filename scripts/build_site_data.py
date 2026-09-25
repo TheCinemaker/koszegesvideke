@@ -157,6 +157,11 @@ def split_signature(blocks):
             sig_chain = True
             blocks.pop()
             continue
+        # "Kámán Z." – vezetéknév + monogram ponttal
+        if last["type"] in ("p", "sig", "h3") and re.fullmatch(r"[A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+ [A-ZÁÉÍÓÖŐÚÜŰ]\.", t):
+            author = author or t
+            blocks.pop()
+            continue
         # plain paragraph that is only a name / role ("Láng József", "Kovácsné Szabó Éva", "polgármester")
         if last["type"] == "p" and len(t) <= 60 and not t.endswith((".", ":", "?", "!", ",")) and _is_name_line(t):
             author = f"{t} {author}" if (author and sig_chain) else (author or t)
@@ -295,6 +300,14 @@ def write_json(path, data, compact=False):
     tmp = path.with_suffix(path.suffix + ".tmp")
     text = json.dumps(data, ensure_ascii=False, separators=(",", ":")) if compact else json.dumps(data, ensure_ascii=False, indent=1)
     tmp.write_text(text, encoding="utf-8")
+    # Windowson a futó dev szerver / szerkesztő pillanatnyilag zárolhatja a fájlt: újrapróbálkozás
+    import time
+    for attempt in range(40):
+        try:
+            tmp.replace(path)
+            return
+        except PermissionError:
+            time.sleep(0.25)
     tmp.replace(path)
 
 
@@ -443,12 +456,15 @@ def build_articles(issues, with_images=True):
         for sid, o in s_over.items():
             if o.get("merge_into"):
                 merges.setdefault(o["merge_into"], []).append(sid)
+            # append_from: egy másik egység szövegének hozzáfűzése úgy, hogy az is megmarad
+            for extra in o.get("append_from", []):
+                merges.setdefault(sid, []).append(extra)
 
         for rank, sid in enumerate(order):
             s = by_sid[sid]
             o = s_over.get(sid, {})
             pg = page_of[sid]
-            blocks = [dict(b) for b in s["blocks"]]
+            blocks = [dict(b) for b in o["set_blocks"]] if "set_blocks" in o else [dict(b) for b in s["blocks"]]
             for extra in sorted(merges.get(sid, []), key=lambda x: (int(x[1:3]), x)):
                 eb = [dict(b) for b in by_sid[extra]["blocks"]]
                 if s_over.get(extra, {}).get("as_box"):
@@ -616,8 +632,6 @@ def main():
     # megnyitáskor töltődik be, a kereséshez pedig egy igény szerint letöltött szövegfájl készül.
     content_dir = PUBLIC / "content"
     content_dir.mkdir(parents=True, exist_ok=True)
-    for old in content_dir.glob("*.json"):
-        old.unlink()
     index, search_rows = [], []
     for a in articles:
         write_json(content_dir / f"{a['id']}.json", {"id": a["id"], "blocks": a["blocks"]}, compact=True)
@@ -627,6 +641,14 @@ def main():
         search_rows.append({"id": a["id"], "t": body})
         index.append({k: v for k, v in a.items() if k != "blocks"})
     write_json(content_dir / "search-2026.json", search_rows, compact=True)
+    # elavult cikkfájlok törlése a megírás után (a futó fejlesztői szerver zárolhat egy-egy fájlt)
+    keep = {f"{a['id']}.json" for a in articles} | {"search-2026.json"}
+    for stale in content_dir.glob("*.json"):
+        if stale.name not in keep:
+            try:
+                stale.unlink()
+            except PermissionError:
+                print(f"  figyelem: nem törölhető (használatban): {stale.name}")
     write_json(DATA_OUT / "articles.json", index, compact=True)
     write_json(DATA_OUT / "sections.json", sections)
     if not args.no_search:

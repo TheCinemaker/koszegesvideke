@@ -1123,7 +1123,7 @@
       },
       {
        "type": "p",
-       "text": "Elmondta az egyesület stratégiai irányát is, a valóságot kell közzé tenni, hogy „Kőszeg a testi, lelki, spirituális feltöltődés városa. Ehhez megvannak az adottságai, a tiszta levegő, a természet közeljának fontos lépése, hogy Kőszeg és a környék turisztikai szereplőinek legyen közös hangja, fóruma, cselekvési tere.”",
+       "text": "Elmondta az egyesület stratégiai irányát is, a valóságot kell közzé tenni, hogy „Kőszeg a testi, lelki, spirituális feltöltődés városa. Ehhez megvannak az adottságai, a tiszta levegő, a természet közelsége, a történelmi városból vezetnek utak a hegyekbe, Kőszeg vendégszeretete, gasztronómiája, kulturális értéke kimagasló. A turizmusban érintettek találkozójának fontos lépése, hogy Kőszeg és a környék turisztikai szereplőinek legyen közös hangja, fóruma, cselekvési tere.”",
        "italic": false
       },
       {
@@ -1177,7 +1177,7 @@
        "italic": false
       }
      ],
-     "chars": 5598
+     "chars": 5757
     }
    ],
    "images": [
@@ -1205,8 +1205,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "sége, a történelmi városból ve- zetnek utak a hegyekbe, Kőszeg vendégszeretete, gasztronómiája, kulturális értéke kimagasló. A turizmusban érintettek találkozó-"
+     "ad_guess": false
     }
    ]
   },
@@ -2209,12 +2208,17 @@
        "italic": false
       },
       {
+       "type": "p",
+       "text": "Az egykori sörház helyét Francz Bálint 1746-ból származó fogadalmi képén nyillal jelölve mutatjuk be. Ott ma az ún. Dreiszker áll, gondozzák a Kálvária utcában az időseket.",
+       "italic": true
+      },
+      {
        "type": "sig",
        "text": "KZ",
        "italic": false
       }
      ],
-     "chars": 4999
+     "chars": 5172
     }
    ],
    "images": [
@@ -2242,8 +2246,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "Az egykori sörház helyét Francz Bálint 1746-ból származó fogadalmi képén nyillal jelölve mutatjuk be. Ott ma az ún. Dreiszker áll, gondoz- zák a Kálvária utcában az időseket."
+     "ad_guess": false
     }
    ]
   },
@@ -2608,7 +2611,7 @@
      "blocks": [
       {
        "type": "p",
-       "text": "Perger Gyula atya két esztendőt szolgált plébánosként Kőszegen, az idei évben ünnepli a pappá szentelésének 25. évfordulóját. Június 21-én 10.00 órakor kezdődött ezüstmiséjén megszámlálhatatlanul sokan töltötték meg Gyöngyösfaluban a Szent Márton-templomot, a bejárat előtti utcarészt. Érkeztek hívek minden plébániáról, ahol korábban papi szolgálatot teljesített. Ministránsok, koncelebráns papok vezették a jubiláns társukat a szülőfalu templomának oltáráig. Az atya édesanyját kísérve zárta a sort. „Legyen hála és köszönet szüleimnek, édesanyámnak és édesapáma mai nap legnagyobb ajándéka ez, ennél nagyobb ajándékot nem kaphattam volna.”",
+       "text": "Perger Gyula atya két esztendőt szolgált plébánosként Kőszegen, az idei évben ünnepli a pappá szentelésének 25. évfordulóját. Június 21-én 10.00 órakor kezdődött ezüstmiséjén megszámlálhatatlanul sokan töltötték meg Gyöngyösfaluban a Szent Márton-templomot, a bejárat előtti utcarészt. Érkeztek hívek minden plébániáról, ahol korábban papi szolgálatot teljesített. Ministránsok, koncelebráns papok vezették a jubiláns társukat a szülőfalu templomának oltáráig. Az atya édesanyját kísérve zárta a sort. „Legyen hála és köszönet szüleimnek, édesanyámnak és édesapámnak, hogy a munka szeretetét, becsületét megtanulhattam. Legyen köszönet a JóIstennek, hogy édesanyám mind a mai napig mellettem áll. A Gondviselő Isten után külön köszönöm édesanyámnak mindazt, amit értem tett. A JóIsten különleges ajándékának tartom, hogy megérhette ezt a napot, és itt lehet közöttünk az ezüstmisén. Számomra a mai nap legnagyobb ajándéka ez, ennél nagyobb ajándékot nem kaphattam volna.”",
        "italic": false
       },
       {
@@ -2642,7 +2645,7 @@
        "italic": false
       }
      ],
-     "chars": 2775
+     "chars": 3106
     }
    ],
    "images": [
@@ -2657,8 +2660,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "nak, hogy a munka szeretetét, becsületét megtanulhattam. Legyen köszönet a  JóIstennek, hogy édesanyám mind a mai napig mellettem áll. A Gondviselő Isten után külön köszönöm édesanyámnak mindazt, amit értem tett. A JóIsten különleges ajándékának tartom, hogy meg- érhette ezt a napot, és itt lehet közöttünk az ezüstmisén. Számomra"
+     "ad_guess": false
     },
     {
      "idx": 1,
@@ -3560,8 +3562,18 @@
      "blocks": [
       {
        "type": "p",
-       "text": "„Amit tehát szeretnétek, hogy az emberek veletek cselekedjenek Ti is azt cselekedjétek velük.” (Mt 7,12) Máté evangéliuma tartalmazza az ún. aranyszabályt a keresztény tanításban. Annak tartalmát sajátjának érzi a Kőszegi Evangélikus Gimnázium, Technikum, Szakképző Iskola és Kollégium. Az iskola tanárai közkinccsé tették: „Velük, értük, közöttük!” jelmondatot is. Vonatkozik az évközi oktatáson túl a diákok egyéb képességeinek fejlesztésére is. Június 9-én színházi előadással jelentkeztek – teljes létszámot tekintve – 45 fővel mutatták be az „Idővágta – A lovak szerepe a magyar történelemben” című előadást az iskola lovardájában. Annak egy pillanatát mutatjuk be fotón. A színi előadás a több hónapot igénylő program zárása volt, a produkciót a nagyközönség újra megtekintheti – egy szélesebb tájékoztatás után – az új tanév kezdetén, szeptemberben. Megvalósulhatott a Nemzeti Tehetpályázatának 4,3 millió Ft támogatásával.",
+       "text": "„Amit tehát szeretnétek, hogy az emberek veletek cselekedjenek Ti is azt cselekedjétek velük.” (Mt 7,12) Máté evangéliuma tartalmazza az ún. aranyszabályt a keresztény tanításban. Annak tartalmát sajátjának érzi a Kőszegi Evangélikus Gimnázium, Technikum, Szakképző Iskola és Kollégium. Az iskola tanárai közkinccsé tették: „Velük, értük, közöttük!” jelmondatot is. Vonatkozik az évközi oktatáson túl a diákok egyéb képességeinek fejlesztésére is. Június 9-én színházi előadással jelentkeztek – teljes létszámot tekintve – 45 fővel mutatták be az „Idővágta – A lovak szerepe a magyar történelemben” című előadást az iskola lovardájában. Annak egy pillanatát mutatjuk be fotón. A színi előadás a több hónapot igénylő program zárása volt, a produkciót a nagyközönség újra megtekintheti – egy szélesebb tájékoztatás után – az új tanév kezdetén, szeptemberben. Megvalósulhatott a Nemzeti Tehet-",
        "italic": true
+      },
+      {
+       "type": "sig",
+       "text": "ség Program „Tehetségközelben”",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "pályázatának 4,3 millió Ft támogatásával.",
+       "italic": false
       },
       {
        "type": "p",
@@ -3604,7 +3616,7 @@
        "italic": false
       }
      ],
-     "chars": 2361
+     "chars": 2392
     }
    ],
    "images": [
@@ -3619,8 +3631,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "ség Program „Tehetségközelben”"
+     "ad_guess": false
     },
     {
      "idx": 1,
@@ -4410,12 +4421,17 @@
       },
       {
        "type": "sig",
-       "text": "Zoli atya az oltár előtt állva végezte",
-       "italic": false
+       "text": "erőt, hogy sokakat tudjál közel",
+       "italic": true
       },
       {
        "type": "p",
-       "text": "a szertartást, de székre ült, amikor az ezüstmiséje üzenetével a hívekhez fordult.",
+       "text": "vinni hozzá.”",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "Zoli atya az oltár előtt állva végezte a szertartást, de székre ült, amikor az ezüstmiséje üzenetével a hívekhez fordult.",
        "italic": false
       },
       {
@@ -4454,7 +4470,7 @@
        "italic": false
       }
      ],
-     "chars": 2334
+     "chars": 2379
     },
     {
      "sid": "p24s2",
@@ -4561,8 +4577,7 @@
      "story": 1,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "erőt, hogy sokakat tudjál közel vinni hozzá.”"
+     "ad_guess": false
     }
    ]
   },

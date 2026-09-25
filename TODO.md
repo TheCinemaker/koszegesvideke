@@ -53,19 +53,21 @@ Lapszámonként: kontaktlap a képekről, hirdetések kiszűrése (`ads`), árva
 összefűzése (`merge_into`), címek/szerzők javítása.
 
 - [x] 2026. szeptember (`kev_20260914_172`)
-- [ ] 2026. augusztus (`kev_20260817_171`) – részben kész
-  - [ ] címlapsztori (p01 árva szöveg) cím nélkül kimaradt → cím + `keep`
+- [x] 2026. augusztus (`kev_20260817_171`)
   - [ ] p08 árva vélemény (Móra Tímea) – cím hiányzik
   - [ ] p17 Ólmod / Fejlesztések (Bozsok) szövegei összekeveredtek
-- [ ] 2026. július (`kev_20260706_170`)
-- [ ] 2026. június (`kev_20260608_169`)
-- [ ] 2026. május (`kev_20260511_168`)
-- [ ] 2026. április (`kev_20260414_167`)
-- [ ] 2026. március (`kev_20260316_166`)
-- [ ] 2026. február (`kev_20260216_164`)
-- [ ] 2026. január (`kev_20260119_163`)
+- [x] 2026. július (`kev_20260706_170`)
+- [x] 2026. június (`kev_20260608_169`)
+- [x] 2026. május (`kev_20260511_168`)
+- [x] 2026. április (`kev_20260414_167`)
+- [x] 2026. március (`kev_20260316_166`)
+- [x] 2026. február (`kev_20260216_164`)
+- [x] 2026. január (`kev_20260119_163`)
 
-Minden lapszámnál külön figyelni:
+Mind a 9 lapszám átnézve (09-25): hirdetésképek, címlapsztorik, átnyúló cikkek, szerzők.
+Finomhangolás a fotóellenőrző oldal (`/kepellenorzes`) jelölései alapján.
+
+Minden lapszámnál külön figyelni (maradék, a jelölések alapján):
 - [ ] címlapsztori: helyes cím nagybetűkkel (a gépi kisbetűsítés elrontja a neveket), `weight` a címlaphoz
 - [ ] kisbetűvel kezdődő leadek (mondat közepén kezdődő szöveg)
 - [ ] rossz szerzők (pl. „feladatellátáshoz Szerdahelyi-Bánó Irén”, „nyár”, „j”)

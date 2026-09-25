@@ -218,7 +218,78 @@
   "ads": {
    "p03": [
     0
+   ],
+   "p04": [
+    1
+   ],
+   "p05": [
+    1
+   ],
+   "p06": [
+    1
+   ],
+   "p14": [
+    1,
+    2,
+    3
    ]
+  },
+  "stories": {
+   "p01s0": {
+    "keep": true,
+    "title": "A Szent Imre-templom új harangja",
+    "deck": "Kirner Zoltán plébános szentelte fel a harangot",
+    "kicker": "Harangszentelés",
+    "images": [
+     "p01:1"
+    ],
+    "photo": "Cseh Gábor",
+    "weight": 10,
+    "section": "hitelet"
+   },
+   "p14s1": {
+    "author": ""
+   },
+   "p16s2": {
+    "author": "Szerdahelyi-Bánó Irén"
+   },
+   "p18s2": {
+    "author": "Hosszu-Hajtó Henrietta"
+   },
+   "p23s0": {
+    "author": "Marija Fülöp Huljev",
+    "photo": "Zita Horváth"
+   },
+   "p24s0": {
+    "author": "Kámán Zoltán"
+   },
+   "p25s0": {
+    "merge_into": "p24s0"
+   },
+   "p28s0": {
+    "author": "Kámán Zoltán"
+   },
+   "p29s0": {
+    "merge_into": "p28s0"
+   },
+   "p31s0": {
+    "images": [
+     "p31:2",
+     "p31:3"
+    ]
+   },
+   "p34s0": {
+    "title": "Gratulálunk! Kitüntetések március 15-én"
+   },
+   "p35s0": {
+    "merge_into": "p34s0"
+   },
+   "p37s1": {
+    "author": ""
+   },
+   "p11s0": {
+    "weight": 5
+   }
   }
  },
  "kev_20260706_170": {
@@ -649,6 +720,242 @@
     "merge_into": "p30s0",
     "as_box": true,
     "box_title": "Eredmények"
+   }
+  }
+ },
+ "kev_20260216_164": {
+  "ads": {
+   "p03": [
+    0
+   ],
+   "p13": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "p15": [
+    4,
+    5
+   ],
+   "p25": [
+    1
+   ],
+   "p27": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  "stories": {
+   "p01s0": {
+    "keep": true,
+    "title": "Kőszeg első újszülöttjei: Baricza Barbara Blanka és Várnagy Dániel",
+    "kicker": "Újszülöttek",
+    "images": [
+     "p01:2",
+     "p01:1"
+    ],
+    "weight": 10
+   },
+   "p13s0": {
+    "images": [
+     "p13:0",
+     "p13:1",
+     "p13:2"
+    ]
+   },
+   "p17s2": {
+    "author": "Koósz Krisztiánné"
+   },
+   "p17s3": {
+    "author": "Tóth Szabolcs"
+   },
+   "p22s1": {
+    "drop": true
+   },
+   "p23s0": {
+    "author": "Marija Fülöp Huljev",
+    "photo": "Kámán Zoltán"
+   },
+   "p24s0": {
+    "title": "Farsang az óvodában",
+    "images": [
+     "p24:4",
+     "p24:5",
+     "p24:6",
+     "p24:7"
+    ],
+    "set_blocks": [
+     {
+      "type": "p",
+      "text": "A Kőszeg Meseváros Óvoda és Bölcsőde tagóvodáiban megtartották a saját farsangot, a kőszegiek ott lesznek a városi farsang délelőtti programjain. Az Újvárosi tagóvodában február 12-én farsangoltak. Az ott készült fotókból adunk közre néhányat."
+     }
+    ]
+   },
+   "p24s1": {
+    "keep": true,
+    "append_from": [
+     "p24s0"
+    ],
+    "images": [
+     "p24:0",
+     "p24:1",
+     "p24:2",
+     "p24:3"
+    ]
+   },
+   "p27s0": {
+    "images": [
+     "p27:4"
+    ]
+   },
+   "p31s0": {
+    "keep": true,
+    "title": "Birkózás és atlétika: téli versenyek",
+    "section": "sport"
+   },
+   "p09s0": {
+    "weight": 6
+   },
+   "p31s1": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s2": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s3": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s4": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s5": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s6": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s7": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s8": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   }
+  }
+ },
+ "kev_20260119_163": {
+  "ads": {
+   "p08": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "p19": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "p13": [
+    2
+   ]
+  },
+  "stories": {
+   "p01s0": {
+    "title": "Tamás, az újszülött",
+    "kicker": "Az év első kőszegi babája",
+    "deck": "Schwahofer Adél, Ábel és Tamás",
+    "images": [
+     "p01:1"
+    ],
+    "captions": {
+     "p01:1": "Schwahofer Adél, Ábel és Tamás"
+    },
+    "weight": 10
+   },
+   "p09s0": {
+    "images": [
+     "p09:2"
+    ]
+   },
+   "p09s1": {
+    "images": [
+     "p09:1"
+    ]
+   },
+   "p09s2": {
+    "images": [
+     "p09:0"
+    ],
+    "author": "Kámán Zoltán"
+   },
+   "p11s0": {
+    "keep": true,
+    "title": "Retró bál a nagycsaládosoknál",
+    "images": [
+     "p11:10"
+    ],
+    "section": "kulonfelek"
+   },
+   "p12s0": {
+    "author": "Kámán Zoltán",
+    "weight": 5
+   },
+   "p13s0": {
+    "merge_into": "p12s0"
+   },
+   "p14s0": {
+    "author": ""
+   },
+   "p19s0": {
+    "author": "P. L.",
+    "photo": "Kőszegi Várszínház / Büki László",
+    "images": [
+     "p19:6"
+    ]
+   },
+   "p20s2": {
+    "author": ""
+   },
+   "p23s0": {
+    "images": [
+     "p23:0",
+     "p23:1"
+    ],
+    "captions": {
+     "p23:1": ""
+    }
+   },
+   "p23s6": {
+    "images": [
+     "p23:2",
+     "p23:3",
+     "p23:4"
+    ]
    }
   }
  }

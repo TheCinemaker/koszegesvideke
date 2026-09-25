@@ -3960,21 +3960,11 @@
       },
       {
        "type": "p",
-       "text": "Hodočasniki u crikvi Blažene Divice Marije k K d l",
+       "text": "Hodočasniki u crikvi Blažene Divice Marije k K u Celldömölk - u d l Márija Fülöp Huljev j p j",
        "italic": true
-      },
-      {
-       "type": "sig",
-       "text": "Márija Fülöp Huljev",
-       "italic": false
-      },
-      {
-       "type": "p",
-       "text": "j p j",
-       "italic": false
       }
      ],
-     "chars": 2030
+     "chars": 2047
     },
     {
      "sid": "p23s1",
@@ -4143,8 +4133,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "u Celldömölk - u"
+     "ad_guess": false
     }
    ]
   },

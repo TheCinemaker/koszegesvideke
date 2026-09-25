@@ -3689,7 +3689,12 @@
       },
       {
        "type": "p",
-       "text": "azért fordult dr. Lőrincz Zoltán felé, hogy megköszönje a húsz év értékes művészi munkáját, és azt is, Péter, Pirch Harro, Turcsán Miklós. hogy az egyesület müködését szívügynek tekintette, és sokat tett a kiadvány megjelenése érdekében.",
+       "text": "azért fordult dr. Lőrincz Zoltán felé, hogy megköszönje a húsz év értékes művészi munkáját, és azt is, A fotóval visszaadjuk a könyv egy részletét. 2025. szeptember 4-én nyitotta meg a Kőszegi Művészeti Egyesület megalakulásuk 20. évfordulójára emlékeztető kiállítást a lovagteremben. Tíz művész tárta a nézők elé az alkotásait: Forró Gergő, Kamper Lajos, Kassai Kefó Árpád, Kántor Sándor, Kovács Marcsi, Németh János, Ohr Tibor, Petky Péter, Pirch Harro, Turcsán Miklós.",
+       "italic": false
+      },
+      {
+       "type": "p",
+       "text": "hogy az egyesület müködését szívügynek tekintette, és sokat tett a kiadvány megjelenése érdekében.",
        "italic": false
       },
       {
@@ -3698,7 +3703,7 @@
        "italic": false
       }
      ],
-     "chars": 1524
+     "chars": 1858
     },
     {
      "sid": "p19s1",
@@ -3821,8 +3826,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "A fotóval visszaadjuk a könyv egy részletét. 2025. szeptember 4-én nyitotta meg a Kőszegi Művészeti Egyesület megalakulásuk 20. év- fordulójára emlékeztető kiállítást a lovagteremben. Tíz művész tárta a nézők elé az alkotásait: Forró Gergő, Kamper Lajos, Kassai Kefó Árpád, Kántor Sándor, Kovács Marcsi, Németh János, Ohr Tibor, Petky"
+     "ad_guess": false
     },
     {
      "idx": 1,
@@ -4527,12 +4531,7 @@
       },
       {
        "type": "p",
-       "text": "„Majd leteszem az okos telefonomat, véletlek",
-       "italic": true
-      },
-      {
-       "type": "sig",
-       "text": "leírva láttam.”",
+       "text": "„Majd leteszem az okos telefonomat, véletlek nül nyomok meg egy gombot, aztán megszólal a telefonomon egy női hang. A következőt mondja: Talán meg kellene kérdezni az édesanyját, vagy netán írjak neki egy kedves levelet. Kinyitottam a telefonomat, és ezt ott leírva láttam.”",
        "italic": true
       },
       {
@@ -4551,7 +4550,7 @@
        "italic": false
       }
      ],
-     "chars": 3775
+     "chars": 3991
     }
    ],
    "images": [
@@ -4592,8 +4591,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "nül nyomok meg egy gombot, aztán megszó- lal a telefonomon egy női hang. A követke- zőt mondja: Talán meg kellene kérdezni az édesanyját, vagy netán írjak neki egy kedves levelet. Kinyitottam a telefonomat, és ezt ott"
+     "ad_guess": false
     }
    ]
   },

@@ -4394,7 +4394,7 @@
      "blocks": [
       {
        "type": "p",
-       "text": "Lipo nakinčena viteška dvorana je čekala kiseške Hrvate, njeve goste i prijatelje na tradicionalni 43. Hrvatski bal u Jurišićevu tvrdjavu. Med gosti primila je poziv i četveročlanska delegcija iz Orehovice, iz Hrvatke, pod peljanjem Branka Šušeca. Goste je na početku bala pozdravio Šandor Pet- Uz pozdravne riči Šandora Petkovića bal je",
+       "text": "Lipo nakinčena viteška dvorana je čekala kiseške Hrvate, njeve goste i prijatelje na tradicionalni 43. Hrvatski bal u Jurišićevu tvrdjavu. Med gosti primila je poziv i četveročlanska delegcija iz Orehovice, iz Hrvatke, pod peljanjem Branka Šušeca. Goste je na početku bala pozdravio Šandor Pet- Uz pozdravne riči Šandora Petkovića bal je otvorio dr. Gábor Zalán",
        "italic": false
       },
       {
@@ -4438,7 +4438,7 @@
        "italic": false
       }
      ],
-     "chars": 1796
+     "chars": 1819
     },
     {
      "sid": "p23s1",
@@ -4522,8 +4522,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "otvorio dr. Gábor Zalán"
+     "ad_guess": false
     },
     {
      "idx": 1,
@@ -4971,17 +4970,12 @@
       },
       {
        "type": "p",
-       "text": "– Te akkor már, március 15-ével belépsz a 90. életévedbe. Hogyan látod a berajzolásod",
+       "text": "– Te akkor már, március 15-ével belépsz a 90. életévedbe. Hogyan látod a berajzolásod jövőjét, mert a szellemi frissességed, a művészettörténeti ismereted kiváló.",
        "italic": true
       },
       {
-       "type": "sig",
-       "text": "– A lábaimról ezt nem mondhatom. Ha ilyen",
-       "italic": false
-      },
-      {
        "type": "p",
-       "text": "egészségi állapotban maradok, akkor elvégzem a berajzolást. Az élet kiszámíthatatlan, bármi megtörténhet. Jó érzésekkel, visszaidézve a múltat, kell a napainkat eltölteni, ami életerőt ad. Adjon nekem is az Isten! Ha mégis majd fel kell adnom, olyan tanult művész felkérését ajánlom, aki a realisztikus művészetben, a rajzolásban képzett. – Mit jelent neked Kőszeg?",
+       "text": "– A lábaimról ezt nem mondhatom. Ha ilyen egészségi állapotban maradok, akkor elvégzem a berajzolást. Az élet kiszámíthatatlan, bármi megtörténhet. Jó érzésekkel, visszaidézve a múltat, kell a napainkat eltölteni, ami életerőt ad. Adjon nekem is az Isten! Ha mégis majd fel kell adnom, olyan tanult művész felkérését ajánlom, aki a realisztikus művészetben, a rajzolásban képzett. – Mit jelent neked Kőszeg?",
        "italic": false
       },
       {
@@ -4995,7 +4989,7 @@
        "italic": false
       }
      ],
-     "chars": 5659
+     "chars": 5736
     }
    ],
    "images": [
@@ -5010,8 +5004,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "jövőjét, mert a szellemi frissességed, a művé- szettörténeti ismereted kiváló."
+     "ad_guess": false
     },
     {
      "idx": 1,

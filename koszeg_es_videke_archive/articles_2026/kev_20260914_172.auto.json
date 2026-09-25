@@ -4379,6 +4379,11 @@
       },
       {
        "type": "sig",
+       "text": "Spome kip pred katedralom u Celju",
+       "italic": true
+      },
+      {
+       "type": "sig",
        "text": "gát. A városrész lakóit is várták, de a szervezők",
        "italic": false
       },
@@ -4393,8 +4398,13 @@
        "italic": false
       },
       {
+       "type": "sig",
+       "text": "A máriazelli vándor Szűzanya–",
+       "italic": true
+      },
+      {
        "type": "p",
-       "text": "zösségei között. Tavaly augusztusban egy évre Horvátzsidányba került, ahonnan meghatározott ideig Kőszegen, Peresznyén, Ólmodon és Undon is vendégeskedett. A kegyszobrot négy napig tartó zarándokút után augusztus 30-án Mariazellben adták át egy évre Nova Gora (Neuberg/Újhegy) településnek.",
+       "text": "szobor évtizedek óta vándorol az ausztriai és a magyarországi gradistyei horvát települések közösségei között. Tavaly augusztusban egy évre Horvátzsidányba került, ahonnan meghatározott ideig Kőszegen, Peresznyén, Ólmodon és Undon is vendégeskedett. A kegyszobrot négy napig tartó zarándokút után augusztus 30-án Mariazellben adták át egy évre Nova Gora (Neuberg/Újhegy) településnek.",
        "italic": true
       },
       {
@@ -4408,7 +4418,7 @@
        "italic": false
       }
      ],
-     "chars": 2574
+     "chars": 2731
     },
     {
      "sid": "p23s1",
@@ -4500,8 +4510,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "Spome kip pred katedralom u Celju A máriazelli vándor Szűzanya– szobor évtizedek óta vándorol az ausztriai és a magyarországi gradistyei horvát települések kö-"
+     "ad_guess": false
     },
     {
      "idx": 3,

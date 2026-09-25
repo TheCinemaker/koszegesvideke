@@ -3282,9 +3282,14 @@
        "type": "p",
        "text": "Köszönet a szorgalmas gyerekeknek és a felkészítőnek, Szántó Annának, hogy Szenteste délutánján a templomban eljátszották Jézus születésének történetét. A szereplők között ott volt Mária, József, a csillag, az angyalok, a pásztorok és a Háromkirályok. Örültünk a színvonalas előadásnak!",
        "italic": false
+      },
+      {
+       "type": "p",
+       "text": "A 100 éves Betlehem a kőszegfalvi templomban",
+       "italic": true
       }
      ],
-     "chars": 1197
+     "chars": 1245
     }
    ],
    "images": [
@@ -3390,8 +3395,7 @@
      "story": 1,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "A 100 éves Betlehem a kőszegfalvi templom- ban"
+     "ad_guess": false
     },
     {
      "idx": 8,

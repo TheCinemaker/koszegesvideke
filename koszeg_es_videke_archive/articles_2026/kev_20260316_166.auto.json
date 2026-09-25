@@ -3495,7 +3495,7 @@
       },
       {
        "type": "p",
-       "text": "A felnőttek sem maradtak le a mókáról: náluk az est győztese az ufó az asztalhoz”. Felidézte, amikor a társakkal ablakon át nézhette a bent táncoló fiatalokat. Amikor az akkori és családi szabályok megengedték, ők is mentek a táncestékre a hétvégeken. Tömördön élő férjével ott ismerkedtek meg. 1958-ban született meg az első gyermekük, majd két évenként",
+       "text": "A felnőttek sem maradtak le a mókáról: náluk az est győztese az ufó szép időkre, „amikor heten ültünk az asztalhoz”. Felidézte, amikor a társakkal ablakon át nézhette a bent táncoló fiatalokat. Amikor az akkori és családi szabályok megengedték, ők is mentek a táncestékre a hétvégeken. Tömördön élő férjével ott ismerkedtek meg. 1958-ban született meg az első gyermekük, majd két évenként",
        "italic": false
       },
       {
@@ -3549,7 +3549,7 @@
        "italic": false
       }
      ],
-     "chars": 1946
+     "chars": 1980
     },
     {
      "sid": "p18s3",
@@ -3633,8 +3633,7 @@
      "story": 2,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "szép időkre, „amikor heten ültünk"
+     "ad_guess": false
     }
    ]
   },
@@ -4299,6 +4298,16 @@
       },
       {
        "type": "sig",
+       "text": "Šandor Petković pozdravlja vjernike",
+       "italic": true
+      },
+      {
+       "type": "p",
+       "text": "Imre-templomba a kőszegi zarádokok. Egy hónapig várja itt híveit imára, lelki feltöltődésre, amikor is visszaviszik Horvátzsidányba a Keresztelő Szent János templomba.",
+       "italic": true
+      },
+      {
+       "type": "sig",
        "text": "Marija Fülöp Huljev",
        "italic": false
       },
@@ -4308,7 +4317,7 @@
        "italic": false
       }
      ],
-     "chars": 1283
+     "chars": 1486
     },
     {
      "sid": "p23s1",
@@ -4439,8 +4448,7 @@
      "story": 0,
      "dist": 0.0,
      "overlay_chars": 0,
-     "ad_guess": false,
-     "caption": "Šandor Petković pozdravlja vjernike Imre-templomba a kőszegi zarádokok. Egy hónapig várja itt híveit imára, lelki feltöltő- désre, amikor is visszaviszik Horvátzsidányba a Keresztelő Szent János templomba."
+     "ad_guess": false
     },
     {
      "idx": 4,
