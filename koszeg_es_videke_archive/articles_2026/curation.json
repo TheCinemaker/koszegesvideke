@@ -220,5 +220,89 @@
     0
    ]
   }
+ },
+ "kev_20260706_170": {
+  "ads": {
+   "p06": [
+    0
+   ]
+  },
+  "stories": {
+   "p01s0": {
+    "title": "„Kőszeg az életünk része lett”",
+    "kicker": "Köz-Játék Fesztivál",
+    "deck": "Marton Róbert, Schneider Zoltán és Balázs Andrea a Jutalomjáték főszereplői",
+    "replace": [
+     [
+      "XXXIX.ÉVFOLYAM, 7. SZÁM 2026. JÚLIUS 6. ",
+      ""
+     ]
+    ],
+    "drop_blocks": [
+     "=Fotó: Kovács Milán",
+     "=P. L."
+    ],
+    "author": "P. L.",
+    "photo": "Kovács Milán",
+    "section": "kultura",
+    "weight": 10
+   },
+   "p03s0": {
+    "author": "Kámán Zoltán"
+   },
+   "p09s0": {
+    "author": "Kámán Zoltán",
+    "weight": 5
+   },
+   "p15s0": {
+    "author": "Kámán Zoltán",
+    "drop_blocks": [
+     "=Perger Gyula és Brenner József"
+    ]
+   },
+   "p17s0": {
+    "author": ""
+   },
+   "p18s0": {
+    "author": "Tóth Árpád"
+   },
+   "p18s1": {
+    "author": "Milos Lászlóné",
+    "drop_blocks": [
+     "=Tóth Árpád"
+    ]
+   },
+   "p19s0": {
+    "author": "Kámán Zoltán"
+   },
+   "p22s0": {
+    "images": [
+     "p22:0"
+    ]
+   },
+   "p22s1": {
+    "title": "Bajnoki címek: Varga Marcell és Fruzsina",
+    "section": "sport",
+    "images": [
+     "p22:5",
+     "p22:6"
+    ]
+   },
+   "p22s2": {
+    "merge_into": "p22s1"
+   },
+   "p23s0": {
+    "author": "Marija Fülöp Huljev"
+   },
+   "p28s1": {
+    "drop": true
+   },
+   "p04s0": {
+    "weight": 6
+   },
+   "p07s0": {
+    "deck": ""
+   }
+  }
  }
 }

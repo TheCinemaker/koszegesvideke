@@ -170,6 +170,8 @@ def split_signature(blocks):
             last["text"] = t[: m3.start()].strip()
             continue
         break
+    if author and re.sub(r"[\s.]", "", author.upper()) in {"KÁMÁNZ", "KZ", "KZ/SZERK", "KÁMÁNZ/SZERK"}:
+        author = "Kámán Zoltán"
     if author:
         # egybetűs maradvány a név előtt ("y Varsányi Áron" -> "Varsányi Áron")
         author = re.sub(r"^(?:[a-záéíóöőúüű]\s+)+", "", author.strip()).strip() or None
