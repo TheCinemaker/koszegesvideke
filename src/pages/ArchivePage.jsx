@@ -13,7 +13,7 @@ export const ArchivePage = ({ year }) => {
       <header className="border-b-2 border-[var(--color-ink)] pb-4 mb-6">
         <h1 className="text-[36px] sm:text-[44px] leading-tight">Archívum</h1>
         <p className="text-[17px] text-[var(--color-ink-2)] mt-2 max-w-[70ch] leading-relaxed">
-          A Kőszeg és Vidéke {years[years.length - 1]} és {years[0]} között megjelent {issues.length} lapszáma. A régebbi számok eredeti
+          A Kőszeg és Vidéke {issues.length} digitalizált lapszáma ({years[years.length - 1]}–{years[0]}). A lapszámok eredeti
           PDF-ben nyílnak meg; a teljes szövegükben a <a className="text-[var(--color-brand)] underline" href={href('kereses')}>keresővel</a> kereshet.
         </p>
       </header>
@@ -31,7 +31,17 @@ export const ArchivePage = ({ year }) => {
         ))}
       </nav>
 
-      <h2 className="font-sans text-[20px] font-bold mb-5">{active}. évi lapszámok ({list.length})</h2>
+      <h2 className="font-sans text-[20px] font-bold mb-2">{active}. évi lapszámok ({list.length})</h2>
+      {list.some((i) => i.source) ? (
+        <p className="meta mb-5">
+          Digitalizálta:{' '}
+          <a className="underline" href="http://www.koszeg-konyvtar.hu/node/77" target="_blank" rel="noopener noreferrer">
+            Chernel Kálmán Városi Könyvtár, Kőszeg
+          </a>
+        </p>
+      ) : (
+        <div className="mb-5" />
+      )}
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6">
         {list.map((i) => (
           <IssueCover key={i.id} issue={i} />

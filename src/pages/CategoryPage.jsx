@@ -40,7 +40,7 @@ export const CategoryPage = ({ slug }) => {
           <aside className="lg:col-span-4 lg:border-l lg:border-[var(--color-line)] lg:pl-8">
             <h2 className="font-sans text-[17px] font-bold mb-2">Keresne régebbi cikket?</h2>
             <p className="text-[16px] text-[var(--color-ink-2)] leading-relaxed">
-              A 2012 óta megjelent lapszámok teljes szövegében kereshet, vagy böngészheti a lapszámokat.
+              A digitalizált lapszámok (1889-től) teljes szövegében kereshet, vagy böngészheti a lapszámokat.
             </p>
             <div className="flex flex-wrap gap-2 mt-4">
               <a className="btn" href={href('kereses')}>Keresés</a>

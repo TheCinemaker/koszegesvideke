@@ -8,7 +8,7 @@ import { href } from './router';
 export const SITE_URL = (import.meta.env?.VITE_SITE_URL || 'https://koszegesvideke.pages.dev').replace(/\/$/, '');
 export const SITE_NAME = 'Kőszeg és Vidéke';
 const SITE_DESC =
-  'Kőszeg és Vidéke – Kőszeg város és környéke polgárainak ingyenes havilapja. Friss helyi hírek, közélet, kultúra, sport és a 2012 óta megjelent lapszámok kereshető archívuma.';
+  'Kőszeg és Vidéke – Kőszeg város és környéke polgárainak ingyenes havilapja. Friss helyi hírek, közélet, kultúra, sport és a digitalizált lapszámok (1889-től) kereshető archívuma.';
 const DEFAULT_IMAGE = '/og-default.jpg';
 
 const clean = (t) => (t || '').replace(/\u00ad/g, '').replace(/\s+/g, ' ').trim();
@@ -137,7 +137,7 @@ export function getMeta(route) {
       return {
         ...base,
         title: y ? `${y}. évi lapszámok – Archívum – ${SITE_NAME}` : `Archívum – ${SITE_NAME}`,
-        description: `A Kőszeg és Vidéke ${y ? `${y}. évben` : '2012 óta'} megjelent lapszámai PDF-ben, teljes szövegű kereséssel.`,
+        description: `A Kőszeg és Vidéke ${y ? `${y}. évben` : '1889 óta'} megjelent, digitalizált lapszámai PDF-ben, teljes szövegű kereséssel.`,
         path: href('archivum', y || undefined),
         image: latestIssue.cover || DEFAULT_IMAGE,
       };

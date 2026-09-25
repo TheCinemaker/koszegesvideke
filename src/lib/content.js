@@ -39,8 +39,14 @@ export function formatDate(iso) {
 export function issueTitle(issue) {
   if (!issue) return '';
   const num = issue.number ? `, ${issue.number}. szám` : '';
-  return `${issue.year}. ${MONTHS[issue.month - 1]}${num}`;
+  // a régi (heti) lapszámoknál a nap is kell: "1889. január 6., 1. szám"
+  const day = issue.weekly ? ` ${issue.day}.` : '';
+  return `${issue.year}. ${MONTHS[issue.month - 1]}${day}${num}`;
 }
+
+// A digitalizált archívum első és utolsó éve (a szövegekben: "1889-től")
+export const ARCHIVE_FIRST_YEAR = Math.min(...ISSUES.map((i) => i.year));
+export const ARCHIVE_LAST_YEAR = Math.max(...ISSUES.map((i) => i.year));
 
 export const monthName = (m) => MONTHS[m - 1];
 

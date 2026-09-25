@@ -340,6 +340,24 @@ def load_issue_meta():
             "pdfOriginal": it["url"],
             "label": f"{it['year']}. {MONTHS[it['month'] - 1]}",
         }
+    # 1889–1939: a Chernel Kálmán Városi Könyvtár digitalizált heti lapszámai (scripts/download_konyvtar.py)
+    kt = ARCH / "index" / "konyvtar.json"
+    if kt.exists():
+        for it in json.loads(kt.read_text(encoding="utf-8")):
+            stem = it["filename"][:-4]
+            out[stem] = {
+                "id": stem,
+                "year": it["year"], "month": it["month"], "day": it["day"],
+                "date": it["date"],
+                "serial": None,
+                "volume": None, "number": it.get("issue_number"),
+                "pages": it.get("pages", 0),
+                "pdf": f"{PDF_BASE}/{it['filename']}",
+                "pdfOriginal": it["url"],
+                "label": f"{it['year']}. {MONTHS[it['month'] - 1]} {it['day']}.",
+                "weekly": True,
+                "source": it.get("source"),
+            }
     return out
 
 
@@ -358,7 +376,15 @@ def build_covers(issues):
             meta["cover"] = f"/covers/{stem}.jpg"
             meta["coverLarge"] = f"/archive_covers/{stem}.jpg"
         else:
-            meta["cover"] = None
+            # nincs kész borítókép (pl. a könyvtári évfolyamok): az első oldalból rendereljük
+            pdf = PDF_DIR / str(meta["year"]) / f"{stem}.pdf"
+            if not dst.exists() and pdf.exists():
+                doc = pymupdf.open(pdf)
+                page = doc[0]
+                pix = page.get_pixmap(matrix=pymupdf.Matrix(520 / page.rect.width, 520 / page.rect.width))
+                Image.frombytes("RGB", (pix.width, pix.height), pix.samples).save(dst, "JPEG", quality=80, optimize=True, progressive=True)
+                doc.close()
+            meta["cover"] = f"/covers/{stem}.jpg" if dst.exists() else None
 
 
 def _xover(a, b):
@@ -621,7 +647,8 @@ def build_print_ads(issues):
 
 def normalize_search_text(t):
     t = t.replace("\u00ad", "")
-    t = re.sub(r"(\w)-\n(\w)", r"\1\2", t)
+    # sorvégi elválasztás (a régi OCR-ben szóköz is lehet a kötőjel után)
+    t = re.sub(r"(\w)[-¬]\s*\n\s*(\w)", r"\1\2", t)
     t = re.sub(r"\s+", " ", t)
     return t.strip()
 

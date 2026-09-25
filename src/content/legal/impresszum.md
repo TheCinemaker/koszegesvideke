@@ -29,7 +29,7 @@ Hirdetésszervezés: Kámán Zoltán – 06 20 381 8014
 
 ## Az online kiadás
 
-A Kőszeg és Vidéke online felülete a lap aktuális és korábbi tartalmainak digitális megjelenítésére, keresésére és archiválására szolgál. Az online felületen megtalálhatók a lap aktuális cikkei, a 2012 óta megjelent lapszámok és azok kereshető szövege.
+A Kőszeg és Vidéke online felülete a lap aktuális és korábbi tartalmainak digitális megjelenítésére, keresésére és archiválására szolgál. Az online felületen megtalálhatók a lap aktuális cikkei, a digitalizált lapszámok és azok kereshető szövege. Az 1889–1939 közötti évfolyamokat a Chernel Kálmán Városi Könyvtár digitalizálta.
 
 Szoftver: SA Software & Network Solutions
 

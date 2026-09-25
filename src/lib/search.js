@@ -1,4 +1,4 @@
-// Keresés: a 2026-os cikkekben (azonnal) és a teljes nyomtatott archívumban (2012–2026, oldalanként).
+// Keresés: a 2026-os cikkekben (azonnal) és a teljes nyomtatott archívumban (1889-től, oldalanként).
 // Ékezetfüggetlen: a „koszeg” megtalálja a „Kőszeg” szót is.
 import MANIFEST from '../data/searchManifest.json';
 import { articles } from './content';

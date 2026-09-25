@@ -1,6 +1,6 @@
 import React from 'react';
 import { href } from '../lib/router';
-import { sections } from '../lib/content';
+import { sections, ARCHIVE_FIRST_YEAR } from '../lib/content';
 
 export const Footer = () => (
   <footer className="mt-16 border-t-2 border-[var(--color-ink)] bg-[#f6f6f4]">
@@ -26,7 +26,7 @@ export const Footer = () => (
       <div>
         <h2 className="font-sans text-[15px] font-bold mb-3">Archívum</h2>
         <p className="text-[15px] text-[var(--color-ink-2)] leading-relaxed mb-3">
-          A 2012 óta megjelent összes lapszám PDF-ben olvasható, szövegük kereshető.
+          A digitalizált lapszámok ({ARCHIVE_FIRST_YEAR}-től) PDF-ben olvashatók, szövegük kereshető.
         </p>
         <a className="btn" href={href('archivum')}>Lapszámok böngészése</a>
       </div>

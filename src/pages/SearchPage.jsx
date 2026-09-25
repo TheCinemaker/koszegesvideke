@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
 import { ArticleCard } from '../components/ArticleCard';
 import { href, navigate } from '../lib/router';
-import { getIssue, issueTitle, pdfLink } from '../lib/content';
+import { getIssue, issueTitle, pdfLink, ARCHIVE_FIRST_YEAR, ARCHIVE_LAST_YEAR } from '../lib/content';
 import { searchArticles, searchArchive, archiveYears, fold, queryTerms } from '../lib/search';
 
 // A találati szavak kiemelése a kivonatban (ékezetfüggetlenül)
@@ -83,7 +83,7 @@ export const SearchPage = ({ query }) => {
     <div className="container-news pt-8 max-w-[900px]">
       <h1 className="text-[36px] sm:text-[42px] leading-tight">Keresés</h1>
       <p className="text-[17px] text-[var(--color-ink-2)] mt-2">
-        Keres a 2026-os cikkekben és a 2012 óta megjelent összes lapszám teljes szövegében. Ékezet nélkül is kereshet.
+        Keres a 2026-os cikkekben és a digitalizált lapszámok ({ARCHIVE_FIRST_YEAR}-től) teljes szövegében. Ékezet nélkül is kereshet.
       </p>
 
       <form onSubmit={submit} className="mt-5 flex gap-2" role="search">
@@ -142,7 +142,7 @@ export const SearchPage = ({ query }) => {
 
           <section className="mt-12" aria-labelledby="archiv-talalatok" aria-busy={loading}>
             <div className="rule-heading">
-              <h2 id="archiv-talalatok">Nyomtatott lapszámok{yearFilter ? ` (${yearFilter})` : ' (2012–2026)'}</h2>
+              <h2 id="archiv-talalatok">Nyomtatott lapszámok{yearFilter ? ` (${yearFilter})` : ` (${ARCHIVE_FIRST_YEAR}–${ARCHIVE_LAST_YEAR})`}</h2>
               <span className="meta" aria-live="polite">
                 {archive.length} oldal{loading ? ` · keresés… (${loadedYear ?? ''})` : ''}
               </span>
@@ -166,6 +166,7 @@ export const SearchPage = ({ query }) => {
                     </p>
                     <p className="meta mt-1">
                       <a className="underline" href={pdfLink(issue, r.page)} target="_blank" rel="noopener noreferrer">Oldal megnyitása (PDF)</a>
+                      {issue.source && <span> · Digitalizálta: {issue.source}</span>}
                       {issue.articleCount > 0 && (
                         <>
                           {' · '}

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Home, LayoutGrid, Search, Megaphone, Library, X, ChevronRight, ArrowRight } from 'lucide-react';
 import { href, navigate } from '../lib/router';
-import { sections, articles, latestIssue, issueTitle } from '../lib/content';
+import { sections, articles, latestIssue, issueTitle, ARCHIVE_FIRST_YEAR } from '../lib/content';
 
 // Alulról felcsúszó panel
 const Sheet = ({ open, onClose, title, children, labelledBy }) => {
@@ -138,7 +138,7 @@ export const MobileNav = ({ route }) => {
           </a>
           <a href={href('archivum')} onClick={close} className="rounded-2xl bg-[#f3f3f1] p-4 active:opacity-80">
             <span className="block text-[13px] font-semibold text-[var(--color-muted)]">Archívum</span>
-            <span className="block text-[17px] font-bold mt-0.5">Lapszámok 2012-től</span>
+            <span className="block text-[17px] font-bold mt-0.5">Lapszámok {ARCHIVE_FIRST_YEAR}-től</span>
           </a>
         </div>
       </Sheet>
@@ -163,7 +163,7 @@ export const MobileNav = ({ route }) => {
             </button>
           </div>
           <p className="text-[15px] text-[var(--color-ink-2)] mt-3 leading-relaxed">
-            A 2026-os cikkekben és a 2012 óta megjelent összes lapszám szövegében keres. Ékezet nélkül is működik.
+            A 2026-os cikkekben és a digitalizált lapszámok ({ARCHIVE_FIRST_YEAR}-től) szövegében keres. Ékezet nélkül is működik.
           </p>
           <p className="text-[13px] font-bold uppercase tracking-wide text-[var(--color-muted)] mt-5 mb-2">Népszerű keresések</p>
           <div className="flex flex-wrap gap-2 pb-2">

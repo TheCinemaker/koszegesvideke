@@ -119,7 +119,7 @@ export const Header = ({ route }) => {
                 type="search"
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
-                placeholder="Keresés a cikkekben és a 2012 óta megjelent lapszámokban…"
+                placeholder="Keresés a cikkekben és a digitalizált lapszámokban…"
                 className="flex-1 min-w-0 px-4 py-2.5 text-[17px] text-[var(--color-ink)] bg-white rounded-md focus:outline-none"
                 autoFocus
               />

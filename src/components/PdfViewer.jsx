@@ -174,7 +174,7 @@ export default function PdfViewer({ url, initialPage = 1, fallbackUrl }) {
               data-no-modal="true"
               className="inline-flex items-center gap-2 mt-4 px-4 py-2.5 rounded-lg bg-white text-[var(--color-brand)] font-bold"
             >
-              <ExternalLink className="w-4 h-4" aria-hidden="true" /> Megnyitás a koszeg.hu-n
+              <ExternalLink className="w-4 h-4" aria-hidden="true" /> Megnyitás az eredeti forrásnál
             </a>
           )}
         </div>
