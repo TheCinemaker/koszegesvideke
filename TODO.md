@@ -19,6 +19,17 @@ Javítva (09-25, felhasználói példák alapján): Sarjadó vetés (hirdetés v
 (a borkirálynő-felhívás a Tóth Flóra-cikkhez került), Ostromnapok felvezető (plakát egészben látszik);
 általánosan: a nyomtatott képkeret és árnyék automatikusan levágódik, a plakátszerű képek nem vágódnak le.
 
+## Havi teendő új lapszámnál
+
+1. PDF feltöltése a Cloudflare R2-be (`https://pub-fc6c9d1807b047e1bbddb255e30b9c50.r2.dev/<fájlnév>.pdf`)
+2. `python scripts/segment_2026.py` → `scripts/detect_recurring_ads.py` → kézi javítások (`curation.json`)
+3. Hirdetések: az új lapszám hirdetésterületei a `koszeg_es_videke_archive/articles_2026/print_ads.json`-ba
+   (a Hirdetések oldal mindig a legfrissebb listát mutatja)
+4. `python scripts/build_site_data.py` → `npm run build`
+
+- [ ] R2 CORS: az `ExposeHeaders` listába `Accept-Ranges` (nem kötelező: a PDF-olvasó saját darabletöltővel
+      enélkül is csak a nézett oldalakat tölti le)
+
 ## 0.5 SEO és Google (fontos: a Google azonnal találja meg)
 
 - [x] **Útvonalak `#/cikk/...` helyett valódi URL-ekre (`/cikk/...`)** – a `#` utáni részt a Google NEM
