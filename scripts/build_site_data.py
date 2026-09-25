@@ -63,7 +63,7 @@ NOTICE_TITLES = re.compile(
     r"kőszeg lomtalanítás|programajánló|rendelési időpontok)", re.I)
 
 BYLINE_RE = re.compile(r"^(?:írta(?: és fényképezte| és fotózta)?|szöveg(?: és fotó)?|összeállította|lejegyezte)\s*:?\s*(.+)$", re.I)
-PHOTO_RE = re.compile(r"^(?:fotó(?:k)?|kép(?:ek)?|fénykép(?:ek)?)\s*:\s*(.+)$", re.I)
+PHOTO_RE = re.compile(r"^(?:fotó(?:k)?|kép(?:ek)?|fénykép(?:ek)?|fényképezte|fotózta)\s*:\s*(.+)$", re.I)
 
 
 _HYPH = pyphen.Pyphen(lang="hu_HU", left=3, right=3)
@@ -180,6 +180,37 @@ def split_signature(blocks):
         if b["type"] == "sig":
             b["type"] = "p"
     return blocks, author, photo
+
+
+def join_broken_paragraphs(blocks):
+    """
+    Hasáb- vagy oldaltörésnél kettévált bekezdések összefűzése: ha egy bekezdés elválasztott szóval
+    végződik ("Egyete-") és a következő kisbetűvel kezdődik ("men …"), a kettő egy bekezdés.
+    Ugyanígy, ha egy bekezdés mondatvégi írásjel nélkül ér véget és a következő kisbetűvel indul.
+    """
+    out = []
+    for b in blocks:
+        # rejtett, olvashatatlan PDF-szövegmaradvány ("j y", "lké í é Ké d lé ...") kihagyása
+        if b.get("type") in ("p", "sig"):
+            words = b["text"].split()
+            if len(b["text"]) < 120 and len(words) >= 2 and sum(len(w) for w in words) / len(words) <= 2.2:
+                continue
+        prev = out[-1] if out else None
+        if (prev is not None and prev.get("type") in ("p", "sig") and b.get("type") in ("p", "sig")
+                and b["text"][:1].islower()):
+            pt = prev["text"].rstrip()
+            if re.search(r"[A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű]-$", pt):
+                prev["text"] = pt[:-1] + b["text"]
+                prev["type"] = "p"
+                continue
+            # évszám vagy rövidítés utáni pont nem mondatvég ("… ügyész 2026." + "március 1. …")
+            abbrev = re.search(r"(?:\b\d{4}\.|\b(?:dr|prof|id|ifj|u|krt|stb|kb|ill|pl|sz|ún|ld|vö)\.)$", pt, re.I)
+            if abbrev or not re.search(r"[.!?:;”\")…]$", pt):
+                prev["text"] = pt + " " + b["text"]
+                prev["type"] = "p"
+                continue
+        out.append(b)
+    return out
 
 
 def make_lead(blocks, deck):
@@ -443,6 +474,7 @@ def build_articles(issues, with_images=True):
                 if "text" in b:
                     b["text"] = fix_text(b["text"])
             blocks = [b for b in blocks if b.get("type") == "box" or b["text"]]
+            blocks = join_broken_paragraphs(blocks)
             blocks, author, photo = split_signature(blocks)
             if o.get("author") is not None:
                 author = o["author"] or None

@@ -530,5 +530,126 @@
     "box_title": "Eredmények"
    }
   }
+ },
+ "kev_20260414_167": {
+  "ads": {
+   "p09": [
+    1
+   ],
+   "p25": [
+    2
+   ],
+   "p26": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "p27": [
+    0
+   ]
+  },
+  "stories": {
+   "p01s0": {
+    "title": "Ereklyék Kőszegen",
+    "author": "",
+    "photo": "Kiskéri László",
+    "images": [
+     "p01:2"
+    ],
+    "weight": 10
+   },
+   "p04s0": {
+    "title": "Választási eredmények Kőszegen és környékén",
+    "deck": "2026. április 12.",
+    "lead": "Az április 12-i országgyűlési választás eredményei Kőszegen és a környező településeken."
+   },
+   "p07s0": {
+    "merge_into": "p06s0"
+   },
+   "p14s1": {
+    "keep": true,
+    "title": "Jody Patricia Jensen, iASK-kutató a világ változásairól",
+    "deck": "Félelmetes világban éltünk kisgyermekként … az új világra nyíló várakozásunk nem tartott sokáig",
+    "images": [
+     "p14:4"
+    ],
+    "author": "Kámán Zoltán"
+   },
+   "p14s0": {
+    "merge_into": "p14s1"
+   },
+   "p15s0": {
+    "merge_into": "p14s1"
+   },
+   "p17s0": {
+    "author": "Szerdahelyi-Bánó Irén"
+   },
+   "p17s1": {
+    "author": "Balázs Anikó"
+   },
+   "p18s0": {
+    "author": "",
+    "photo": "Cseh Gábor"
+   },
+   "p23s0": {
+    "author": "Marija Fülöp Huljev",
+    "photo": "Zita Horváth"
+   },
+   "p26s0": {
+    "drop": true
+   },
+   "p26s1": {
+    "merge_into": "",
+    "keep": true,
+    "images": []
+   },
+   "p27s1": {
+    "images": []
+   },
+   "p30s0": {
+    "keep": true,
+    "title": "Diáksport: mezei futás, labdarúgás, birkózás",
+    "section": "sport"
+   },
+   "p30s1": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s2": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s3": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s4": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s6": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s7": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   }
+  }
  }
 }
