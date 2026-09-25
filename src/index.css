@@ -325,3 +325,38 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* Jogi oldalak (impresszum, adatvédelem, sütik) – nyugodt, jól olvasható, nem sorkizárt jogi szöveg */
+.legal-body {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--color-ink);
+}
+.legal-body h2 {
+  font-family: var(--font-sans);
+  font-size: 21px;
+  font-weight: 700;
+  margin: 1.8em 0 0.5em;
+}
+.legal-body h3 {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 1.4em 0 0.4em;
+}
+.legal-body p,
+.legal-body ul {
+  margin: 0 0 1em;
+}
+.legal-body ul {
+  list-style: disc;
+  padding-left: 1.3em;
+}
+.legal-body li {
+  margin-bottom: 0.35em;
+}
+.legal-body a {
+  color: var(--color-brand);
+  text-decoration: underline;
+}

@@ -1,24 +1,35 @@
 {
-  "name": "Kőszeg és Vidéke - Digitális Kiadás",
+  "name": "Kőszeg és Vidéke",
   "short_name": "Kőszeg és Vidéke",
-  "description": "Kőszeg és Vidéke független megyei és városi lap digitális archívuma és friss kiadásai (2012–2026).",
+  "description": "Kőszeg város és környéke polgárainak ingyenes havilapja – friss cikkek és a 2012 óta megjelent lapszámok kereshető archívuma.",
+  "lang": "hu",
+  "dir": "ltr",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#fcfbf7",
-  "theme_color": "#1a1a1a",
-  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#154e87",
+  "categories": [
+    "news"
+  ],
   "icons": [
     {
       "src": "/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     },
     {
       "src": "/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-512-any.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

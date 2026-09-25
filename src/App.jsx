@@ -8,6 +8,7 @@ import { CategoryPage } from './pages/CategoryPage';
 import { IssuePage } from './pages/IssuePage';
 import { ArchivePage } from './pages/ArchivePage';
 import { SearchPage } from './pages/SearchPage';
+import { LegalPage, LEGAL_PAGES } from './pages/LegalPage';
 import { useRoute, href } from './lib/router';
 import { useDocumentMeta } from './lib/useDocumentMeta';
 
@@ -69,7 +70,7 @@ export default function App() {
       page = <SearchPage key={`${route.query.q || ''}|${route.query.ev || ''}`} query={route.query} />;
       break;
     default:
-      page = <NotFound />;
+      page = LEGAL_PAGES[route.name] ? <LegalPage page={route.name} /> : <NotFound />;
   }
 
   return (

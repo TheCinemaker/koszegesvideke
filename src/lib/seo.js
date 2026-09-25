@@ -149,6 +149,17 @@ export function getMeta(route) {
         description: 'Helyi vállalkozások ajánlatai. Hirdessen a Kőszeg és Vidéke nyomtatott és online kiadásában!',
         path: href('hirdetesek'),
       };
+    case 'impresszum':
+    case 'adatvedelem':
+    case 'sutik': {
+      const titles = { impresszum: 'Impresszum', adatvedelem: 'Adatvédelmi tájékoztató', sutik: 'Süti-tájékoztató' };
+      return {
+        ...base,
+        title: `${titles[route.name]} – ${SITE_NAME}`,
+        description: `${titles[route.name]} – Kőszeg és Vidéke, kiadja a Jurisics-vár Művelődési Központ és Várszínház.`,
+        path: href(route.name),
+      };
+    }
     case 'kereses':
       return { ...base, title: `Keresés – ${SITE_NAME}`, path: href('kereses'), robots: 'noindex, follow' };
     case 'admin':

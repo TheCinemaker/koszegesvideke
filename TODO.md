@@ -31,13 +31,17 @@ Kézi javítások: `koszeg_es_videke_archive/articles_2026/curation.json`
 - [x] `robots.txt` a sitemap hivatkozással
 - [ ] **Cloudflare Pages környezeti változó: `VITE_SITE_URL`** = a végleges domain (pl. `https://koszegesvideke.hu`),
       e nélkül a kanonikus URL-ek, a sitemap és az RSS a `https://koszegesvideke.pages.dev` címre mutatnak
-- [ ] `public/og-default.jpg` (1200×630) – alapértelmezett megosztási kép (Gemini)
+- [x] `public/og-default.jpg` (1200×630), ikonok, favicon, manifest
 - [ ] Google Search Console: tulajdon igazolása, sitemap beküldése; Google News Publisher Center
-- [ ] Google Analytics 4 (vagy adatvédelmileg barátságosabb alternatíva) + süti-tájékoztató (GDPR)
+- [x] impresszum, adatvédelmi és süti-tájékoztató oldal (`src/content/legal/*.md`)
+- [ ] **a jogi szövegeket és a kiadó elérhetőségeit (Rajnis u. 9., +36 94 360 113, jurisics@koszeg.hu)
+      a kiadóval jóváhagyatni** – a cím és az e-mail a lapban nem szerepel, ellenőrizni kell
+- [ ] Google Fonts helyett saját tárhelyről a betűk (adatvédelem: így nem megy IP-cím a Google-höz; gyorsabb is)
+- [ ] látogatottságmérés: Cloudflare Web Analytics (sütimentes, nem kell hozzájárulás) vagy GA4 + süti-banner
 - [ ] képek: `alt` szövegek, `width`/`height`, WebP/AVIF változat, `srcset` a mobilhoz
 - [ ] Core Web Vitals / PageSpeed Insights mobilon: LCP, CLS mérése és javítása
 - [x] RSS feed (`/rss.xml`) a friss cikkekhez
-- [ ] PWA: `manifest.webmanifest`, telepíthető app, offline olvasás (a favicont/ikonokat a Gemini készíti)
+- [x] PWA manifest + ikonok (telepíthető) · [ ] offline olvasás (service worker)
 
 ## 1. Tartalom – kézi ellenőrzés (legfontosabb)
 

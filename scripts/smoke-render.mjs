@@ -2,7 +2,7 @@
 // Használat: node scripts/smoke-render.mjs
 import { createServer } from 'vite';
 
-const routes = ['/', '/rovat/sport', '/rovat/nemzetisegek', '/archivum', '/archivum/2015', '/kereses?q=jurisics', '/hirdetesek'];
+const routes = ['/', '/rovat/sport', '/rovat/nemzetisegek', '/archivum', '/archivum/2015', '/kereses?q=jurisics', '/hirdetesek', '/impresszum', '/adatvedelem', '/sutik'];
 
 globalThis.window = {
   location: { pathname: '/', search: '', hash: '' },

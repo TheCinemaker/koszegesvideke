@@ -33,7 +33,12 @@ export const Footer = () => (
     </div>
     <div className="border-t border-[var(--color-line)]">
       <div className="container-news py-4 meta flex flex-wrap justify-between gap-x-6 gap-y-2">
-        <a className="hover:underline" href={href('hirdetesek')}>Hirdetések · Hirdessen nálunk</a>
+        <span className="flex flex-wrap gap-x-5 gap-y-2">
+          <a className="hover:underline" href={href('impresszum')}>Impresszum</a>
+          <a className="hover:underline" href={href('adatvedelem')}>Adatvédelem</a>
+          <a className="hover:underline" href={href('sutik')}>Sütik</a>
+          <a className="hover:underline" href={href('hirdetesek')}>Hirdessen nálunk</a>
+        </span>
         <a className="hover:underline" href={href('admin')}>Szerkesztőségi belépés</a>
       </div>
     </div>
