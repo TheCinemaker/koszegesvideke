@@ -503,6 +503,9 @@ def extract_caption(stories, images):
                 continue
             caps.append((l, s))
             bottom = l["bbox"][3]
+        # folyószöveg, nem képaláírás: kötőjellel végződik (elválasztott szó) vagy kisbetűvel kezdődik
+        if caps and (any(l["text"].rstrip().endswith("-") for l, _ in caps) or caps[0][0]["text"].strip()[:1].islower()):
+            caps = []
         if caps:
             for l, s in caps:
                 s["lines"] = [x for x in s["lines"] if x is not l]

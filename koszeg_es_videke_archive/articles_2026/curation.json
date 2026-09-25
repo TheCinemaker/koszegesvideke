@@ -304,5 +304,231 @@
     "deck": ""
    }
   }
+ },
+ "kev_20260608_169": {
+  "ads": {
+   "p05": [
+    2
+   ],
+   "p06": [
+    1
+   ],
+   "p15": [
+    0
+   ],
+   "p22": [
+    1,
+    3
+   ],
+   "p28": [
+    0
+   ]
+  },
+  "stories": {
+   "p01s0": {
+    "keep": true,
+    "title": "Táncba szőtt esztendő",
+    "kicker": "Hajnalcsillag Néptáncegyüttes",
+    "replace": [
+     [
+      "XXXIX.ÉVFOLYAM, 6. SZÁM 2026. JÚNIUS 8. ",
+      ""
+     ]
+    ],
+    "images": [
+     "p01:2",
+     "p01:0"
+    ],
+    "captions": {
+     "p01:2": "Kisgöncöl csoport",
+     "p01:0": "Nosztalgia csoport"
+    },
+    "section": "kultura",
+    "weight": 10
+   },
+   "p06s0": {
+    "weight": 6
+   },
+   "p07s0": {
+    "merge_into": "p06s0"
+   },
+   "p14s1": {
+    "keep": true,
+    "title": "Földesiné Németh Csilla: évzáró gondolatok",
+    "author": "Kámán Zoltán",
+    "drop_blocks": [
+     "=Lejegyezte: KZ"
+    ],
+    "images": [
+     "p14:0"
+    ]
+   },
+   "p14s2": {
+    "merge_into": "p14s1"
+   },
+   "p19s1": {
+    "author": "Láng József"
+   },
+   "p22s0": {
+    "drop": true
+   },
+   "p23s0": {
+    "author": "",
+    "replace": [
+     [
+      " Kőszegfalvi Ágnes NNÖ elnöke",
+      ""
+     ]
+    ]
+   },
+   "p23s1": {
+    "author": "Kőszegfalvi Ágnes NNÖ elnöke"
+   },
+   "p24s0": {
+    "author": "Kámán Zoltán"
+   },
+   "p25s0": {
+    "merge_into": "p24s0"
+   },
+   "p31s0": {
+    "keep": true,
+    "title": "Kötélugrás, diákolimpiák: kőszegi eredmények",
+    "section": "sport",
+    "drop_blocks": [
+     "=j g"
+    ]
+   }
+  }
+ },
+ "kev_20260511_168": {
+  "ads": {
+   "p09": [
+    2
+   ],
+   "p12": [
+    2
+   ],
+   "p15": [
+    2
+   ],
+   "p17": [
+    0
+   ],
+   "p26": [
+    0,
+    1
+   ]
+  },
+  "stories": {
+   "p01s0": {
+    "keep": true,
+    "title": "Ballagtak a kőszegi középiskolások",
+    "kicker": "Ballagás",
+    "replace": [
+     [
+      "XXXIX.ÉVFOLYAM, 5. SZÁM 2026. MÁJUS 11. ",
+      ""
+     ]
+    ],
+    "images": [
+     "p01:0",
+     "p01:1",
+     "p01:3"
+    ],
+    "captions": {
+     "p01:0": "Az Árpád-házi iskola diákjai a kápolnában",
+     "p01:1": "Az Árpád-házi iskola diákjai a kápolnában",
+     "p01:3": "A Jurisich Gimnázium diákjai a belvárosban"
+    },
+    "weight": 10
+   },
+   "p03s0": {
+    "keep": true,
+    "title": "Lakossági tájékoztató az azbesztet tartalmazó „bernsteini” kőzúzalékról",
+    "deck": "A kőzúzalék kőszegi jelenléte, a megtett és folyamatban lévő intézkedések",
+    "author": "Básthy Béla polgármester",
+    "section": "varoshaza",
+    "weight": 7
+   },
+   "p05s0": {
+    "merge_into": "p04s0"
+   },
+   "p15s0": {
+    "merge_into": "p14s0"
+   },
+   "p24s0": {
+    "images": [
+     "p25:0",
+     "p25:1",
+     "p25:2",
+     "p25:3",
+     "p25:4",
+     "p25:5",
+     "p25:6",
+     "p25:7",
+     "p25:8",
+     "p25:9",
+     "p25:10"
+    ]
+   },
+   "p17s3": {
+    "title": "Kőszegszerdahely: azbeszttartalmú kőzúzalék"
+   },
+   "p30s0": {
+    "keep": true,
+    "title": "Diáksport: atlétika, duatlon, labdarúgás",
+    "section": "sport"
+   },
+   "p31s0": {
+    "keep": true,
+    "title": "Diáksport és birkózás: érmek, helyezések",
+    "section": "sport"
+   },
+   "p30s1": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s2": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s3": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s4": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s5": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p30s6": {
+    "merge_into": "p30s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s1": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s2": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   },
+   "p31s3": {
+    "merge_into": "p31s0",
+    "as_box": true,
+    "box_title": "Eredmények"
+   }
+  }
  }
 }

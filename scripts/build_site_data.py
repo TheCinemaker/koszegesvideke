@@ -489,7 +489,7 @@ def build_articles(issues, with_images=True):
                 elif (PUBLIC / rel).exists():
                     w, h = Image.open(PUBLIC / rel).size
                 images.append({"src": "/" + rel, "w": w, "h": h,
-                               "caption": fix_text(captions.get(ref) or im.get("caption") or "") or None})
+                               "caption": fix_text(captions[ref] if ref in captions else (im.get("caption") or "")) or None})
 
             text_len = sum(len(b.get("text", "")) for b in blocks)
             for b in blocks:
