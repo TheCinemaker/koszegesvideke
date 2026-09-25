@@ -109,7 +109,7 @@ writeFileSync(
 // ---- robots.txt ----
 writeFileSync(
   join(DIST, 'robots.txt'),
-  `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /kereses\n\nSitemap: ${SITE_URL}/sitemap.xml\nSitemap: ${SITE_URL}/news-sitemap.xml\n`
+  `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /kereses\nDisallow: /kepellenorzes\n\nSitemap: ${SITE_URL}/sitemap.xml\nSitemap: ${SITE_URL}/news-sitemap.xml\n`
 );
 
 // ---- rss.xml ----

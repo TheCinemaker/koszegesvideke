@@ -1,13 +1,5 @@
 import React from 'react';
-import impresszum from '../content/legal/impresszum.md?raw';
-import adatvedelem from '../content/legal/adatvedelem.md?raw';
-import sutik from '../content/legal/sutik.md?raw';
-
-export const LEGAL_PAGES = {
-  impresszum: { title: 'Impresszum', source: impresszum },
-  adatvedelem: { title: 'Adatvédelmi tájékoztató', source: adatvedelem },
-  sutik: { title: 'Süti-tájékoztató', source: sutik },
-};
+import { LEGAL_PAGES } from '../content/legal';
 
 // Soron belüli jelölés: **félkövér** és [szöveg](link) – React-elemekként, nyers HTML nélkül
 function inline(text, keyBase) {

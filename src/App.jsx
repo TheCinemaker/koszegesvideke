@@ -8,12 +8,14 @@ import { CategoryPage } from './pages/CategoryPage';
 import { IssuePage } from './pages/IssuePage';
 import { ArchivePage } from './pages/ArchivePage';
 import { SearchPage } from './pages/SearchPage';
-import { LegalPage, LEGAL_PAGES } from './pages/LegalPage';
+import { LegalPage } from './pages/LegalPage';
+import { LEGAL_PAGES } from './content/legal';
 import { useRoute, href } from './lib/router';
 import { useDocumentMeta } from './lib/useDocumentMeta';
 
 // A szerkesztőségi felület külön csomagban töltődik be, csak ha megnyitják.
 const AdsPage = lazy(() => import('./pages/AdsPage').then((m) => ({ default: m.AdsPage })));
+const PhotoReviewPage = lazy(() => import('./pages/PhotoReviewPage').then((m) => ({ default: m.PhotoReviewPage })));
 const AdminApp = lazy(() => import('./pages/admin/AdminApp').then((m) => ({ default: m.AdminApp })));
 
 const NotFound = () => (
@@ -63,6 +65,13 @@ export default function App() {
       page = (
         <Suspense fallback={<p className="container-news py-10 text-[18px]">Betöltés…</p>}>
           <AdsPage />
+        </Suspense>
+      );
+      break;
+    case 'kepellenorzes':
+      page = (
+        <Suspense fallback={<p className="container-news py-10 text-[18px]">Betöltés…</p>}>
+          <PhotoReviewPage />
         </Suspense>
       );
       break;

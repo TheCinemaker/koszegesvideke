@@ -162,6 +162,8 @@ export function getMeta(route) {
     }
     case 'kereses':
       return { ...base, title: `Keresés – ${SITE_NAME}`, path: href('kereses'), robots: 'noindex, follow' };
+    case 'kepellenorzes':
+      return { ...base, title: `Fotóellenőrzés – ${SITE_NAME}`, path: href('kepellenorzes'), robots: 'noindex, nofollow' };
     case 'admin':
       return { ...base, title: `Szerkesztőség – ${SITE_NAME}`, path: href('admin'), robots: 'noindex, nofollow' };
     default:
