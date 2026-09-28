@@ -1,10 +1,14 @@
 import React from 'react';
 import { href } from '../lib/router';
 import { sections, ARCHIVE_FIRST_YEAR } from '../lib/content';
+import { Stats } from './Stats';
 
 export const Footer = () => (
-  <footer className="mt-16 border-t-2 border-[var(--color-ink)] bg-[#f6f6f4]">
-    <div className="container-news py-10 grid gap-8 md:grid-cols-3">
+  <footer className="mt-16 border-t-[3px] border-[var(--color-gold)] bg-[#f6f6f4]">
+    <div className="container-news pt-10">
+      <Stats />
+    </div>
+    <div className="container-news pb-10 grid gap-8 md:grid-cols-3">
       <div>
         <p className="font-serif font-bold text-[26px] text-[var(--color-brand)] leading-tight">Kőszeg és Vidéke</p>
         <p className="mt-2 text-[15px] text-[var(--color-ink-2)] leading-relaxed">

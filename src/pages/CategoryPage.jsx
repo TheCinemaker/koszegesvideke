@@ -30,10 +30,10 @@ export const CategoryPage = ({ slug }) => {
       {first && (
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-8">
-            <ArticleCard article={first} variant="hero" showSection={false} />
+            <ArticleCard article={first} variant="hero" showSection={false} showDate />
             <div className="mt-8 border-t border-[var(--color-line)]">
               {rest.map((a) => (
-                <ArticleCard key={a.id} article={a} variant="row" showSection={false} />
+                <ArticleCard key={a.id} article={a} variant="row" showSection={false} showDate />
               ))}
             </div>
           </div>

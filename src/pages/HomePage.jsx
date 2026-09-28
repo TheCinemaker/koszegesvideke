@@ -1,12 +1,11 @@
 import React from 'react';
 import { ArticleCard } from '../components/ArticleCard';
+import { ThisWeekStrip } from '../components/OnThisWeek';
 import { href } from '../lib/router';
 import { articles, sections, latestIssue, issueTitle } from '../lib/content';
 
-// Címlap: legfelül a legfrissebb lapszám vezető cikkei, alatta rovatonként (a felső menü sorrendjében)
-// a 2026-os cikkek, a legújabbal kezdve. Rovatonként legfeljebb PER_SECTION cikk, a többi a rovatoldalon.
-
-const PER_SECTION = 16;
+// Címlap: CSAK a legfrissebb lapszám cikkei – legfelül a vezető cikkek, alatta rovatonként
+// (a felső menü sorrendjében). A korábbi számok cikkei a rovatoldalakon, az archívumban és a keresőben.
 
 const byWeight = (list) => [...list].sort((a, b) => (b.weight || 0) - (a.weight || 0) || a.rank - b.rank);
 
@@ -42,7 +41,7 @@ const Module = ({ m, showSection }) => {
       return (
         <div className={`grid gap-8 ${m.items.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'} md:divide-x md:divide-[var(--color-line)]`}>
           {m.items.map((a, k) => (
-            <div key={a.id} className={k ? 'md:pl-8' : ''}>
+            <div key={a.id} className={k ? 'border-t border-[var(--color-line)] pt-8 md:border-t-0 md:pt-0 md:pl-8' : ''}>
               <ArticleCard article={a} variant="feature" showSection={showSection} />
             </div>
           ))}
@@ -55,7 +54,7 @@ const Module = ({ m, showSection }) => {
             <ArticleCard article={m.main} variant="wide" showSection={showSection} />
           </div>
           {m.side.length > 0 && (
-            <div className="lg:col-span-4 lg:border-l lg:border-[var(--color-line)] lg:pl-8">
+            <div className="lg:col-span-4 lg:border-l lg:border-[var(--color-line)] lg:pl-8 border-t border-[var(--color-line)] pt-6 lg:border-t-0 lg:pt-0">
               {m.side.map((a) => (
                 <ArticleCard key={a.id} article={a} variant="text" showSection={showSection} />
               ))}
@@ -66,8 +65,10 @@ const Module = ({ m, showSection }) => {
     case 'four':
       return (
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {m.items.map((a) => (
-            <ArticleCard key={a.id} article={a} variant="small" showSection={showSection} />
+          {m.items.map((a, k) => (
+            <div key={a.id} className={k ? 'border-t border-[var(--color-line)] pt-8 sm:border-t-0 sm:pt-0' : ''}>
+              <ArticleCard article={a} variant="small" showSection={showSection} />
+            </div>
           ))}
         </div>
       );
@@ -98,13 +99,15 @@ export const HomePage = () => {
 
   const blocks = sections
     .map((s) => {
-      const all = articles.filter((a) => a.section === s.slug && !used.has(a.id));
-      return { section: s, total: all.length, modules: buildModules(all.slice(0, PER_SECTION)) };
+      const list = current.filter((a) => a.section === s.slug && !used.has(a.id));
+      return { section: s, total: list.length, modules: buildModules(list) };
     })
     .filter((b) => b.total > 0);
 
   return (
     <div className="container-news pt-4 sm:pt-8">
+      {/* Így írtunk – 1, 10, 100 éve: vékony sáv, külön oldalra visz */}
+      <ThisWeekStrip />
       {/* Rovatválasztó (mobilon/tableten): a tartalom része, görgetéssel eltűnik */}
       <nav aria-label="Rovatok" className="lg:hidden -mx-4 mb-4 overflow-x-auto no-scrollbar">
         <ul className="flex gap-2 px-4 w-max">
@@ -121,23 +124,23 @@ export const HomePage = () => {
         </ul>
       </nav>
       {hero && (
-        <section aria-label="Vezető cikkek" className="pb-12">
+        <section aria-label="Vezető cikkek" className="pb-10">
           <div className="grid gap-8 lg:grid-cols-12">
             <div className="lg:col-span-6 lg:order-2">
               <ArticleCard article={hero} variant="hero" />
             </div>
-            <div className="lg:col-span-3 lg:order-1 lg:border-r lg:border-[var(--color-line)] lg:pr-8 flex flex-col gap-6">
+            <div className="lg:col-span-3 lg:order-1 lg:border-r lg:border-[var(--color-line)] lg:pr-8 flex flex-col gap-6 border-t border-[var(--color-line)] pt-8 lg:border-t-0 lg:pt-0">
               {side.map((a, k) => (
                 <div key={a.id} className={k ? 'pt-6 border-t border-[var(--color-line)]' : ''}>
                   <ArticleCard article={a} variant={k === 0 ? 'feature' : 'compact'} showLead={k === 0} />
                 </div>
               ))}
             </div>
-            <aside className="lg:col-span-3 lg:order-3 lg:border-l lg:border-[var(--color-line)] lg:pl-8">
+            <aside className="lg:col-span-3 lg:order-3 lg:border-l lg:border-[var(--color-line)] lg:pl-8 border-t border-[var(--color-line)] pt-8 lg:border-t-0 lg:pt-0">
               <h2 className="font-sans text-[15px] font-extrabold uppercase tracking-wide text-[var(--color-brand)] pb-2 border-b-2 border-[var(--color-ink)]">
                 Friss · {issueTitle(latestIssue)}
               </h2>
-              <ol className="mt-1">
+              <ol className="mt-1 divide-y divide-[var(--color-line)]">
                 {headlines.map((a) => (
                   <li key={a.id}>
                     <ArticleCard article={a} variant="text" showLead={false} />
@@ -150,18 +153,18 @@ export const HomePage = () => {
       )}
 
       {blocks.map(({ section, total, modules }) => (
-        <section key={section.slug} className="pt-4 pb-12" aria-labelledby={`rovat-${section.slug}`}>
+        <section key={section.slug} className="pt-2 pb-10" aria-labelledby={`rovat-${section.slug}`}>
           <div className="rule-heading">
             <h2 id={`rovat-${section.slug}`}>
               <a className="hover:text-[var(--color-brand)]" href={href('rovat', section.slug)}>{section.name}</a>
             </h2>
             <a className="meta hover:underline font-semibold" href={href('rovat', section.slug)}>
-              Mind a {total} cikk →
+              A rovat cikkei →
             </a>
           </div>
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-8">
             {modules.map((m, k) => (
-              <div key={k} className={k ? 'pt-10 border-t border-[var(--color-line)]' : ''}>
+              <div key={k} className={k ? 'pt-8 border-t border-[var(--color-line)]' : ''}>
                 <Module m={m} showSection={false} />
               </div>
             ))}

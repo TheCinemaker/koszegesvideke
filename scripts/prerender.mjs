@@ -37,6 +37,7 @@ const routes = [
   { name: 'home' },
   { name: 'archivum' },
   { name: 'hirdetesek' },
+  { name: 'igy-irtunk' },
   { name: 'impresszum' },
   { name: 'adatvedelem' },
   { name: 'sutik' },

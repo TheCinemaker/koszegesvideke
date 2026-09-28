@@ -9,6 +9,7 @@ import { IssuePage } from './pages/IssuePage';
 import { ArchivePage } from './pages/ArchivePage';
 import { SearchPage } from './pages/SearchPage';
 import { LegalPage } from './pages/LegalPage';
+import { ThisWeekPage } from './components/OnThisWeek';
 import { LEGAL_PAGES } from './content/legal';
 import { useRoute, href } from './lib/router';
 import { useDocumentMeta } from './lib/useDocumentMeta';
@@ -26,6 +27,7 @@ const NotFound = () => (
 );
 
 import { ScrollToTop } from './components/ScrollToTop';
+import { BackButton } from './components/BackButton';
 import { PdfModal } from './components/PdfModal';
 
 export default function App() {
@@ -107,6 +109,9 @@ export default function App() {
         </Suspense>
       );
       break;
+    case 'igy-irtunk':
+      page = <ThisWeekPage />;
+      break;
     case 'kereses':
       page = <SearchPage key={`${route.query.q || ''}|${route.query.ev || ''}`} query={route.query} />;
       break;
@@ -127,6 +132,7 @@ export default function App() {
       <main id="main" tabIndex={-1} className="flex-1 focus:outline-none">{page}</main>
       <Footer />
       <MobileNav key={routeKey} route={route} />
+      {route.name !== 'home' && <BackButton />}
       <ScrollToTop />
       {pdfModal && (
         <PdfModal

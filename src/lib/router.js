@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 //   /archivum[/<év>]       lapszám-archívum
 //   /kereses?q=<szöveg>    keresés
 //   /hirdetesek            hirdetések
+//   /igy-irtunk            Így írtunk: 1, 10, 100 éve (régi lapszámok ezen a héten)
 //   /admin                 szerkesztőség
 // A régi #/... linkek automatikusan átirányítanak az új címre.
 
@@ -34,10 +35,19 @@ export function navigate(name, param, query, { replace = false } = {}) {
   go(href(name, param, query), { replace });
 }
 
+// Az oldalon belüli lépések számát a history állapotában tartjuk: így a „Vissza” gomb tudja,
+// hogy van-e hova visszalépni az oldalon belül (kívülről érkezve a címlapra visz).
+const depth = () => (typeof window !== 'undefined' && window.history.state?.kev) || 0;
+
 export function go(url, { replace = false } = {}) {
-  if (replace) window.history.replaceState(null, '', url);
-  else window.history.pushState(null, '', url);
+  if (replace) window.history.replaceState({ kev: depth() }, '', url);
+  else window.history.pushState({ kev: depth() + 1 }, '', url);
   window.dispatchEvent(new Event(NAV_EVENT));
+}
+
+export function goBack() {
+  if (depth() > 0) window.history.back();
+  else go('/');
 }
 
 // régi hash-es linkek (#/cikk/...) átirányítása

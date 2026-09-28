@@ -36,6 +36,17 @@ UA = {"User-Agent": "Mozilla/5.0 (KoszegEsVideke-archivum; kapcsolat: kamansn@t-
 PAUSE = 1.5  # másodperc két letöltés között – ne terheljük a könyvtár szerverét
 
 
+def safe_replace(tmp, dst):
+    # a feltöltő épp olvashatja a fájlt (Windows-zárolás): várunk és újrapróbáljuk
+    for i in range(60):
+        try:
+            tmp.replace(dst)
+            return
+        except PermissionError:
+            time.sleep(2)
+    raise PermissionError(f"nem cserélhető: {dst}")
+
+
 def fetch(url, binary=False, tries=4):
     last = None
     for i in range(tries):
@@ -111,15 +122,25 @@ def main():
             (pdf_dir / f"{stem}.pdf").write_bytes(data)
             time.sleep(PAUSE)
         dst = pdf_dir / f"{stem}.pdf"
-        if not dst.exists() or dst.stat().st_size < 10000:
-            data = fetch(url, binary=True)
-            if not data.startswith(b"%PDF"):
-                print("  HIBA (nem PDF):", url)
-                continue
-            dst.write_bytes(data)
-            time.sleep(PAUSE)
+        doc = None
+        for attempt in range(2):
+            if attempt or not dst.exists() or dst.stat().st_size < 10000:
+                data = fetch(url, binary=True)
+                if not data.startswith(b"%PDF"):
+                    break
+                tmp = dst.with_suffix(".pdf.part")  # félbeszakadt letöltés ne maradjon .pdf néven
+                tmp.write_bytes(data)
+                safe_replace(tmp, dst)
+                time.sleep(PAUSE)
+            try:
+                doc = pymupdf.open(dst)
+                break
+            except Exception:
+                doc = None  # sérült/csonka fájl: még egyszer letöltjük
+        if doc is None:
+            print("  HIBA (sérült vagy nem PDF, kihagyva):", url)
+            continue
 
-        doc = pymupdf.open(dst)
         pages = [{"page": i + 1, "text": clean_text(p.get_text("text"))} for i, p in enumerate(doc)]
         doc.close()
         for p in pages:

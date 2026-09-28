@@ -40,9 +40,9 @@ export const PdfModal = ({ pdfUrl, title, onClose }) => {
       aria-label={title || 'PDF olvasó'}
     >
       {/* Top Navigation Bar */}
-      <header className="flex items-center justify-between px-4 py-3 bg-[var(--color-ink,#1a1a1a)] border-b border-[#d4af37]/40 text-white select-none shrink-0">
+      <header className="flex items-center justify-between px-4 py-3 bg-[var(--color-ink,#1a1a1a)] border-b border-[var(--color-gold)]/40 text-white select-none shrink-0">
         <div className="flex items-center gap-2 truncate">
-          <span className="w-3 h-3 rounded-full bg-[#8b0000] border border-[#d4af37] shrink-0"></span>
+          <span className="w-3 h-3 rounded-full bg-[var(--color-brand)] border border-[var(--color-gold)] shrink-0"></span>
           <h2 className="text-[15px] sm:text-[18px] font-serif font-bold text-[#fcfbf7] truncate max-w-[200px] sm:max-w-[500px]">
             {title || 'Kőszeg és Vidéke Lapszám'}
           </h2>
@@ -57,13 +57,13 @@ export const PdfModal = ({ pdfUrl, title, onClose }) => {
             className="flex items-center gap-1.5 px-3 py-1.5 text-[12px] sm:text-[13px] rounded bg-white/10 hover:bg-white/20 text-white transition-colors"
             title="Megnyitás teljes képernyőn / letöltés"
           >
-            <ExternalLink className="w-4 h-4 text-[#d4af37]" />
+            <ExternalLink className="w-4 h-4 text-[var(--color-gold)]" />
             <span className="hidden sm:inline">Teljes képernyő</span>
           </a>
 
           <button
             onClick={onClose}
-            className="flex items-center justify-center p-2 rounded-full bg-[#8b0000] hover:bg-red-700 text-white transition-colors duration-200 transform hover:scale-105 active:scale-95 shadow-md"
+            className="flex items-center justify-center p-2 rounded-full bg-[var(--color-brand)] hover:bg-red-700 text-white transition-colors duration-200 transform hover:scale-105 active:scale-95 shadow-md"
             aria-label="Bezárás"
             title="Bezárás (ESC)"
           >

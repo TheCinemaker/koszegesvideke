@@ -149,6 +149,13 @@ export function getMeta(route) {
         description: 'Helyi vállalkozások ajánlatai. Hirdessen a Kőszeg és Vidéke nyomtatott és online kiadásában!',
         path: href('hirdetesek'),
       };
+    case 'igy-irtunk':
+      return {
+        ...base,
+        title: `Így írtunk – 1, 10 és 100 éve – ${SITE_NAME}`,
+        description: 'Mit írt a Kőszeg és Vidéke ugyanezen a héten 1, 10 és 100 évvel ezelőtt? Lapozza át az eredeti lapszámokat!',
+        path: href('igy-irtunk'),
+      };
     case 'impresszum':
     case 'adatvedelem':
     case 'sutik': {

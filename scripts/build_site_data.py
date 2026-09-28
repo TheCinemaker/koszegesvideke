@@ -397,6 +397,29 @@ def load_issue_meta():
                 "weekly": True,
                 "source": it.get("source"),
             }
+    # 2008–2012 novembere: a koszeg.hu régi, lista nélküli havi lapszámai (scripts/download_koszeg_old.py)
+    ko = ARCH / "index" / "koszeg_old.json"
+    if ko.exists():
+        old = json.loads(ko.read_text(encoding="utf-8"))
+        online = r2_online([it["filename"] for it in old])
+        hidden = [it for it in old if it["filename"] not in online]
+        if hidden:
+            print(f"  R2-n még nincs fent {len(hidden)} régi koszeg.hu-s lapszám – ezek kimaradnak")
+        for it in old:
+            if it["filename"] not in online:
+                continue
+            stem = it["filename"][:-4]
+            out[stem] = {
+                "id": stem,
+                "year": it["year"], "month": it["month"], "day": it["day"],
+                "date": it["date"],
+                "serial": None,
+                "volume": it.get("volume"), "number": it.get("number"),
+                "pages": it.get("pages", 0),
+                "pdf": f"{PDF_BASE}/{it['filename']}",
+                "pdfOriginal": it["url"],
+                "label": f"{it['year']}. {MONTHS[it['month'] - 1]}",
+            }
     return out
 
 
@@ -404,6 +427,7 @@ def build_covers(issues):
     src_dir = PUBLIC / "archive_covers"
     out_dir = PUBLIC / "covers"
     out_dir.mkdir(parents=True, exist_ok=True)
+    todo, pending_meta = [], []
     for stem, meta in issues.items():
         src = src_dir / f"{stem}.jpg"
         dst = out_dir / f"{stem}.jpg"
@@ -415,15 +439,31 @@ def build_covers(issues):
             meta["cover"] = f"/covers/{stem}.jpg"
             meta["coverLarge"] = f"/archive_covers/{stem}.jpg"
         else:
-            # nincs kész borítókép (pl. a könyvtári évfolyamok): az első oldalból rendereljük
+            # nincs kész borítókép (pl. a könyvtári évfolyamok): az első oldalból rendereljük – párhuzamosan
             pdf = PDF_DIR / str(meta["year"]) / f"{stem}.pdf"
             if not dst.exists() and pdf.exists():
-                doc = pymupdf.open(pdf)
-                page = doc[0]
-                pix = page.get_pixmap(matrix=pymupdf.Matrix(520 / page.rect.width, 520 / page.rect.width))
-                Image.frombytes("RGB", (pix.width, pix.height), pix.samples).save(dst, "JPEG", quality=80, optimize=True, progressive=True)
-                doc.close()
-            meta["cover"] = f"/covers/{stem}.jpg" if dst.exists() else None
+                todo.append((str(pdf), str(dst)))
+            pending_meta.append((meta, stem, dst))
+    if todo:
+        from concurrent.futures import ProcessPoolExecutor
+        print(f"  borítók renderelése: {len(todo)} db, {max(1, (os.cpu_count() or 2) - 1)} szálon")
+        with ProcessPoolExecutor(max_workers=max(1, (os.cpu_count() or 2) - 1)) as ex:
+            list(ex.map(_render_cover, todo, chunksize=4))
+    for meta, stem, dst in pending_meta:
+        meta["cover"] = f"/covers/{stem}.jpg" if dst.exists() else None
+
+
+def _render_cover(job):
+    """Egy lapszám első oldalából borítókép (külön folyamatban fut)."""
+    pdf, dst = job
+    try:
+        doc = pymupdf.open(pdf)
+        page = doc[0]
+        pix = page.get_pixmap(matrix=pymupdf.Matrix(400 / page.rect.width, 400 / page.rect.width))
+        Image.frombytes("RGB", (pix.width, pix.height), pix.samples).save(dst, "JPEG", quality=74, optimize=True, progressive=True)
+        doc.close()
+    except Exception as e:  # egy hibás PDF ne állítsa meg az egészet
+        print(f"  figyelem: borító nem készült: {Path(pdf).name} ({e})")
 
 
 def _xover(a, b):
@@ -733,6 +773,7 @@ def build_search(issues):
     docs, postings = [], {}
     written_t = set()
     n_pages = 0
+    n_words = 0  # a kereshető szövegben lévő összes szó (statisztikához)
     for f in sorted(PROCESSED.glob("kev_*.json"), key=lambda p: issues.get(p.stem, {}).get("date", ""), reverse=True):
         stem = f.stem
         if stem not in issues:
@@ -749,7 +790,9 @@ def build_search(issues):
         for text in pages:
             d = n_pages
             n_pages += 1
-            for w in set(SEARCH_WORD.findall(search_fold(text))):
+            tokens = SEARCH_WORD.findall(search_fold(text))
+            n_words += len(tokens)
+            for w in set(tokens):
                 if 2 <= len(w) <= 24:
                     postings.setdefault(w, []).append(d)
     buckets = [dict() for _ in range(SEARCH_BUCKETS)]
@@ -772,7 +815,7 @@ def build_search(issues):
     years = sorted({issues[s]["year"] for s, _ in docs})
     total = sum((out_dir / "idx" / f"{n}.json").stat().st_size for n in range(SEARCH_BUCKETS))
     print(f"Kereső: {n_pages} oldal, {len(postings)} szó, index {total / 1e6:.1f} MB / {SEARCH_BUCKETS} vödör")
-    return {"years": years, "pages": n_pages, "buckets": SEARCH_BUCKETS}
+    return {"years": years, "pages": n_pages, "words": n_words, "vocabulary": len(postings), "buckets": SEARCH_BUCKETS}
 
 
 def main():

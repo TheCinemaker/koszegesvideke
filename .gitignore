@@ -29,3 +29,5 @@ yarn-debug.log*
 *.suo
 *.sw?
 .logs/
+.wrangler/
+__pycache__/

@@ -19,6 +19,8 @@
   --color-brand: #154e87;
   --color-brand-dark: #0f3a66;
   --color-brand-soft: #eef4fa;
+  /* arany kiemelőszín (a fejléc alsó sávja): rovatcímek, lábléc, lebegő gombok */
+  --color-gold: #cfb284;
 }
 
 @layer base {
@@ -120,12 +122,23 @@
 /* Rovatfejléc a címlapon: vastag vonal + név */
 .rule-heading {
   border-top: 3px solid var(--color-ink);
+  position: relative;
   padding-top: 10px;
   margin-bottom: 20px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 12px;
+}
+.rule-heading::before {
+  /* rövid arany „könyvjelző” a rovatvonal elején */
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 56px;
+  height: 3px;
+  background: var(--color-gold);
 }
 .rule-heading h2 {
   font-family: var(--font-sans);

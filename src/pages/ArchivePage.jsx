@@ -2,6 +2,7 @@ import React from 'react';
 import { IssueCover } from '../components/IssueCover';
 import { href } from '../lib/router';
 import { issues } from '../lib/content';
+import { Stats } from '../components/Stats';
 
 export const ArchivePage = ({ year }) => {
   const years = [...new Set(issues.map((i) => i.year))].sort((a, b) => b - a);
@@ -16,6 +17,9 @@ export const ArchivePage = ({ year }) => {
           A Kőszeg és Vidéke {issues.length} digitalizált lapszáma ({years[years.length - 1]}–{years[0]}). A lapszámok eredeti
           PDF-ben nyílnak meg; a teljes szövegükben a <a className="text-[var(--color-brand)] underline" href={href('kereses')}>keresővel</a> kereshet.
         </p>
+        <div className="mt-3">
+          <Stats compact />
+        </div>
       </header>
 
       <nav aria-label="Évek" className="flex flex-wrap gap-2 mb-8">

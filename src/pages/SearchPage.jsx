@@ -192,7 +192,7 @@ export const SearchPage = ({ query }) => {
             ) : (
               articleHits.slice(0, 20).map(({ article, snippet }) => (
                 <div key={article.id}>
-                  <ArticleCard article={{ ...article, lead: null }} variant="row" showLead={false} />
+                  <ArticleCard article={{ ...article, lead: null }} variant="row" showLead={false} showDate />
                   <p className="lead-text text-[16px] -mt-3 mb-4 text-[var(--color-ink-2)]">
                     <Highlight text={snippet} terms={terms} />
                   </p>
