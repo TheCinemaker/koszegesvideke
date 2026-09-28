@@ -10,6 +10,13 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 // Csak a képernyő közelében lévő oldalakat rendereli, a távoliakat felszabadítja (mobil memória).
 
 const MAX_CANVAS_WIDTH = 2400;
+// A dekóderek (JPEG 2000 – a könyvtári szkennelt lapszámok ilyenek –, JBIG2, színprofil) és a szabványos betűk
+// a public/pdfjs mappából jönnek; nélkülük a régi lapszámok oldalai üresek maradnak.
+const ASSETS = {
+  wasmUrl: '/pdfjs/wasm/',
+  iccUrl: '/pdfjs/iccs/',
+  standardFontDataUrl: '/pdfjs/standard_fonts/',
+};
 const FIRST_CHUNK = 262144;
 
 // Saját darabletöltő: a PDF.js csak a szükséges bájttartományokat kéri le (Range kérés).
@@ -27,12 +34,12 @@ async function openDocument(url) {
           .then((buf) => transport.onDataRange(begin, new Uint8Array(buf)))
           .catch(() => {});
       };
-      return pdfjsLib.getDocument({ range: transport, rangeChunkSize: FIRST_CHUNK, disableAutoFetch: true });
+      return pdfjsLib.getDocument({ ...ASSETS, range: transport, rangeChunkSize: FIRST_CHUNK, disableAutoFetch: true });
     }
   } catch {
     // tovább a teljes letöltésre
   }
-  return pdfjsLib.getDocument({ url });
+  return pdfjsLib.getDocument({ ...ASSETS, url });
 }
 
 const Page = ({ doc, number, width, ratio, onVisible, registerRef }) => {
