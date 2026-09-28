@@ -1,7 +1,7 @@
 // Keresés: a 2026-os cikkekben (azonnal) és a teljes nyomtatott archívumban (1889-től, oldalanként).
 // Ékezetfüggetlen: a „koszeg” megtalálja a „Kőszeg” szót is.
 import MANIFEST from '../data/searchManifest.json';
-import { articles } from './content';
+import { articles, getIssue } from './content';
 
 const FOLD = {
   á: 'a', é: 'e', í: 'i', ó: 'o', ö: 'o', ő: 'o', ú: 'u', ü: 'u', ű: 'u',
@@ -87,45 +87,93 @@ export async function searchArticles(q) {
 }
 
 // ---- Nyomtatott archívum ----
-const yearCache = new Map();
+// Szóindex (scripts/build_site_data.py → build_search): egy keresés csak a szavak 1–3 vödrét tölti le,
+// a kivonatokhoz pedig csak a megjelenített találatok lapszámának szövegét.
+export const archiveYears = [...MANIFEST.years].sort((a, b) => b - a);
 
-export const archiveYears = MANIFEST.map((m) => m.year).sort((a, b) => b - a);
+const WORD = /[\p{L}\p{N}]+/gu;
 
-async function loadYear(year) {
-  if (!yearCache.has(year)) {
-    const entry = MANIFEST.find((m) => m.year === year);
-    const p = fetch(entry.file)
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json();
-      })
-      .then((items) =>
-        items.map((it) => ({ issueId: it.i, pages: it.p.map((t) => ({ text: t, folded: fold(t) })) }))
-      );
-    yearCache.set(year, p);
-    p.catch(() => yearCache.delete(year));
+// FNV-1a a szó első 3 betűjén – egyezik a Python oldali search_bucket-tel
+function bucketOf(word) {
+  const key = word.slice(0, 3);
+  let h = 0x811c9dc5;
+  for (let i = 0; i < key.length; i++) {
+    h ^= key.charCodeAt(i);
+    h = Math.imul(h, 16777619) >>> 0;
   }
-  return yearCache.get(year);
+  return h % MANIFEST.buckets;
 }
 
-// Évenként halad (legfrissebbtől), és minden év után visszajelez, így az eredmények fokozatosan jelennek meg.
-export async function searchArchive(q, { years = archiveYears, onProgress, signal } = {}) {
-  const terms = queryTerms(q);
-  if (!terms.length) return [];
-  const results = [];
-  for (const year of years) {
-    if (signal?.aborted) return results;
-    const items = await loadYear(year);
-    for (const issue of items) {
-      issue.pages.forEach((pg, idx) => {
-        if (!terms.every((t) => pg.folded.includes(t))) return;
-        let hits = 0;
-        for (const t of terms) hits += pg.folded.split(t).length - 1;
-        results.push({ issueId: issue.issueId, year, page: idx + 1, hits, snippet: snippet(pg.text, pg.folded, terms) });
-      });
-    }
-    results.sort((a, b) => b.year - a.year || b.issueId.localeCompare(a.issueId) || a.page - b.page);
-    onProgress?.([...results], year);
+const cache = new Map();
+function getJson(url) {
+  if (!cache.has(url)) {
+    const p = fetch(url).then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    });
+    cache.set(url, p);
+    p.catch(() => cache.delete(url));
   }
-  return results;
+  return cache.get(url);
+}
+
+// oldal-sorszám → { issueId, page }
+let docsPromise = null;
+function loadDocs() {
+  if (!docsPromise) {
+    docsPromise = getJson('/search/docs.json').then((rows) => {
+      const out = [];
+      for (const [issueId, n] of rows) for (let p = 1; p <= n; p++) out.push({ issueId, page: p, year: Number(issueId.slice(4, 8)) });
+      return out;
+    });
+    docsPromise.catch(() => (docsPromise = null));
+  }
+  return docsPromise;
+}
+
+function decode(list) {
+  const out = [];
+  let d = 0;
+  for (const part of list.split(',')) {
+    d += parseInt(part, 36);
+    out.push(d);
+  }
+  return out;
+}
+
+// Egy keresőszó oldalai: minden szó, ami így kezdődik (a kétbetűseknél csak a pontos egyezés)
+async function docsForWord(word) {
+  const bucket = await getJson(`/search/idx/${bucketOf(word)}.json`);
+  const set = new Set();
+  if (word.length < 3) {
+    if (bucket[word]) for (const d of decode(bucket[word])) set.add(d);
+    return set;
+  }
+  for (const w in bucket) {
+    if (w.startsWith(word)) for (const d of decode(bucket[w])) set.add(d);
+  }
+  return set;
+}
+
+// Találatok a legfrissebbtől: [{ issueId, year, page }]
+export async function searchArchive(q, { year } = {}) {
+  const words = [...new Set(queryTerms(q).flatMap((t) => t.match(WORD) || []))].filter((w) => w.length >= 2);
+  if (!words.length) return [];
+  const [docs, ...sets] = await Promise.all([loadDocs(), ...words.map(docsForWord)]);
+  sets.sort((a, b) => a.size - b.size);
+  const res = [];
+  for (const d of sets[0]) {
+    if (!sets.every((s) => s.has(d))) continue;
+    const doc = docs[d];
+    // a cikkekre bontott (2026-os) lapszámok a „Cikkek” találatai között már szerepelnek
+    if (doc && (!year || doc.year === year) && !(getIssue(doc.issueId)?.articleCount > 0)) res.push(doc);
+  }
+  return res.sort((a, b) => b.issueId.localeCompare(a.issueId) || a.page - b.page);
+}
+
+// Kivonat egy találathoz (a lapszám szövege egyszer töltődik le, utána gyorsítótárból)
+export async function archiveSnippet(hit, terms) {
+  const pages = await getJson(`/search/t/${hit.issueId}.json`);
+  const text = pages[hit.page - 1] || '';
+  return snippet(text, fold(text), terms);
 }

@@ -28,3 +28,4 @@ yarn-debug.log*
 .DS_Store
 *.suo
 *.sw?
+.logs/

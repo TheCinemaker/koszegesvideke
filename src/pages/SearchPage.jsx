@@ -1,9 +1,9 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Search } from 'lucide-react';
 import { ArticleCard } from '../components/ArticleCard';
 import { href, navigate } from '../lib/router';
 import { getIssue, issueTitle, pdfLink, ARCHIVE_FIRST_YEAR, ARCHIVE_LAST_YEAR } from '../lib/content';
-import { searchArticles, searchArchive, archiveYears, fold, queryTerms } from '../lib/search';
+import { searchArticles, searchArchive, archiveSnippet, archiveYears, fold, queryTerms } from '../lib/search';
 
 // A találati szavak kiemelése a kivonatban (ékezetfüggetlenül)
 const Highlight = ({ text, terms }) => {
@@ -32,6 +32,68 @@ const Highlight = ({ text, terms }) => {
 
 const PAGE_SIZE = 30;
 
+// Egy archív találat: a kivonat csak megjelenítéskor töltődik be (a lapszám szövegéből)
+const ArchiveHit = ({ hit, terms }) => {
+  const issue = getIssue(hit.issueId);
+  const [text, setText] = useState(null);
+  const [near, setNear] = useState(false);
+  const ref = useRef(null);
+  // a kivonat (a lapszám szövege) csak akkor töltődik le, ha a találat a képernyő közelébe ér
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || near) return undefined;
+    if (typeof IntersectionObserver === 'undefined') {
+      setNear(true);
+      return undefined;
+    }
+    const io = new IntersectionObserver((entries) => entries.some((e) => e.isIntersecting) && setNear(true), { rootMargin: '600px 0px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [near]);
+  useEffect(() => {
+    if (!near) return undefined;
+    let alive = true;
+    archiveSnippet(hit, terms)
+      .then((t) => alive && setText(t))
+      .catch(() => alive && setText(''));
+    return () => {
+      alive = false;
+    };
+  }, [hit, terms, near]);
+  if (!issue) return null;
+  return (
+    <li ref={ref} className="py-4 border-b border-[var(--color-line)]">
+      <a className="headline-link block" href={pdfLink(issue, hit.page)} target="_blank" rel="noopener noreferrer">
+        <p className="headline text-[19px]">
+          {issueTitle(issue)} · {hit.page}. oldal
+        </p>
+      </a>
+      {text === null ? (
+        <div className="mt-2 space-y-2" aria-hidden="true">
+          <div className="h-3.5 rounded bg-[var(--color-line)] w-full" />
+          <div className="h-3.5 rounded bg-[var(--color-line)] w-4/5" />
+        </div>
+      ) : (
+        text && (
+          <p className="text-[16px] leading-relaxed text-[var(--color-ink-2)] mt-1 font-serif">
+            <Highlight text={text} terms={terms} />
+          </p>
+        )
+      )}
+      <p className="meta mt-1">
+        <a className="underline" href={pdfLink(issue, hit.page)} target="_blank" rel="noopener noreferrer">Oldal megnyitása (PDF)</a>
+        {issue.source && <span> · Digitalizálta: {issue.source}</span>}
+        {issue.articleCount > 0 && (
+          <>
+            {' · '}
+            <a className="underline" href={href('lapszam', issue.id)}>A lapszám cikkei</a>
+          </>
+        )}
+      </p>
+    </li>
+  );
+};
+
 export const SearchPage = ({ query }) => {
   const q = (query.q || '').trim();
   const yearFilter = query.ev ? Number(query.ev) : null;
@@ -39,7 +101,6 @@ export const SearchPage = ({ query }) => {
   const terms = useMemo(() => queryTerms(q), [q]);
   const [input, setInput] = useState(q);
   const [archive, setArchive] = useState([]);
-  const [loadedYear, setLoadedYear] = useState(null);
   const [loading, setLoading] = useState(terms.length > 0);
   const [error, setError] = useState(null);
   const [shown, setShown] = useState(PAGE_SIZE);
@@ -56,20 +117,14 @@ export const SearchPage = ({ query }) => {
 
   useEffect(() => {
     if (!terms.length) return undefined;
-    const ctrl = new AbortController();
-    searchArchive(q, {
-      years: yearFilter ? [yearFilter] : archiveYears,
-      signal: ctrl.signal,
-      onProgress: (res, year) => {
-        if (!ctrl.signal.aborted) {
-          setArchive(res);
-          setLoadedYear(year);
-        }
-      },
-    })
-      .catch(() => !ctrl.signal.aborted && setError('Az archívum betöltése nem sikerült. Kérjük, próbálja újra.'))
-      .finally(() => !ctrl.signal.aborted && setLoading(false));
-    return () => ctrl.abort();
+    let alive = true;
+    searchArchive(q, { year: yearFilter })
+      .then((res) => alive && setArchive(res))
+      .catch(() => alive && setError('Az archívum betöltése nem sikerült. Kérjük, próbálja újra.'))
+      .finally(() => alive && setLoading(false));
+    return () => {
+      alive = false;
+    };
   }, [q, yearFilter, terms.length]);
 
   const submit = (e) => {
@@ -104,16 +159,22 @@ export const SearchPage = ({ query }) => {
       </form>
 
       {q && (
-        <div className="mt-4 -mx-4 px-4 sm:mx-0 sm:px-0 flex sm:flex-wrap items-center gap-2 text-[15px] overflow-x-auto no-scrollbar">
-          <span className="meta shrink-0">Archívum éve:</span>
-          <button type="button" onClick={() => setYear(null)} className={`shrink-0 px-2.5 py-1 rounded border ${!yearFilter ? 'bg-[var(--color-ink)] text-white border-[var(--color-ink)]' : 'border-[var(--color-line)]'}`}>
+        <div className="mt-4 flex flex-wrap items-center gap-2 text-[15px]">
+          <label htmlFor="ev" className="meta">Archívum éve:</label>
+          <button type="button" onClick={() => setYear(null)} className={`px-2.5 py-1 rounded border ${!yearFilter ? 'bg-[var(--color-ink)] text-white border-[var(--color-ink)]' : 'border-[var(--color-line)]'}`}>
             Mind
           </button>
-          {archiveYears.map((y) => (
-            <button key={y} type="button" onClick={() => setYear(y)} className={`shrink-0 px-2.5 py-1 rounded border ${yearFilter === y ? 'bg-[var(--color-ink)] text-white border-[var(--color-ink)]' : 'border-[var(--color-line)]'}`}>
-              {y}
-            </button>
-          ))}
+          <select
+            id="ev"
+            value={yearFilter || ''}
+            onChange={(e) => setYear(e.target.value ? Number(e.target.value) : null)}
+            className={`px-2 py-1 rounded border bg-white text-[15px] ${yearFilter ? 'border-[var(--color-ink)] font-semibold' : 'border-[var(--color-line)]'}`}
+          >
+            <option value="">Válasszon évet…</option>
+            {archiveYears.map((y) => (
+              <option key={y} value={y}>{y}</option>
+            ))}
+          </select>
         </div>
       )}
 
@@ -144,7 +205,7 @@ export const SearchPage = ({ query }) => {
             <div className="rule-heading">
               <h2 id="archiv-talalatok">Nyomtatott lapszámok{yearFilter ? ` (${yearFilter})` : ` (${ARCHIVE_FIRST_YEAR}–${ARCHIVE_LAST_YEAR})`}</h2>
               <span className="meta" aria-live="polite">
-                {archive.length} oldal{loading ? ` · keresés… (${loadedYear ?? ''})` : ''}
+                {loading ? 'keresés…' : `${archive.length} oldal`}
               </span>
             </div>
             {error && <p className="text-[17px] text-red-700">{error}</p>}
@@ -152,31 +213,9 @@ export const SearchPage = ({ query }) => {
               <p className="text-[17px] text-[var(--color-ink-2)]">Nincs találat a nyomtatott lapszámokban.</p>
             )}
             <ol>
-              {archive.slice(0, shown).map((r) => {
-                const issue = getIssue(r.issueId);
-                return (
-                  <li key={`${r.issueId}-${r.page}`} className="py-4 border-b border-[var(--color-line)]">
-                    <a className="headline-link block" href={pdfLink(issue, r.page)} target="_blank" rel="noopener noreferrer">
-                      <p className="headline text-[19px]">
-                        {issueTitle(issue)} · {r.page}. oldal
-                      </p>
-                    </a>
-                    <p className="text-[16px] leading-relaxed text-[var(--color-ink-2)] mt-1 font-serif">
-                      <Highlight text={r.snippet} terms={terms} />
-                    </p>
-                    <p className="meta mt-1">
-                      <a className="underline" href={pdfLink(issue, r.page)} target="_blank" rel="noopener noreferrer">Oldal megnyitása (PDF)</a>
-                      {issue.source && <span> · Digitalizálta: {issue.source}</span>}
-                      {issue.articleCount > 0 && (
-                        <>
-                          {' · '}
-                          <a className="underline" href={href('lapszam', issue.id)}>A lapszám cikkei</a>
-                        </>
-                      )}
-                    </p>
-                  </li>
-                );
-              })}
+              {archive.slice(0, shown).map((r) => (
+                <ArchiveHit key={`${r.issueId}-${r.page}`} hit={r} terms={terms} />
+              ))}
             </ol>
             {archive.length > shown && (
               <button type="button" className="btn mt-6" onClick={() => setShown((s) => s + PAGE_SIZE)}>

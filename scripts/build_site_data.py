@@ -5,7 +5,7 @@ Kőszeg és Vidéke – a weboldal adatainak előállítása.
   1. 2026-os cikkek: segment_2026.py kimenete + curation.json kézi szerkesztői döntései
      -> src/data/articles.json, a cikkekhez tartozó fotók kivágva: public/images/2026/...
   2. Lapszámok (2012–2026): src/data/issues.json, borító-bélyegképek: public/covers/...
-  3. Teljes szövegű archívum-kereső: public/search/<év>.json (oldalanként, igény szerint töltődik be)
+  3. Teljes szövegű archívum-kereső: public/search/ szóindex + lapszámonkénti szöveg (lásd build_search)
 
 Futtatás a projekt gyökeréből:  python scripts/build_site_data.py [--no-images] [--no-search]
 """
@@ -313,6 +313,37 @@ def write_json(path, data, compact=False):
     tmp.replace(path)
 
 
+R2_ONLINE = ARCH / "index" / "r2_online.json"
+CHECK_R2 = True
+
+
+def r2_online(filenames):
+    """Mely PDF-ek érhetők el már az R2-n. A könyvtári lapszámok csak ezután kerülnek ki az oldalra
+    (a PDF-eket kézzel töltjük fel). A megtalált fájlokat megjegyzi, így csak az újakat kérdezi le."""
+    known = set(json.loads(R2_ONLINE.read_text(encoding="utf-8"))) if R2_ONLINE.exists() else set()
+    if not CHECK_R2:
+        return set(filenames)
+    todo = [f for f in filenames if f not in known]
+    if todo:
+        import urllib.request
+        from concurrent.futures import ThreadPoolExecutor
+
+        def check(name):
+            req = urllib.request.Request(f"{PDF_BASE}/{name}", headers={"User-Agent": "Mozilla/5.0", "Range": "bytes=0-7"})
+            try:
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    return name if r.status in (200, 206) and r.read(8).startswith(b"%PDF") else None
+            except Exception:
+                return None
+
+        with ThreadPoolExecutor(16) as ex:
+            found = {n for n in ex.map(check, todo) if n}
+        if found:
+            known |= found
+            write_json(R2_ONLINE, sorted(known))
+    return known & set(filenames)
+
+
 def load_issue_meta():
     issues = json.loads((ARCH / "index" / "issues.json").read_text(encoding="utf-8"))
     out = {}
@@ -343,7 +374,15 @@ def load_issue_meta():
     # 1889–1939: a Chernel Kálmán Városi Könyvtár digitalizált heti lapszámai (scripts/download_konyvtar.py)
     kt = ARCH / "index" / "konyvtar.json"
     if kt.exists():
-        for it in json.loads(kt.read_text(encoding="utf-8")):
+        lib = json.loads(kt.read_text(encoding="utf-8"))
+        online = r2_online([it["filename"] for it in lib])
+        hidden = [it for it in lib if it["filename"] not in online]
+        if hidden:
+            years = sorted({it["year"] for it in hidden})
+            print(f"  R2-n még nincs fent {len(hidden)} könyvtári lapszám ({years[0]}–{years[-1]}) – ezek kimaradnak")
+        for it in lib:
+            if it["filename"] not in online:
+                continue
             stem = it["filename"][:-4]
             out[stem] = {
                 "id": stem,
@@ -653,23 +692,87 @@ def normalize_search_text(t):
     return t.strip()
 
 
+# ---- Archívum-kereső: szóindex ----
+# A böngésző nem tölti le a teljes szöveget (1889–1939-cel ez 180 MB fölött lenne), csak:
+#   search/docs.json       – oldal-sorszám → lapszám + oldal (a legfrissebbtől)
+#   search/idx/<n>.json    – szó → oldalak listája; a szavak a 3 betűs elejük hash-e szerint 2048 vödörben
+#   search/t/<lapszám>.json – a lapszám oldalainak szövege, csak a képernyőn lévő találatok kivonatához
+# A hajtogatás (fold), a szótördelés és a hash pontosan egyezik a src/lib/search.js-belivel.
+SEARCH_BUCKETS = 2048
+SEARCH_FOLD = str.maketrans("áéíóöőúüűäàâèêëôõûùčćšžđß", "aeiooouuuaaaeeeoouuccszds")
+SEARCH_WORD = re.compile(r"[^\W_]+")
+B36 = "0123456789abcdefghijklmnopqrstuvwxyz"
+
+
+def search_fold(t):
+    return t.lower().translate(SEARCH_FOLD)
+
+
+def search_bucket(word):
+    key = word[:3]
+    h = 0x811C9DC5
+    for ch in key:
+        h ^= ord(ch)
+        h = (h * 16777619) & 0xFFFFFFFF
+    return h % SEARCH_BUCKETS
+
+
+def b36(n):
+    s = ""
+    while True:
+        n, r = divmod(n, 36)
+        s = B36[r] + s
+        if not n:
+            return s
+
+
 def build_search(issues):
     out_dir = PUBLIC / "search"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    years = {}
-    for f in sorted(PROCESSED.glob("kev_*.json")):
-        pj = json.loads(f.read_text(encoding="utf-8"))
+    (out_dir / "idx").mkdir(parents=True, exist_ok=True)
+    (out_dir / "t").mkdir(parents=True, exist_ok=True)
+    docs, postings = [], {}
+    written_t = set()
+    n_pages = 0
+    for f in sorted(PROCESSED.glob("kev_*.json"), key=lambda p: issues.get(p.stem, {}).get("date", ""), reverse=True):
         stem = f.stem
         if stem not in issues:
             continue
+        try:
+            pj = json.loads(f.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            print(f"  figyelem: olvashatatlan (épp íródik?): {f.name}")
+            continue
         pages = [normalize_search_text(p["text"]) for p in pj["pages"]]
-        years.setdefault(pj["year"], []).append({"i": stem, "p": pages})
-    manifest = []
-    for y, items in sorted(years.items()):
-        path = out_dir / f"{y}.json"
-        write_json(path, items, compact=True)
-        manifest.append({"year": y, "file": f"/search/{y}.json", "bytes": path.stat().st_size})
-    return manifest
+        write_json(out_dir / "t" / f"{stem}.json", pages, compact=True)
+        written_t.add(f"{stem}.json")
+        docs.append([stem, len(pages)])
+        for text in pages:
+            d = n_pages
+            n_pages += 1
+            for w in set(SEARCH_WORD.findall(search_fold(text))):
+                if 2 <= len(w) <= 24:
+                    postings.setdefault(w, []).append(d)
+    buckets = [dict() for _ in range(SEARCH_BUCKETS)]
+    for w, ds in postings.items():
+        prev, enc = 0, []
+        for d in ds:
+            enc.append(b36(d - prev))
+            prev = d
+        buckets[search_bucket(w)][w] = ",".join(enc)
+    for n, b in enumerate(buckets):
+        write_json(out_dir / "idx" / f"{n}.json", b, compact=True)
+    write_json(out_dir / "docs.json", docs, compact=True)
+    # régi (évenkénti) keresőfájlok és elavult lapszám-szövegek törlése
+    for old in list(out_dir.glob("*.json")) + list((out_dir / "t").glob("*.json")):
+        if old.name != "docs.json" and (old.parent == out_dir or old.name not in written_t):
+            try:
+                old.unlink()
+            except PermissionError:
+                print(f"  figyelem: nem törölhető (használatban): {old.name}")
+    years = sorted({issues[s]["year"] for s, _ in docs})
+    total = sum((out_dir / "idx" / f"{n}.json").stat().st_size for n in range(SEARCH_BUCKETS))
+    print(f"Kereső: {n_pages} oldal, {len(postings)} szó, index {total / 1e6:.1f} MB / {SEARCH_BUCKETS} vödör")
+    return {"years": years, "pages": n_pages, "buckets": SEARCH_BUCKETS}
 
 
 def main():
@@ -677,9 +780,11 @@ def main():
     ap.add_argument("--no-images", action="store_true")
     ap.add_argument("--no-search", action="store_true")
     ap.add_argument("--force-images", action="store_true", help="minden képet újrarenderel")
+    ap.add_argument("--no-r2-check", action="store_true", help="a könyvtári lapszámokat az R2-ellenőrzés nélkül is kiteszi")
     args = ap.parse_args()
-    global FORCE_IMAGES
+    global FORCE_IMAGES, CHECK_R2
     FORCE_IMAGES = args.force_images
+    CHECK_R2 = not args.no_r2_check
 
     DATA_OUT.mkdir(parents=True, exist_ok=True)
     issues = load_issue_meta()
