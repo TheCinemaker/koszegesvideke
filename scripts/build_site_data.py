@@ -15,6 +15,7 @@ import os
 import hashlib
 import json
 import re
+import shutil
 import sys
 import unicodedata
 from pathlib import Path
@@ -736,7 +737,7 @@ def normalize_search_text(t):
 # A böngésző nem tölti le a teljes szöveget (1889–1939-cel ez 180 MB fölött lenne), csak:
 #   search/docs.json       – oldal-sorszám → lapszám + oldal (a legfrissebbtől)
 #   search/idx/<n>.json    – szó → oldalak listája; a szavak a 3 betűs elejük hash-e szerint 2048 vödörben
-#   search/t/<lapszám>.json – a lapszám oldalainak szövege, csak a képernyőn lévő találatok kivonatához
+#   search/t/<lapszám>/<oldal>.json – egy oldal szövege (kivonat, pontos egyezés vizsgálata)
 # A hajtogatás (fold), a szótördelés és a hash pontosan egyezik a src/lib/search.js-belivel.
 SEARCH_BUCKETS = 2048
 SEARCH_FOLD = str.maketrans("áéíóöőúüűäàâèêëôõûùčćšžđß", "aeiooouuuaaaeeeoouuccszds")
@@ -784,8 +785,18 @@ def build_search(issues):
             print(f"  figyelem: olvashatatlan (épp íródik?): {f.name}")
             continue
         pages = [normalize_search_text(p["text"]) for p in pj["pages"]]
-        write_json(out_dir / "t" / f"{stem}.json", pages, compact=True)
-        written_t.add(f"{stem}.json")
+        # oldalanként külön fájl: a kivonathoz és a pontos egyezés vizsgálatához csak a találati oldal kell
+        page_dir = out_dir / "t" / stem
+        page_dir.mkdir(exist_ok=True)
+        for k, text in enumerate(pages, 1):
+            dst = page_dir / f"{k}.json"
+            body = json.dumps(text, ensure_ascii=False)
+            if not dst.exists() or dst.read_text(encoding="utf-8") != body:
+                dst.write_text(body, encoding="utf-8")
+        for extra in page_dir.glob("*.json"):
+            if not extra.stem.isdigit() or int(extra.stem) > len(pages):
+                extra.unlink(missing_ok=True)
+        written_t.add(stem)
         docs.append([stem, len(pages)])
         for text in pages:
             d = n_pages
@@ -806,12 +817,16 @@ def build_search(issues):
         write_json(out_dir / "idx" / f"{n}.json", b, compact=True)
     write_json(out_dir / "docs.json", docs, compact=True)
     # régi (évenkénti) keresőfájlok és elavult lapszám-szövegek törlése
+    # régi fájlok: évenkénti és lapszámonkénti (egyben tárolt) szövegek, elavult lapszám-mappák
     for old in list(out_dir.glob("*.json")) + list((out_dir / "t").glob("*.json")):
-        if old.name != "docs.json" and (old.parent == out_dir or old.name not in written_t):
+        if old.name != "docs.json":
             try:
                 old.unlink()
             except PermissionError:
                 print(f"  figyelem: nem törölhető (használatban): {old.name}")
+    for d in (out_dir / "t").iterdir():
+        if d.is_dir() and d.name not in written_t:
+            shutil.rmtree(d, ignore_errors=True)
     years = sorted({issues[s]["year"] for s, _ in docs})
     total = sum((out_dir / "idx" / f"{n}.json").stat().st_size for n in range(SEARCH_BUCKETS))
     print(f"Kereső: {n_pages} oldal, {len(postings)} szó, index {total / 1e6:.1f} MB / {SEARCH_BUCKETS} vödör")

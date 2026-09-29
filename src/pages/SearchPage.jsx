@@ -3,7 +3,7 @@ import { Search } from 'lucide-react';
 import { ArticleCard } from '../components/ArticleCard';
 import { href, navigate } from '../lib/router';
 import { getIssue, issueTitle, pdfLink, ARCHIVE_FIRST_YEAR, ARCHIVE_LAST_YEAR } from '../lib/content';
-import { searchArticles, searchArchive, archiveSnippet, archiveYears, fold, queryTerms } from '../lib/search';
+import { searchArticles, searchArchive, rankByProximity, archiveSnippet, archiveYears, fold, queryTerms } from '../lib/search';
 
 // A találati szavak kiemelése a kivonatban (ékezetfüggetlenül)
 const Highlight = ({ text, terms }) => {
@@ -101,6 +101,10 @@ export const SearchPage = ({ query }) => {
   const terms = useMemo(() => queryTerms(q), [q]);
   const [input, setInput] = useState(q);
   const [archive, setArchive] = useState([]);
+  // több szónál: hány találaton áll a kifejezés egyben (a lista eleje); null = nem vizsgáltuk
+  const [nearCount, setNearCount] = useState(null);
+  const [ranking, setRanking] = useState(false);
+  const [progress, setProgress] = useState(null); // { done, total } lapszám
   const [loading, setLoading] = useState(terms.length > 0);
   const [error, setError] = useState(null);
   const [shown, setShown] = useState(PAGE_SIZE);
@@ -118,12 +122,36 @@ export const SearchPage = ({ query }) => {
   useEffect(() => {
     if (!terms.length) return undefined;
     let alive = true;
+    const ctrl = new AbortController();
     searchArchive(q, { year: yearFilter })
-      .then((res) => alive && setArchive(res))
+      .then((res) => {
+        if (!alive) return;
+        setArchive(res);
+        if (terms.length < 2 && !q.trim().includes(' ')) return;
+        // pontos egyezések (egymás melletti szavak) előre
+        setRanking(true);
+        rankByProximity(res, q, {
+          signal: ctrl.signal,
+          // adagonként: a pontos egyezések folyamatosan kerülnek előre
+          onProgress: ({ near, far }, p) => {
+            if (!alive) return;
+            setArchive([...near, ...far]);
+            setNearCount(near.length);
+            setProgress(p);
+          },
+        })
+          .then(({ near, far, checked }) => {
+            if (!alive || !checked) return;
+            setArchive([...near, ...far]);
+            setNearCount(near.length);
+          })
+          .finally(() => alive && setRanking(false));
+      })
       .catch(() => alive && setError('Az archívum betöltése nem sikerült. Kérjük, próbálja újra.'))
       .finally(() => alive && setLoading(false));
     return () => {
       alive = false;
+      ctrl.abort();
     };
   }, [q, yearFilter, terms.length]);
 
@@ -205,16 +233,35 @@ export const SearchPage = ({ query }) => {
             <div className="rule-heading">
               <h2 id="archiv-talalatok">Nyomtatott lapszámok{yearFilter ? ` (${yearFilter})` : ` (${ARCHIVE_FIRST_YEAR}–${ARCHIVE_LAST_YEAR})`}</h2>
               <span className="meta" aria-live="polite">
-                {loading ? 'keresés…' : `${archive.length} oldal`}
+                {loading
+                  ? 'keresés…'
+                  : `${nearCount != null ? `${nearCount} pontos · ` : ''}${archive.length} oldal${
+                      ranking ? ` · pontos egyezések keresése…${progress ? ` ${progress.done}/${progress.total} lapszám` : ''}` : ''
+                    }`}
               </span>
             </div>
             {error && <p className="text-[17px] text-red-700">{error}</p>}
             {!loading && !error && archive.length === 0 && (
               <p className="text-[17px] text-[var(--color-ink-2)]">Nincs találat a nyomtatott lapszámokban.</p>
             )}
+            {!loading && !ranking && progress && progress.total < new Set(archive.map((h) => h.issueId)).size && (
+              <p className="text-[15px] text-[var(--color-ink-2)] bg-[var(--color-brand-soft)] px-4 py-2.5 rounded-md mb-2">
+                Nagyon sok a találat: a pontos egyezéseket a legfrissebb {progress?.total} lapszámban kerestük. A régebbiekhez válasszon fent <strong>évet</strong>.
+              </p>
+            )}
             <ol>
-              {archive.slice(0, shown).map((r) => (
-                <ArchiveHit key={`${r.issueId}-${r.page}`} hit={r} terms={terms} />
+              {archive.slice(0, shown).map((r, k) => (
+                <React.Fragment key={`${r.issueId}-${r.page}`}>
+                  {nearCount > 0 && k === 0 && (
+                    <li className="section-label uppercase tracking-[0.08em] text-[12px] pt-1">Pontos egyezés</li>
+                  )}
+                  {nearCount != null && k === nearCount && (
+                    <li className="section-label uppercase tracking-[0.08em] text-[12px] pt-8 text-[var(--color-muted)]">
+                      A szavak külön-külön szerepelnek az oldalon
+                    </li>
+                  )}
+                  <ArchiveHit hit={r} terms={terms} />
+                </React.Fragment>
               ))}
             </ol>
             {archive.length > shown && (

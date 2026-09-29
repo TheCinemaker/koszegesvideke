@@ -27,11 +27,11 @@ export function queryTerms(q) {
     .filter((t) => t.length >= 2);
 }
 
-export function snippet(text, folded, terms, radius = 130) {
-  let pos = -1;
+export function snippet(text, folded, terms, radius = 130, at = -1) {
+  let pos = at;
   for (const t of terms) {
-    pos = folded.indexOf(t);
     if (pos >= 0) break;
+    pos = folded.indexOf(t);
   }
   if (pos < 0) return text.slice(0, radius * 2);
   let start = Math.max(0, pos - radius);
@@ -155,25 +155,89 @@ async function docsForWord(word) {
   return set;
 }
 
+const archiveWords = (q) =>
+  [...new Set(queryTerms(q).flatMap((t) => t.match(WORD) || []))].filter((w) => w.length >= 2);
+
 // Találatok a legfrissebbtől: [{ issueId, year, page }]
+// Több szónál: azok az oldalak, ahol mind szerepel – és az egybeírt alak is („tűzoltó autó” → „tűzoltóautó”).
 export async function searchArchive(q, { year } = {}) {
-  const words = [...new Set(queryTerms(q).flatMap((t) => t.match(WORD) || []))].filter((w) => w.length >= 2);
+  const words = archiveWords(q);
   if (!words.length) return [];
-  const [docs, ...sets] = await Promise.all([loadDocs(), ...words.map(docsForWord)]);
+  const [docs, joined, ...sets] = await Promise.all([
+    loadDocs(),
+    words.length > 1 ? docsForWord(words.join('')) : Promise.resolve(new Set()),
+    ...words.map(docsForWord),
+  ]);
   sets.sort((a, b) => a.size - b.size);
+  const found = new Set(joined);
+  for (const d of sets[0]) if (sets.every((s) => s.has(d))) found.add(d);
   const res = [];
-  for (const d of sets[0]) {
-    if (!sets.every((s) => s.has(d))) continue;
+  for (const d of found) {
     const doc = docs[d];
     // a cikkekre bontott (2026-os) lapszámok a „Cikkek” találatai között már szerepelnek
-    if (doc && (!year || doc.year === year) && !(getIssue(doc.issueId)?.articleCount > 0)) res.push(doc);
+    if (doc && (!year || doc.year === year) && !(getIssue(doc.issueId)?.articleCount > 0)) res.push({ ...doc });
   }
   return res.sort((a, b) => b.issueId.localeCompare(a.issueId) || a.page - b.page);
 }
 
-// Kivonat egy találathoz (a lapszám szövege egyszer töltődik le, utána gyorsítótárból)
+// Több szavas keresésnél (pl. névre): hol állnak a szavak egymás közelében – legfeljebb 2 szó köztük,
+// bármilyen sorrendben („Avar Szilveszter”, „Avar »Baba« Szilveszter”, „Szilveszter Avar”).
+// Ehhez a találatok lapszámainak szövege kell: adagokban, a legfrissebbtől tölti le, és minden adag után
+// visszajelez (onProgress), így a pontos egyezések folyamatosan kerülnek előre. Biztonsági felső korlát: MAX_PROXIMITY_ISSUES.
+const MAX_PROXIMITY_ISSUES = 600;
+const BATCH = 12; // lapszám / adag (az adagban csak a találati oldalak töltődnek le)
+
+// egy újságoldal szövege (oldalanként külön fájl, gyorsítótárazva)
+const pageText = (h) => getJson(`/search/t/${h.issueId}/${h.page}.json`).catch(() => '');
+
+function findNear(folded, words) {
+  const joined = words.join('');
+  const toks = [...folded.matchAll(/[\p{L}\p{N}]+/gu)];
+  const span = words.length + 2;
+  for (let i = 0; i < toks.length; i++) {
+    const w = toks[i][0];
+    if (w.startsWith(joined)) return toks[i].index;
+    if (!words.some((t) => w.startsWith(t))) continue;
+    const win = toks.slice(i, i + span).map((m) => m[0]);
+    if (words.every((t) => win.some((x) => x.startsWith(t)))) return toks[i].index;
+  }
+  return -1;
+}
+
+export async function rankByProximity(hits, q, { onProgress, signal } = {}) {
+  const words = archiveWords(q);
+  if (words.length < 2) return { near: hits, far: [], checked: false };
+  const issueIds = [...new Set(hits.map((h) => h.issueId))].slice(0, MAX_PROXIMITY_ISSUES);
+  const byIssue = hits.reduce((m, h) => m.set(h.issueId, [...(m.get(h.issueId) || []), h]), new Map());
+  const nearKeys = new Map();
+  for (let i = 0; i < issueIds.length; i += BATCH) {
+    if (signal?.aborted) break;
+    const pages = issueIds.slice(i, i + BATCH).flatMap((id) => byIssue.get(id));
+    const texts = await Promise.all(pages.map((h) => pageText(h)));
+    pages.forEach((h, k) => {
+      const pos = findNear(fold(texts[k]), words);
+      if (pos >= 0) nearKeys.set(`${h.issueId}/${h.page}`, pos);
+    });
+    const done = Math.min(i + BATCH, issueIds.length);
+    onProgress?.(split(hits, nearKeys), { done, total: issueIds.length });
+  }
+  return { ...split(hits, nearKeys), checked: true };
+}
+
+function split(hits, nearKeys) {
+  const near = [];
+  const far = [];
+  for (const h of hits) {
+    const pos = nearKeys.get(`${h.issueId}/${h.page}`);
+    if (pos != null) near.push({ ...h, pos });
+    else far.push(h);
+  }
+  return { near, far };
+}
+
+// Kivonat egy találathoz (a lapszám szövege egyszer töltődik le, utána gyorsítótárból);
+// pontos egyezésnél a kivonat az egyezés helyére ugrik
 export async function archiveSnippet(hit, terms) {
-  const pages = await getJson(`/search/t/${hit.issueId}.json`);
-  const text = pages[hit.page - 1] || '';
-  return snippet(text, fold(text), terms);
+  const text = await pageText(hit);
+  return snippet(text, fold(text), terms, 130, hit.pos ?? -1);
 }

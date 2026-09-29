@@ -10,6 +10,9 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 // Csak a képernyő közelében lévő oldalakat rendereli, a távoliakat felszabadítja (mobil memória).
 
 const MAX_CANVAS_WIDTH = 2400;
+// A vásznat a kijelzett méretnél nagyobb felbontásban rajzoljuk (a régi szkennek kb. 2300 px szélesek):
+// így az ujjas nagyítás is éles marad. Csak a képernyő közelében lévő 2–3 oldal él egyszerre.
+const MIN_RENDER_WIDTH = 1800;
 // A dekóderek (JPEG 2000 – a könyvtári szkennelt lapszámok ilyenek –, JBIG2, színprofil) és a szabványos betűk
 // a public/pdfjs mappából jönnek; nélkülük a régi lapszámok oldalai üresek maradnak.
 const ASSETS = {
@@ -68,8 +71,9 @@ const Page = ({ doc, number, width, ratio, onVisible, registerRef }) => {
     doc.getPage(number).then((page) => {
       if (cancelled) return;
       const base = page.getViewport({ scale: 1 });
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      const scale = Math.min((width * dpr) / base.width, MAX_CANVAS_WIDTH / base.width);
+      const dpr = Math.min(window.devicePixelRatio || 1, 3);
+      const target = Math.min(Math.max(width * dpr, MIN_RENDER_WIDTH), MAX_CANVAS_WIDTH);
+      const scale = target / base.width;
       const viewport = page.getViewport({ scale });
       const canvas = canvasEl;
       if (!canvas) return;
