@@ -3,9 +3,8 @@
 import { getArticle, getIssue, getSection, sectionName, issueTitle, latestIssue, articles } from './content';
 import { href } from './router';
 
-// A végleges domain: Cloudflare Pages környezeti változó (VITE_SITE_URL), amíg nincs saját domain,
-// addig a Pages alapértelmezett címe.
-export const SITE_URL = (import.meta.env?.VITE_SITE_URL || 'https://koszegesvideke.pages.dev').replace(/\/$/, '');
+// Az oldal nyilvános címe: VITE_SITE_URL, ennek hiányában a Netlify URL változója (lásd vite.config.js).
+export const SITE_URL = (import.meta.env?.VITE_SITE_URL || 'https://koszegesvideke.netlify.app').replace(/\/$/, '');
 export const SITE_NAME = 'Kőszeg és Vidéke';
 const SITE_DESC =
   'Kőszeg és Vidéke – Kőszeg város és környéke polgárainak ingyenes havilapja. Friss helyi hírek, közélet, kultúra, sport és a digitalizált lapszámok (1889-től) kereshető archívuma.';

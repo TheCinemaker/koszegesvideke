@@ -1,0 +1,2 @@
+# Netlify: minden nem létező útvonal az alkalmazáshoz megy (a meglévő, előrenderelt fájlok elsőbbséget élveznek)
+/*    /index.html    200

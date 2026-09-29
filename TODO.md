@@ -4,6 +4,16 @@
 `scripts/segment_2026.py` → `scripts/detect_recurring_ads.py` → `scripts/build_site_data.py`
 Kézi javítások: `koszeg_es_videke_archive/articles_2026/curation.json`
 
+## Következő lépések (2026-09-29)
+
+- [ ] **Archívum újratervezése** – a 70 évfolyam gombsora „botrányos”: legördülő / évtized-választó
+      vagy valami rendezettebb kell helyette (mobilon is). Holnap együtt kitalálni.
+- [ ] R2-feltöltés befejezése (1938–1939, 2008–2022), utána `npm run data` → teszt → push:
+      így lesz kint mind a 70 évfolyam (1889–1939, 2008–2026).
+- [ ] Netlify: `VITE_SITE_URL` beállítása, ha saját domain lesz (addig a Netlify `URL` változója megy).
+- [ ] Családnév-kereső a régi anyakönyvi hírekből (születés, házasság, halálozás).
+- [ ] Hiányzó évek felkutatása: `koszeg_es_videke_archive/index/hianyzo_lapszamok.md` (1881–1888, 1988–2007).
+
 ## 0. Béta teszt hibái (felhasználói visszajelzés, 2026-09-24)
 
 - [ ] **Sortörési hibák sok cikkben** – bekezdések rossz helyen törnek vagy összeolvadnak.
